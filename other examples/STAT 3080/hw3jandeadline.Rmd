@@ -1,0 +1,62 @@
+---
+title: "Homework 3" 
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+## Problem 1   
+### a
+```{r}
+x = 109.8
+sd = 7.4
+sigLevel = 0.05
+```
+### b
+```{r}
+#zTest<- function(x,sd,sigL){
+  #takes in mean sd and significance level 
+  #use sample size of 23
+  #use sd and sample size and siglevel to determine whether
+  # variable x is the correct mean
+  # return true or false
+ # sample.int(1, size = 23)
+ # zScore = 
+#
+
+```
+### c
+```{r}
+
+```
+### d
+```{r}
+
+```
+### e
+```{r}
+
+```
+### f
+```{r}
+
+```
+### g
+```{r}
+
+```
+
+
+Linebreaks are created using two spaces at the end of the previous line of text, or using the command \newline.  
+Pagebreaks are created using the command \newpage.  
+Note: These commands execute when knitting, moving the end-of-sentence period in the resulting PDF.
+
+
+## References
+1. Your resources go here. Links should be surrounded by <>.

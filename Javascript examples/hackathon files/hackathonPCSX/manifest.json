@@ -1,0 +1,24 @@
+{
+    "name": "Motivational Quote Generator",
+    "version": "1.0.0",
+    "description": "Generates a random Motivational Quote",
+    "manifest_version": 3,
+    "icons": {
+        "16": "mqgLOGO16.png",
+        "32": "mqgLOGO32.png",
+        "48": "mqgLOGO48.png",
+        "64": "mqgLOGO64.png",
+        "128": "mqgLOGO128.png"
+      },
+    "content_scripts":[
+        {
+        "matches": ["http://example.com/"],
+        "js": ["main.js"]
+        }
+    ],
+    "action": {
+        "default_title": " extensionTitle ",
+        "default_popup": "popup.html"
+    }
+    
+}

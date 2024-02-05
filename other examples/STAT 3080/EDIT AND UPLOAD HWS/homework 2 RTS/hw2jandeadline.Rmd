@@ -1,0 +1,159 @@
+---
+title: "Homework 2"
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{rsetup,include=FALSE}
+knitr::opts_chunk$set(echo=TRUE,highlight=FALSE)
+```
+
+##Problem 1
+### a)
+```{r}
+commutes<-matrix(c(25,24,36,27,21,36,34,33,25,32),nrow=5,ncol=2)
+row.names(commutes)<-c("Monday","Tuesday","Wednesday","Thursday","Friday")
+print(commutes)
+```
+### b)
+```{r}
+colnames(commutes)<-c("Week1","Week2")
+print(commutes)
+```
+### c)
+```{r}
+comparison<-commutes[,"Week1"]<commutes[,"Week2"]
+print(comparison)
+```
+### d)
+```{r}
+mean_commutes<-rowMeans(commutes)
+print(mean_commutes)
+```
+### e)
+```{r}
+diff<-commutes-30
+
+print(diff)
+```
+### f)
+```{r}
+mean_diff<-colMeans(diff)
+print(mean_diff)
+```
+### g)
+```{r}
+max_delay<-apply(diff,2,max)
+print(max_delay)
+```
+### h)
+```{r}
+week2_fast_arrival<-row.names(commutes[diff[,"Week2"]<=-5,])
+print(week2_fast_arrival)
+```
+### i)
+```{r}
+days_within_budget<-colSums(diff<=0)
+print(days_within_budget)
+```
+### j)
+```{r}
+week1_fast_arrival<-row.names(commutes[diff[,"Week1"]<=0,])
+print(week1_fast_arrival)
+```
+### k)
+```{r}
+similar_commutes<-diff[diff[,"Week1"]==diff[,"Week2"],]
+print(similar_commutes)
+```
+
+
+##Problem 2
+### a)
+```{r}
+library(car)
+data(Davis)
+
+weight.metric <- Davis[, c("weight", "repwt")]
+head(weight.metric)
+
+
+```
+### b)
+```{r}
+weight.imp<-weight.metric*2.2
+names(weight.imp)<-c("rec.weight","rep.weight")
+
+head(weight.imp)
+```
+
+### c)
+```{r}
+height.metric<-Davis[,c("height","repht")]
+head(height.metric)
+```
+### d)
+```{r}
+height.imp<-round(height.metric/2.54,1)
+names(height.imp)<-c("rec.height","rep.height")
+head(height.imp)
+```
+### e)
+```{r}
+Davis.imp<-cbind(sex=Davis$sex,weight.imp,height.imp)
+
+head(Davis.imp)
+```
+### f)
+```{r}
+apply(Davis.imp,2,function(x)sum(is.na(x)))
+```
+### g)
+```{r}
+sum(apply(Davis.imp,1,function(x)any(is.na(x))))
+
+```
+
+### h)
+```{r}
+Davis.imp[which(apply(Davis.imp,1,function(x)any(is.na(x)))),"sex"]
+```
+##Problem 3
+### a)
+```{r}
+planets<-data.frame(name=c("Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune"),
+distance=c(0.39,0.72,1,1.52,5.2,9.54,19.18,30.06),
+type=c("terrestrial","terrestrial","terrestrial","terrestrial","gas","gas","gas","gas"),
+diameter=c(0.382,0.949,1,0.532,11.209,9.449,4.007,3.883),
+rotation=c(58.64,-243.02,1,1.03,0.41,0.43,-0.72,0.67),
+rings=c(FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE),
+moons=c(0,0,1,2,67,62,27,14))
+
+#remember to print
+print(planets)
+```
+### b)
+```{r}
+small_planets<-subset(planets,diameter<5)
+print(small_planets)
+
+```
+### c)
+```{r}
+same_rotation_planets<-subset(planets,rotation==1)
+print(same_rotation_planets)
+```
+### d)
+```{r}
+large_diameter_planets<-subset(planets,diameter>1,select=c("name","moons","type"))
+print(large_diameter_planets)
+```
+### e)
+```{r}
+ringed_planets<-subset(planets,moons>1,select=c("rings","type"))
+print(ringed_planets)
+```
+

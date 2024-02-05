@@ -1,0 +1,35 @@
+def compute(self, file_data):
+        # Parse the input
+        num_rooms = int(file_data[0].strip())
+        luke_start, luke_end = map(int, file_data[1].split())
+        lorelai_start, lorelai_end = map(int, file_data[2].split())
+
+        # Build adjacency list
+        adj_list = {i: [] for i in range(num_rooms)}
+        for i, line in enumerate(file_data[3:]):
+            rooms = list(map(int, line.strip().split()))
+            for room in rooms:
+                adj_list[i].append(room)
+
+        visited = set()
+        queue = deque([((luke_start, lorelai_start), [(luke_start, lorelai_start)])])
+        while queue:
+            (luke_pos, lorelai_pos), path = queue.popleft()
+
+            # Check end condition
+            if luke_pos == luke_end and lorelai_pos == lorelai_end:
+                self.lukePath = [p[0] for p in path]
+                self.lorelaiPath = [p[1] for p in path]
+                return len(self.lukePath)
+
+            for l_next in adj_list[luke_pos] + [luke_pos]: # Luke can stay or move to an adjacent room
+                for ll_next in adj_list[lorelai_pos] + [lorelai_pos]: # Lorelai can stay or move to an adjacent room
+                    if l_next != ll_next and ll_next not in adj_list[l_next] and (l_next, ll_next) not in visited:
+                        visited.add((l_next, ll_next))
+                        queue.append(((l_next, ll_next), path + [(l_next, ll_next)]))
+        return -1 # if no path is found
+
+        5
+[0, 3, 5, 6, 6]
+[2, 1, 2, 3, 4]
+time: 0.0001201629638671875

@@ -1,0 +1,121 @@
+---
+title: "Homework 6" 
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+## Problem 1  
+### a
+```{r}
+fData<-read.delim("nym2021.txt")
+ageGroups<-table(fData$DivAge)
+print(barplot(ageGroups,border = "grey",col="white"))
+```
+### b
+```{r}
+fData<-read.delim("nym2021.txt")
+ageNsex<-table(fData$Sex)
+print(barplot(ageNsex,col=c('red','blue'),beside=T,legend=c('F','M')))
+```
+### c
+```{r}
+fData<-read.delim("nym2021.txt")
+ageNsex<-table(fData$Sex,fData$DivAge)
+print(barplot(ageNsex,col=rep(rainbow(9),each =2),beside=T))
+```
+### d
+\newline
+Plot b shows us that there were more male finishers in the race than female. And a larger proportion of the fishers in th race were male. Aswell as for each age group.
+
+### e
+\newline
+From the plot given in the question we can see that relative to their population sizes more females were able to finish the race which does not necessarily contradict my answer in part d as there were overall more male finishers but only because there were a lot more males in the race, so it is important to tsee all the data before making any assumptions.
+### f
+```{r}
+fData<-read.delim("nym2021.txt")
+medAge<-aggregate(fData$DivAge,list(fData$DivAge),median)
+med<-table(medAge)
+print(barplot(med,col=rep(rainbow(9),each =2)))
+```
+### g
+```{r}
+#median from all age groups is roughly the same.
+```
+
+
+## Problem 2
+```{r}
+# Load data
+data <- read.csv("fatal_accidents.csv")
+
+# Create Graphic2
+Graphic2 <- ggplot(data, aes(x=Licensed.drivers, y=Fatal.crashes)) + geom_point()
+
+# Add layers to Graphic2
+Graphic2 + labs(title="State level information on fatal car accidents in 2019", x="Number of licensed drivers (millions)", y="Number of fatal accidents") +
+  geom_text(aes(label=Hand.held.ban), hjust=1.5, vjust=-1.5)
+
+print(Graphic2)
+
+```
+## Problem 3
+```{r}
+# Load data
+data <- read.csv("fatal_accidents.csv")
+
+# Create Graphic3
+Graphic3 <- ggplot(data, aes(x=Year, y=FPropV)) + geom_line()
+
+# Add layers to Graphic3
+Graphic3 + labs(title="Car accident fatalities from 1994 to 2019", x="Year", y="Fatalities as percentage of vehicles registered in state") +
+  geom_text(aes(label=State), hjust=-0.5, vjust=0)
+
+print(Graphic3)
+```
+## Problem 4
+```{r}
+# Load data
+data <- read.csv("nyc_marathon.csv")
+
+# Create Graphic4
+Graphic4 <- ggplot(data, aes(x=DivAge, y=prop)) + geom_bar(stat="identity")
+
+# Add layers to Graphic4
+Graphic4 + labs(title="Select 2021 NYC Marathon finishers", x="Age division", y="Proportion of finishers of each sex assigned at birth") +
+  facet_grid(Sex ~ .)
+
+print(Graphic4)
+```
+## Problem 5
+```{r}
+# Load data
+data <- read.csv("fatal_accidents.csv")
+
+# Filter data for Virginia
+data <- subset(data, State == "Virginia")
+
+# Create Graphic5
+Graphic5 <- ggplot(data, aes(x=People.count)) + geom_histogram(bins=30, alpha=0.5)
+
+# Add layers to Graphic5
+Graphic5 + labs(title="Distribution of Virginians involved in fatal accidents in 2019", x="Number of people involved in a fatal accident", y="Density") +
+  geom_density(color="red", size=1)
+
+print(Graphic5)
+```
+
+## Problem 6
+
+```{r}
+#Based on the distribution of the number of people involved in fatal accidents in Virginia in 2019 shown in Graphic5, it appears that the majority of fatal accidents involve only one or two people. There is a small tail on the distribution for accidents involving more people, but these are relatively rare.
+```
+
+
+

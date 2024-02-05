@@ -1,0 +1,125 @@
+---
+title: "Homework 3"
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{rsetup,include=FALSE}
+knitr::opts_chunk$set(echo=TRUE,highlight=FALSE)
+```
+
+## Problem 1
+### a)
+```{r}
+mean<-109.8
+sd<-7.4
+print(mean)
+print(sd)
+```
+### b)
+```{r}
+ztest<-function(sample_size){
+sample<-rnorm(sample_size,mean,sd)
+z<-(mean(sample)-mean)/(sd/sqrt(sample_size))
+p<-pnorm(abs(z),lower.tail=FALSE)
+p<0.05
+}
+ztest(23)
+
+print(ztest(23))
+```
+### c)
+```{r}
+# Execute function 10,000 times using a sample size of 23
+results <- replicate(10000, ztest(23))
+
+# Calculate proportion of tests that reject the null hypothesis and print
+print(mean(results))
+```
+### d)
+```{r}
+#Theoretically,the proportion should be around 5% as that is the significance level
+```
+### e)
+```{r}
+proportion_rejecting_null <- function(mean, sd, sample_size, num_tests) {
+  # Execute z-test function num_tests times using a sample size of sample_size
+  results <- replicate(num_tests, ztest(sample_size))
+  return(mean(results))
+}
+
+proportion_rejecting_null(mean, sd, 8, 10000)
+proportion_rejecting_null(mean, sd, 23, 10000)
+proportion_rejecting_null(mean, sd, 52, 10000)
+
+```
+### f)
+```{r}
+# Generate sequence of sample sizes from 3 to 52
+sample_sizes <- 3:52
+
+# Execute function for each sample size in sequence
+proportions <- lapply(sample_sizes, function(x) proportion_rejecting_null(mean, sd, x, 10000))
+
+# View results
+proportions
+```
+### g)
+```{r}
+#proportion of tests that reject the null hypothesis generally decreases as the sample size increases.This is expected because a larger sample size provides more accurate estimates of the true mean ,and the z-test becomes less likely to reject the null hypothesis when the sample mean is closer to the true mean.
+```
+## Problem 2
+### a)
+```{r}
+nym2021<-read.csv("nym2021.txt")
+head(nym2021)
+```
+### b)
+```{r}
+print(nrow(nym2021))
+```
+### c)
+```{r}
+print(sum(nym2021$Home.Country=="UnitedStates"))
+```
+### d)
+```{r}
+print(table(nym2021$Home.Country))
+```
+### e)
+```{r}
+print(length(unique(nym2021$Home.Country)))
+```
+### f)
+```{r}
+print(min(nym2021$Age))
+print(max(nym2021$Age))
+```
+### g)
+```{r}
+print(nym2021[which.min(nym2021$Finish.Time),"Age"])
+print(nym2021[which.max(nym2021$Finish.Time),"Age"])
+```
+### h)
+```{r}
+print(sum(nym2021$Overall.Rank<=25))
+```
+### i)
+```{r}
+print(unique(nym2021[nym2021$Overall.Rank<=25,"Division"]))
+```
+### j)
+```{r}
+print(nym2021[nym2021$Overall.Rank<=10,])
+```
+### k)
+```{r}
+print(mean(nym2021[nym2021$Qualified.for.Boston.Marathon=="Yes","Age"]))
+print(mean(nym2021[nym2021$Qualified.for.Boston.Marathon=="No","Age"]))
+
+```
+
+

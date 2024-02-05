@@ -1,0 +1,69 @@
+@import 'app';
+.header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffec99;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  h3 {
+    color: $grey-800;
+    margin: 0;
+  }
+}
+
+.account-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-pic-plain-color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $grey-600;
+  cursor: pointer;
+  display: flex; 
+  justify-content: center;
+  align-items:center;
+  font-size: 12px; 
+  color: #ffec99; 
+}
+
+.profile-pic-plain-color:hover {
+  background-color: rgb(8, 172, 172);
+} 
+
+.account-name-container {
+  //   height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 32px; 
+}
+
+.account-name {
+  margin: 0;
+  color: $grey-800;
+}
+
+.nav-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-header {
+  width: 12rem;
+  height: 2rem;
+  padding: 0.7rem 1remrem;
+  border-radius: $borderRadius;
+  background: $backgroundColor;
+  border: 1px solid $grey-200;
+}

@@ -1,0 +1,43 @@
+body {
+    background-color: peachpuff;
+    width : 400px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0rem;
+    justify-content: space-between;
+    
+}
+
+#new-quote {
+    /* margin-top: 1rem; */
+    /* margin-bottom: 0rem; */
+    cursor: pointer;
+    border-color: black ;
+    border-radius: 0.8rem;
+    text-align: center;
+    font-family:  "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.container {
+    position: relative;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  "Comic Sans MS", "Comic Sans", cursive;
+}
+#container {
+    position: relative;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  "Comic Sans MS", "Comic Sans", cursive;
+}

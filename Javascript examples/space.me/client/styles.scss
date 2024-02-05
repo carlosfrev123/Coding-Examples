@@ -1,0 +1,229 @@
+// HTML Element styles
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  color: #ddd;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  color: #ddd;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+img {
+  width: 100%;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input {
+  height: 2rem;
+  width: 100%;
+  margin-top: 0;
+}
+
+//FavStar
+.fav-star {
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+// Navbar styles
+.navbar {
+  display: flex;
+  height: 3rem;
+  background-color: #222;
+  align-items: center;
+}
+
+.navbar-title {
+  margin: 0;
+  margin-left: 2rem;
+  margin-right: auto;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  background: transparent;
+  border: none;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.navbar-menu-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-menu-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #555;
+  min-width: 10rem;
+  width: 20rem;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.navbar-menu-dropdown:hover .navbar-menu-dropdown-content {
+  display: block;
+}
+
+// Home Page Styles
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Big Image & Space Fact Styles
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5rem
+}
+
+.main-big-image-container {
+  display: flex;
+  flex-direction: column;
+  width: 60.75rem;
+}
+
+.main-big-image {
+  position: relative;
+}
+
+.main-space-fact {
+  width: 90%;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.main-button {
+  margin: 2rem 0
+}
+
+// Small Tile Styles
+.small-tile-container {
+  width: 60.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 5rem;
+}
+
+.small-tile {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  min-width: 15rem;
+  background-color: #999;
+}
+
+// Login + Signup Styles
+
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 50vh;
+  background-color: #eee;
+  color: #333;
+  border-radius: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.login-form-input {
+  height: 25rem;
+}
+
+.login-form-button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: .5rem;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #333;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.login-form-button:hover{
+  background-color: #444;
+}
+
+.login-form-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+.form-links {
+  margin-top: .25rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+// Favorites Styles
+
+.favorites-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.favorites-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  width: 76rem;
+}
+
+.favorites-title {
+  margin-left: 15rem;
+}
+
+.big-tile {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  min-width: 15rem;
+  background-color: #999;
+}

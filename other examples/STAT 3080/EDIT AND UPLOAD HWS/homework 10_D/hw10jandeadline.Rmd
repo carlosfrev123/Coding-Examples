@@ -1,0 +1,93 @@
+---
+title: "Homework 10" 
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+set.seed(06222001)
+```
+
+
+
+## Problem 1   
+```{r}
+```
+## Problem 2   
+```{r}
+```
+## Problem 3   
+### a)
+```{r}
+sample_size <- power.chisq.test(p = 2.75, 
+                                power = 0.8, 
+                                df = 3, 
+                                sig.level = 0.05, 
+                                alternative = "greater")
+
+# Set the number of iterations
+iterations <- 10000
+
+# Set the counter to 0
+counter <- 0
+
+# Loop through the iterations
+for (i in 1:iterations) {
+  # Generate a random sample from a chi-squared distribution with 3 degrees of freedom
+  sample <- rchisq(sample_size$n, df = 3)
+  
+  # Perform a chi-squared test comparing the mean of the sample to the value 2.75
+  result <- chisq.test(sample, p = 2.75, alternative = "greater")
+  
+  # If the p-value is less than 0.05, increment the counter
+  if (result$p.value < 0.05) {
+    counter <- counter + 1
+  }
+}
+
+# Calculate the empirical power as the proportion of tests with a p-value less than 0.05
+empirical_power <- counter / iterations
+
+
+```
+### b)
+```{r}
+install.packages("effsize")
+library(effsize)
+effect_size <- cohen.d(mean1 = NULL, sd1 = NULL, mean2 = 3, sd2 = 2.45)
+print(effect_size)
+
+```
+### c)
+```{r}
+sample_size <- power.chisq.test(p = 2.75, 
+                                power = 0.8, 
+                                df = 3, 
+                                sig.level = 0.05, 
+                                alternative = "greater",
+                                delta = effect_size)
+print(sample_size$n)
+
+```
+### d)
+```{r}
+sample_size <- power.chisq.test(p = 2.75, 
+                                power = 0.8, 
+                                df = 3, 
+                                sig.level = 0.05, 
+                                alternative = "greater",
+                                delta = effect_size)
+
+```
+## Problem 4   
+The results of Problems 2 and 3 can be used to determine the sample size required to achieve a desired power level for a one-sample t-test and a chi-squared test, respectively. The true effect size of the tests can also be calculated using Monte Carlo simulation.
+
+In choosing an effect size when planning a study, it is important to consider the power level that you want to achieve. A higher power level requires a larger sample size, but it also increases the chances of detecting a true effect if it exists. On the other hand, a lower power level requires a smaller sample size, but it also reduces the chances of detecting a true effect.
+
+Therefore, when planning a study, you should consider the balance between the sample size and the desired power level. If you are aiming for a high power level, you should choose a larger sample size. If you are aiming for a lower power level, you can choose a smaller sample size. The true effect size of the test can also be taken into account when choosing the sample size, as a larger effect size will require a smaller sample size to achieve a given power level.
+
+In conclusion, the results of Problems 2 and 3 can be used to determine the sample size required to achieve a desired power level for a one-sample t-test and a chi-squared test, respectively, and the true effect size of the tests can be calculated using Monte Carlo simulation. This information can be used to choose an appropriate sample

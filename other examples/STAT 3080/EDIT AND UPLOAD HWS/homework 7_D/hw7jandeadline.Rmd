@@ -1,0 +1,207 @@
+---
+title: "Homework 7" 
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+## Problem 1 
+```{r}
+# Set the random seed
+set.seed(10312002)
+# Plot the density curve of a chi-squared distribution with 3 degrees of freedom
+dcur<-curve(dchisq(x, df = 3), from = 0, to = 20, xlab = "x", ylab = "Density")
+print(dcur)
+```
+## Problem 2 
+```{r}
+# Set the degrees of freedom and population mean and standard deviation
+df <- 3
+mu <- 3
+sigma <- 2.45
+
+# Set the sample sizes
+sizes <- c(8, 23, 52)
+
+# Set the number of repetitions
+reps <- 10000
+
+# Initialize a list to store the results
+results <- list()
+
+# Loop over the sample sizes
+for (size in sizes) {
+  # Initialize a vector to store the Type I errors for this sample size
+  type1_errors <- c()
+  
+  # Loop over the repetitions
+  for (i in 1:reps) {
+    # Generate a sample from the chi-squared distribution
+    sample <- rchisq(size, df)
+    
+    # Conduct a two-sided z-test
+    z <- (mean(sample) - mu)/(sigma/sqrt(size))
+    pval <- 2 * pnorm(abs(z))
+    type1_errors <- c(type1_errors, pval < 0.05)
+    
+    # Conduct a left-sided z-test
+    z <- (mean(sample) - mu)/(sigma/sqrt(size))
+    pval <- pnorm(z)
+    type1_errors <- c(type1_errors, pval < 0.05)
+    
+    # Conduct a right-sided z-test
+    z <- (mean(sample) - mu)/(sigma/sqrt(size))
+    pval <- pnorm(-z)
+    type1_errors <- c(type1_errors, pval < 0.05)
+  }
+  
+  # Store the results for this sample size
+  results[[as.character(size)]] <- type1_errors
+}
+
+```
+## Problem 3 
+```{r}
+# Install and load the required packages
+install.packages(c("tibble", "purrr"))
+library(tibble)
+library(purrr)
+
+# Initialize an empty tibble
+tab <- tibble()
+
+# Loop over the sample sizes
+for (size in sizes) {
+  # Get the Type I errors for this sample size
+  errors <- results[[as.character(size)]]
+  
+  # Add a row to the tibble
+  tab <- add_row(tab, size, sum(errors[1:reps]), sum(errors[(reps+1):(2*reps)]), sum(errors[(2*reps+1):(3*reps)]))
+}
+
+# Rename the columns
+colnames(tab) <- c("Sample size", "Two-sided", "Left-sided", "Right-sided")
+
+# Print the tibble
+print(tab)
+
+#Conclusions: To draw conclusions from the results, you can compare the number of Type I errors for each sample size and test type to the expected rate of 0.05. If the observed rate is close to 0.05, then the z-test is correctly controlling the Type I error rate. If the observed rate is significantly higher or lower than 0.05, then there may be a problem with the z-test.
+
+```
+## Problem 4 
+```{r}
+# Set the number of repetitions
+reps <- 10000
+
+# Set the sample sizes
+sample_sizes <- c(8, 23, 52)
+
+# Set the degrees of freedom and population mean and standard deviation
+df <- 3
+mean <- 3
+sd <- 2.45
+
+# Initialize a matrix to store the results
+results <- matrix(NA, nrow = reps, ncol = length(sample_sizes))
+
+# Perform the Monte Carlo simulation
+for (i in 1:reps) {
+  for (j in 1:length(sample_sizes)) {
+    # Generate a sample from the chi-squared distribution
+    sample <- rchisq(sample_sizes[j], df)
+    
+    # Conduct the two-sided t-test
+    two_sided <- t.test(sample, mu = mean, alternative = "two.sided")
+    results[i, j] <- two_sided$p.value
+  }
+}
+
+# Calculate the empirical Type I error for the two-sided t-test
+two_sided_error <- mean(results < 0.05)
+
+# Repeat the process for the left-sided and right-sided t-tests
+left_sided_error <- NA
+right_sided_error <- NA
+for (j in 1:length(sample_sizes)) {
+  left_sided_error[j] <- mean(t.test(rchisq(sample_sizes[j], df), mu = mean, alternative = "less")$p.value < 0.05)
+  right_sided_error[j] <- mean(t.test(rchisq(sample_sizes[j], df), mu = mean, alternative = "greater")$p.value < 0.05)
+}
+
+```
+## Problem 5 
+```{r}
+# Create a data frame to display the results
+results_df <- data.frame(
+  Sample_Size = sample_sizes,
+  Two_Sided = two_sided_error,
+  Left_Sided = left_sided_error,
+  Right_Sided = right_sided_error
+)
+
+# Print the results
+print(results_df)
+
+#Conclusion:  if the empirical Type I error is close to the desired level of 0.05 for all sample sizes, it suggests that the t-test is correctly conducted.
+```
+## Problem 6
+```{r}
+# Set the number of repetitions
+reps <- 10000
+
+# Set the sample sizes
+sample_sizes <- c(8, 23, 52)
+
+# Set the degrees of freedom and population mean and standard deviation
+df <- 3
+mean <- 3
+sd <- 2.45
+
+# Initialize a matrix to store the results
+results <- matrix(NA, nrow = reps, ncol = length(sample_sizes))
+
+# Perform the Monte Carlo simulation
+for (i in 1:reps) {
+  for (j in 1:length(sample_sizes)) {
+    # Generate a sample from the chi-squared distribution
+    sample <- rchisq(sample_sizes[j], df)
+    
+    # Conduct the two-sided z-test
+    two_sided <- t.test(sample, mu = mean, alternative = "two.sided", var.equal = TRUE)
+    results[i, j] <- two_sided$p.value
+  }
+}
+
+# Calculate the empirical Type I error for the two-sided z-test
+two_sided_error <- mean(results < 0.05)
+
+# Repeat the process for the left-sided and right-sided z-tests
+left_sided_error <- NA
+right_sided_error <- NA
+for (j in 1:length(sample_sizes)) {
+  left_sided_error[j] <- mean(t.test(rchisq(sample_sizes[j], df), mu = mean, alternative = "less", var.equal = TRUE)$p.value < 0.05)
+  right_sided_error[j] <- mean(t.test(rchisq(sample_sizes[j], df), mu = mean, alternative = "greater", var.equal = TRUE)$p.value < 0.05)
+}
+
+```
+## Problem 7 
+```{r}
+# Create a data frame to display the results
+results_df <- data.frame(
+  Sample_Size = sample_sizes,
+  Two_Sided = two_sided_error,
+  Left_Sided = left_sided_error,
+  Right_Sided = right_sided_error
+)
+
+# Print the results
+print(results_df)
+
+#conclusions: if the empirical Type I error is significantly different from the desired level of 0.05 for any sample size, it suggests that the z-test is not correctly conducted.
+```
+

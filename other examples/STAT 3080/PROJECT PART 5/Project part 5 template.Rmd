@@ -1,0 +1,61 @@
+---
+title: "Project Part 5" 
+author: "Carlos F Revilla"
+date: "2022-12-12"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+header-includes:
+- \usepackage{setspace}
+- \onehalfspacing
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+```{r, echo=FALSE}
+## Use this chunk for reading in packages.
+## Use this chunk for reading in the data, combining the data, and any other major data cleaning that is not relevant to show.
+## Remove the ## before all code.
+```
+
+# Factors that affect Virginia county Budget amounts
+
+
+## Introduction
+
+In this project I want to investigate certain variables across counties in Virginia and determine if they show any correlation with the budget amount in the county. My goal for this investigation is to determine if there is a variable or variables that are good predictors of the budget amount Virginia counties receive.
+
+
+Virginia counties range in budget amount from $37.39 Billion dollars in Fairfax county which accounts for 27.96% of Virginia's total Budget to $43.968 Million Dollars in Rappahannock County.
+
+By investigating the factors which strongly correlate with these budgets we can determine if they are good predictors of Virginia county budgets.
+
+```{r}
+## R code to be shown. 
+## Remove the ## before all code.
+```
+
+## Research questions
+1. Does the percentage of the Unemployed population in each county correlate with the amount of money that county receives from the government?
+2. Does the average income of a county have an affect on the budget for that county?
+3. Does the percentage of Black and Hispanic people in Virginia counties have any correlation with the budget amount received by the county?
+
+
+
+
+I chose these research questions in order to investigate three factors, Unemployment rate, Income, and Percentage of Black and Hispanic people in the county population. In order to  determine whether these factors are significant or not I will use the research questions to investigate each of them. I feel the Populations I have chosen to investigate are important as they help us analyze the outcome of the budgets of these counties.
+
+
+## DataSets
+I will use the following DataSets as my primary sources of data to investigate each of my research questions,
+
+Works Cited
+
+US Census Bureau. “Census.gov.” Census.gov, 2021, www.census.gov.
+
+“USAspending.gov.” Www.usaspending.gov, www.usaspending.gov/state/virginia/latest. Accessed 10 Sept. 2022
+## References
+1. Your resources go here. Links should be surrounded by <>.

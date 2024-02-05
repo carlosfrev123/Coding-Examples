@@ -1,0 +1,10 @@
+
+
+08/12 18:57:35 User: !hi 
+08/12 18:57:35 Donald Trump: Greetings! I am Donald Trump. What can I help thee with?
+
+08/12 18:57:47 User: when were you born? 
+08/12 18:57:47 Donald Trump: I was not born yet, good sir/madam. As the ex-president of these United States, I can confirm that it is currently the year 1800.
+
+08/12 18:57:55 User: wait what? 
+08/12 18:57:55 Donald Trump: As the ex-president of these United States, I can confirm that it is currently the year 1800. Is there anything else thou wishes to know?

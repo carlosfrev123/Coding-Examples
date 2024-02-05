@@ -1,0 +1,116 @@
+%--------- Modify the following three lines for every homework
+\def\yourid{yourid}
+\def\collabs{list your collaborators}
+\def\sources{list your sources}
+
+% --- Do not modify the lines in this section-------------------------------------------------
+\def\duedate{November 3, 2023 at 11:59 PM}
+\def\pnumber{4}
+\newcommand{\soln}{\medskip\noindent\textbf{Solution:}\vspace*{1ex}}
+
+\documentclass[10pt]{article}
+\usepackage{dsa2}
+
+\begin{document}
+\thispagestyle{empty}
+\handout
+
+
+%--- Beginning of the problems.  Students should look for the TODO comment after each problem
+%--- and add their answers there.
+
+%===============================================================================================
+
+
+\begin{problem}Dynamic Programming\end{problem}
+
+\begin{enumerate}
+    \item If a problem can be defined recursively but its subproblems do not overlap and are not repeated, then is dynamic programming a good design strategy for this problem?  If not, is there another design strategy that might be better?
+    
+    \soln
+    
+    %% TODO: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Add your answer here that answers the question(s) asked for this problem.
+    
+    \item As part of our process for creating a dynamic programming solution, we searched for a good order for solving the subproblems.  Briefly (and intuitively) describe the difference between a top-down and bottom-up approach.  
+    
+    \soln
+    
+    %% TODO: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Add your answer here that answers the question(s) asked for this problem.
+    
+\end{enumerate}
+
+
+
+
+\begin{problem}Birthday Prank\end{problem}
+
+Prof Hott's brother-in-law loves pranks, and in the past he's played the nested-present-boxes prank.  I want to repeat this prank on his birthday this year by putting his tiny gift in a bunch of progressively larger boxes, so that when he opens the large box there's a smaller box inside, which contains a smaller box, etc., until he's finally gotten to the tiny gift inside.  The problem is that I have a set of $n$ boxes after our recent move and I need to find the best way to nest them inside of each other.  Write a \textbf{dynamic programming} algorithm which, given a $fits(b_i,b_j)$ function that determines if box $b_i$ fits inside box $b_j$, returns the maximum number of boxes I can nest (i.e. gives the count of the maximum number of boxes my brother-in-law must open).
+
+\soln
+
+%% TODO: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Add your answer here that answers the question(s) asked for this problem.
+
+
+\begin{problem}Arithmetic Optimization\end{problem}
+
+You are given an arithmetic expression containing $n$ integers and the only operations are additions ($+$)
+and subtractions ($-$). There are no parenthesis in the expression. For example, the expression might be: $1 + 2 - 3 - 4 - 5 + 6$.
+
+You can change the value of the expression by choosing the best order of operations:
+\begin{align*}
+ ((((1 + 2) - 3) - 4) - 5) + 6 &= -3 \\
+ (((1 + 2) - 3) - 4) - (5 + 6) &= -15\\
+ ((1 + 2) - ((3 - 4) - 5)) + 6 &= 15
+\end{align*}
+
+Give a {\bf dynamic programming} algorithm that computes the maximum possible value of the expression. You may assume that
+the input consists of two arrays: \texttt{nums} which is the list of $n$ integers and
+\texttt{ops} which is the list of operations (each entry in \texttt{ops} is either \texttt{'+'}
+or \texttt{'-'}), where \texttt{ops[0]} is the operation between \texttt{nums[0]} and \texttt{nums[1]}. \emph{Hint: consider a similar strategy to our algorithm for matrix chaining.}
+
+\soln
+
+%% TODO: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Add your answer here that answers the question(s) asked for this problem.
+
+  
+
+\begin{problem}Stranger Things\end{problem}
+
+The town of Hawkins, Indiana is being overrun by interdimensional beings called Demogorgons. The Hawkins lab has developed a Demogorgon Defense Device (DDD) to help protect the town. The DDD continuously monitors the inter-dimensional ether to perfectly predict all future Demogorgon invasions.
+
+The DDD allows Hawkins to predict that $i$ days from now $a_i$ Demogorgons will attack. The DDD has a laser gun that is able to eliminate Demogorgons, but the device takes a lot of time to charge.  In general, charging the laser for $j$ days will allow it to eliminate $d_j$ Demogorgons.
+
+\paragraph{Example:} Suppose $(a_1, a_2, a_3, a_4) = (1, 10, 10, 1)$ and $(d_1, d_2, d_3, d_4) = (1,2,4,8)$. The best solution is to fire the laser at times 3, 4 in order to eliminate $5$ Demogorgons.
+
+\begin{enumerate}
+    \item Construct an instance of the problem on which the following ``greedy'' algorithm returns the wrong answer:
+    \begin{align*}
+        \mathtt{BADLASER}&((a_1, a_2, a_3, \ldots , a_n), (d_1, d_2, d_3, , \ldots, d_n)): \\
+        & \text{Compute the smallest $j$ such that $d_j \geq  a_n$, Set $j = n$ if no such $j$ exists} \\
+        & \text{Shoot the laser at time $n$}\\
+        & \text{if $n > j$ then $\mathtt{BADLASER}((a_1, \ldots , a_{n - j}), (d1, \ldots , d_{n-j}))$}
+    \end{align*}
+    
+    Intuitively, the algorithm figures out how many days ($j$) are needed to kill all the Demogorgons in the last time slot. It shoots during that last time slot, and then accounts for the $j$ days required to recharge for that last slot, and recursively considers the best solution for the smaller problem of size $n-j$.
+
+    \soln
+
+    %% TODO: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Add your answer here that answers the question(s) asked for this problem.
+    
+               
+    \item Given an array holding $a_i$ and $d_j$, devise a dynamic programming algorithm that eliminates the maximum number of Demogorgons. Analyze the running time of your solution. \textit{Hint: it is always optimal to fire during the last time slot.}
+
+    \soln
+
+    %% TODO: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Add your answer here that answers the question(s) asked for this problem.
+
+
+\end{enumerate}
+
+\end{document}

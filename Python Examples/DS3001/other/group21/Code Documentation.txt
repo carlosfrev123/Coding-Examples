@@ -1,0 +1,15 @@
+Steps for Data Cleaning:
+- Read the CSV file
+- Extracted all the data for 2018, 2021, and 2022 (no data for 2019, 2020)
+- Chose 3 subject variables (age, sex, and marital) and 1 target variable (fluvax)
+- We dropped the N/A columns for fluvax and age (as we could not perform analysis without these columns)
+- Plotted a histogram for fluvax vs age
+- Created a count plot for fluvax vs sex
+- Created a count plot for fluvax vs marital
+- Attempted to perform in-depth analysis for each filtered year (the last 3 years - 2018, 2021, 2022) but realized
+    that after dropping the invalid data entries, the only remaining data was from the year 2022 (with respect to
+    the last 3 recent years).
+- The project started out with the intent of analyzing the relationship between flu vaccines and age, sex, and
+    marital for the 3 recent years; however, through the data wrangling/visualization process, the scope of the
+    project changed to just the recent year (2022) due to the data missing from 2018 and 2021.
+- Added a chi-squared test for independence to check if the results for gender vs fluvax and marital status vs fluvax were         statistically significant

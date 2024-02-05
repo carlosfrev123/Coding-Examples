@@ -1,0 +1,266 @@
+---
+title: "Homework 11" 
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE, warning=FALSE)
+# Set the random seed
+set.seed(06222001)
+```
+
+## Problem 1   
+```{r}
+# Define the probability of success and the number of trials
+p <- 0.5
+n <- 104
+
+# Define the number of repetitions for the Monte Carlo simulation
+reps <- 10000
+
+# Perform the Monte Carlo simulation for each test
+left_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = FALSE)$p.value)
+left_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = TRUE)$p.value)
+right_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", correct = FALSE)$p.value)
+right_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", correct = TRUE)$p.value)
+two_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", correct = FALSE)$p.value)
+two_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", correct = TRUE)$p.value)
+
+# Print the empirical Type I error for each test
+print(paste("Left-tailed without continuity correction:", mean(left_tailed_no_cc < 0.05)))
+print(paste("Left-tailed with continuity correction:", mean(left_tailed_cc < 0.05)))
+print(paste("Right-tailed without continuity correction:", mean(right_tailed_no_cc < 0.05)))
+print(paste("Right-tailed with continuity correction:", mean(right_tailed_cc < 0.05)))
+print(paste("Two-tailed without continuity correction:", mean(two_tailed_no_cc < 0.05)))
+print(paste("Two-tailed with continuity correction:", mean(two_tailed_cc < 0.05)))
+```
+
+## Problem 2   
+```{r}
+# Define the probability of success and the number of trials
+p <- 0.5
+n <- 104
+
+# Define the alternative value and the number of repetitions for the Monte Carlo simulation
+alternative <- 0.55
+reps <- 10000
+
+# Perform the Monte Carlo simulation
+left_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = FALSE, p = alternative)$p.value)
+left_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = TRUE, p = alternative)$power)
+right_tailed_no_cc <- replicate(reps, binom.test(x = 45, n = n, p = p, alternative = "greater", correct = FALSE)$p.value)
+right_tailed_cc <- replicate(reps, binom.test(x = 45, n = n, p = p, alternative = "greater", correct = TRUE)$p.value)
+two_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", p.value = 0.45, correct = FALSE)$p.value)
+two_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", p.value = 0.45, correct = TRUE)$p.value)
+# Print the empirical power for the test
+print(paste("Left-tailed without continuity correction:", mean(left_tailed_no_cc < 0.05)))
+print(paste("Left-tailed with continuity correction:", mean(left_tailed_cc < 0.05)))
+print(paste("Right-tailed (more than 45%) without continuity correction:", mean(right_tailed_no_cc < 0.05)))
+print(paste("Right-tailed (more than 45%) with continuity correction:", mean(right_tailed_cc < 0.05)))
+print(paste("Two-tailed (is not 45%) without continuity correction:", mean(two_tailed_no_cc < 0.05)))
+print(paste("Two-tailed (is not 45%) with continuity correction:", mean(two_tailed_cc < 0.05)))
+```
+## Problem 3   
+```{r}
+# Define the probability of success and the number of trials
+p <- 0.5
+n <- 104
+
+# Define the number of repetitions for the Monte Carlo simulation
+reps <- 10000
+
+# Perform the Monte Carlo simulation for each test
+left_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = FALSE)$p.value)
+left_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = TRUE)$p.value)
+right_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", correct = FALSE)$p.value)
+right_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", correct = TRUE)$p.value)
+two_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", correct = FALSE)$p.value)
+two_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", correct = TRUE)$p.value)
+
+results <- data.frame(
+  Test = c(
+    "Left-tailed without continuity correction",
+    "Left-tailed with continuity correction",
+    "Right-tailed without continuity correction",
+    "Right-tailed with continuity correction",
+    "Two-tailed without continuity correction",
+    "Two-tailed with continuity correction"
+  ),
+  Empirical_Type_I_Error = c(
+    mean(left_tailed_no_cc < 0.05),
+    mean(left_tailed_cc < 0.05),
+    mean(right_tailed_no_cc < 0.05),
+    mean(right_tailed_cc < 0.05),
+    mean(two_tailed_no_cc < 0.05),
+    mean(two_tailed_cc < 0.05)
+  )
+)
+
+# Print the results in a tabular-like structure
+knitr::kable(results)
+```
+
+## Problem 4   
+```{r}
+# Define the probability of success and the number of trials
+p <- 0.5
+n <- 104
+
+# Define the number of repetitions for the Monte Carlo simulation
+reps <- 10000
+
+# Perform the Monte Carlo simulation for each test
+two_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", p.value = 0.45, correct = FALSE)$p.value)
+two_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", p.value = 0.45, correct = TRUE)$p.value)
+
+# Create a data frame to store the results
+results <- data.frame(
+  Test = c("Two-tailed (is not 45%) without continuity correction", "Two-tailed (is not 45%) with continuity correction"),
+  Empirical_Power = c(mean(two_tailed_no_cc < 0.05), mean(two_tailed_cc < 0.05))
+)
+
+# Print the results
+results
+```
+
+## Problem 5   
+```{r}
+# Define the probability of success and the number of trials
+p <- 0.1
+n <- 104
+
+# Define the number of repetitions for the Monte Carlo simulation
+reps <- 10000
+
+# Perform the Monte Carlo simulation for each test
+left_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = FALSE)$p.value)
+left_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = TRUE)$p.value)
+right_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", correct = FALSE)$p.value)
+right_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", correct = TRUE)$p.value)
+two_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", correct = FALSE)$p.value)
+two_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", correct = TRUE)$p.value)
+
+# Print the empirical Type I error for each test
+print(paste("Left-tailed without continuity correction:", mean(left_tailed_no_cc < 0.05)))
+print(paste("Left-tailed with continuity correction:", mean(left_tailed_cc < 0.05)))
+print(paste("Right-tailed without continuity correction:", mean(right_tailed_no_cc < 0.05)))
+print(paste("Right-tailed with continuity correction:", mean(right_tailed_cc < 0.05)))
+print(paste("Two-tailed without continuity correction:", mean(two_tailed_no_cc < 0.05)))
+print(paste("Two-tailed with continuity correction:", mean(two_tailed_cc < 0.05)))
+```
+
+## Problem 6   
+```{r}
+# Define the probability of success and the number of trials
+p <- 0.1
+n <- 104
+
+# Define the number of repetitions for the Monte Carlo simulation
+reps <- 10000
+
+# Perform the Monte Carlo simulation for each test
+left_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", p.value = 0.15, correct = FALSE)$p.value)
+left_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", p.value = 0.15, correct = TRUE)$p.value)
+right_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", p.value = 0.05, correct = FALSE)$p.value)
+right_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", p.value = 0.05, correct = TRUE)$p.value)
+two_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", p.value = 0.05, correct = FALSE)$p.value)
+two_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", p.value = 0.05, correct = TRUE)$p.value)
+
+# Print the empirical power for each test
+print(paste("Left-tailed (less than 15%) without continuity correction:", mean(left_tailed_no_cc < 0.05)))
+print(paste("Left-tailed (less than 15%) with continuity correction:", mean(left_tailed_cc < 0.05)))
+print(paste("Right-tailed (more than 5%) without continuity correction:", mean(right_tailed_no_cc < 0.05)))
+print(paste("Right-tailed (more than 5%) with continuity correction:", mean(right_tailed_cc < 0.05)))
+print(paste("Two-tailed (is not 5%) without continuity correction:", mean(two_tailed_no_cc < 0.05)))
+print(paste("Two-tailed (is not 5%) with continuity correction:", mean(two_tailed_cc < 0.05)))
+
+```
+
+## Problem 7   
+```{r}
+
+# Define the probability of success and the number of trials
+p <- 0.1
+n <- 104
+
+# Define the number of repetitions for the Monte Carlo simulation
+reps <- 10000
+
+# Perform the Monte Carlo simulation for each test
+left_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = FALSE)$p.value)
+left_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", correct = TRUE)$p.value)
+right_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", correct = FALSE)$p.value)
+right_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", correct = TRUE)$p.value)
+two_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", correct = FALSE)$p.value)
+two_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", correct = TRUE)$p.value)
+
+results <- data.frame(
+  Test = c(
+    "Left-tailed without continuity correction",
+    "Left-tailed with continuity correction",
+    "Right-tailed without continuity correction",
+    "Right-tailed with continuity correction",
+    "Two-tailed without continuity correction",
+    "Two-tailed with continuity correction"
+  ),
+  Empirical_Type_I_Error = c(
+    mean(left_tailed_no_cc < 0.05),
+    mean(left_tailed_cc < 0.05),
+    mean(right_tailed_no_cc < 0.05),
+    mean(right_tailed_cc < 0.05),
+    mean(two_tailed_no_cc < 0.05),
+    mean(two_tailed_cc < 0.05)
+  )
+)
+
+print(results)
+```
+
+## Problem 8   
+```{r}
+# Define the probability of success and the number of trials
+p <- 0.1
+n <- 104
+
+# Define the number of repetitions for the Monte Carlo simulation
+reps <- 10000
+
+# Perform the Monte Carlo simulation for each test
+left_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", p.value = 0.15, correct = FALSE)$p.value)
+left_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "less", p.value = 0.15, correct = TRUE)$p.value)
+right_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", p.value = 0.05, correct = FALSE)$p.value)
+right_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "greater", p.value = 0.05, correct = TRUE)$p.value)
+two_tailed_no_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", p.value = 0.05, correct = FALSE)$p.value)
+two_tailed_cc <- replicate(reps, binom.test(x = 0, n = n, p = p, alternative = "two.sided", p.value = 0.05, correct = TRUE)$p.value)
+
+results <- data.frame(
+  Test = c(
+    "Left-tailed without continuity correction",
+    "Left-tailed with continuity correction",
+    "Right-tailed without continuity correction",
+    "Right-tailed with continuity correction",
+    "Two-tailed without continuity correction",
+    "Two-tailed with continuity correction"
+  ),
+  Empirical_Type_I_Error = c(
+    mean(left_tailed_no_cc < 0.05),
+    mean(left_tailed_cc < 0.05),
+    mean(right_tailed_no_cc < 0.05),
+    mean(right_tailed_cc < 0.05),
+    mean(two_tailed_no_cc < 0.05),
+    mean(two_tailed_cc < 0.05)
+  )
+)
+
+print(results)
+```
+
+## Problem 9   
+When the sample size is large enough that the approximate normality assumption holds, the continuity correction to the one-sample z-test for proportions has a negligible effect on the Type I error and power of the test. This is because the continuity correction is a small adjustment to the test statistic that is used to account for the fact that the binomial distribution is discrete, rather than continuous. When the sample size is large, the binomial distribution approximates the normal distribution closely, so the continuity correction has little impact on the test. Therefore, in this situation, it is generally recommended to use the continuity correction to ensure that the Type I error of the test is correctly controlled. However, the choice of whether to use the continuity correction or not will not have a significant impact on the overall conclusions of the test.
+
+
+

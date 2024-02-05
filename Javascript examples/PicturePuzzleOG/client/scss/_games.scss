@@ -1,0 +1,175 @@
+body {
+  background: #181818;
+}
+.container{
+  position: relative;
+}
+.signInCreateAcc{
+  margin-top: 20px;
+  margin-left: 300px;
+  position: absolute;
+  display: grid;
+  width: 150px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px; 
+  #signInButton {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: blue;
+  }
+  
+  #createAccountButton {
+    font-family: 'Roboto Mono', monospace;
+    
+  }
+}
+
+.mainContainer {
+  .titleBox{
+    margin-left: 345px;
+    width: 5em;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  width: 900px;
+  height: 630px;
+  background-color: #8758FF;
+  border-radius: 10px;
+  margin: 10px auto;
+  margin-left: 500px;
+  padding: 1;
+
+  // puzzle Container
+  #puzzleContainer {
+    width: 495px;
+    height: 495px;
+    border: 2px solid ;
+    border-radius: 5px;
+    background-color: #73daca;
+    float: left;
+    margin-left: 80px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    // padding: 0;
+    .piecesContainer {
+      padding-top: 35px;
+      padding-left: 45px;
+      height: 405px;
+      width: 405px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-gap: 1px;
+      #idTL{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 203px;
+        height: 203px;
+      } 
+      #idTR{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 203px;
+        height: 203px;
+      } 
+      #idBL{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 203px;
+        height: 203px;
+      } 
+      #idBR{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 203px;
+        height: 203px;
+      } 
+    }
+    
+    .startReset {
+      font-family: 'Roboto Mono', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+      gap: 5px;
+      #resetButton{
+        color: white;
+        background-color: red;
+        border-radius: 3px;
+      }
+      #startButton{
+        color: white;
+        background-color: green;
+        border-radius: 3px;
+      }
+    }
+  
+    
+  }
+
+  //imageSelector Container
+  #imgSelectInnerbox{
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger;
+    width: 225px;
+    height: 425px;
+    border: 2px solid ;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    float:right;
+    margin-right: 80px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    // padding: 0;
+    #spHeader{
+      display: flex;
+      justify-content: center;
+    
+    }
+    .selectImageGrid{
+      padding-top: 0px;
+      padding-left: 30px;
+      height: 270px;
+      width: 270px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px; 
+      .siButton{
+        display: flex;
+        justify-content: center;
+        // align-self: center; 
+        width: 150px;
+        height: 150px;
+        border: 3px solid;
+        .puzzleImage{
+          width: 150px;
+          height: 150px;
+          border: 3px solid
+        }
+        
+      }
+    }
+  }
+  
+ .timer {
+  font-family: 'Roboto Mono', monospace;
+  float: right;
+  margin-right: 80px;
+  height: 55px;
+  width: 225px;
+  border-color: black;
+  border: 2px solid;
+  background-color: lightgreen;
+  border-radius: 5px;
+  font-size: 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+

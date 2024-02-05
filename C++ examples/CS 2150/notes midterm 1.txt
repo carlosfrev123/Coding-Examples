@@ -1,0 +1,231 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@samsam9852 
+brianaguirre
+/
+CS2150
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+CS2150/CS2150Labs/Notes/Midterm1
+@brianaguirre
+brianaguirre First Commit
+Latest commit 4b527b9 on Oct 12, 2016
+ History
+ 1 contributor
+191 lines (129 sloc)  8.6 KB
+   
+Brian Aguirre
+ba5bx
+09/28/2014
+
+#Midterm 1 Review
+
+#People's Questions:
+    ##Include Loop:
+        #ifndef - returns TRUE if NOT defined, FALSE if defined.
+        Allows for the compiler to include it once (not redundant).
+
+    ##Why separate files into cpp and h files:
+        1. H files supply prototypes. Allows compiler to do type checking, and matching.
+        2. Better implementation, organizational set up. 
+
+    ##”Friend" H files:
+        1. Allows visibility between header files.
+
+    ##operator = () vs. constructor:
+        Consider the separate statements:
+            List l;
+            l = m;
+
+            The declaration is in the first statement while the assignment is in the second statement. These two lines are SEPARATE. This one calls the copy constructor.
+
+            VS.
+
+
+            List q = r;
+            The declaration and assignment are on  the same line. This one calls the copy constructor b/c the initialization is in the same like as the assignment. An alternate calling is List q(r);
+
+    ##Pointer * vs. References &:
+        Pointers cause seg. fault errors ALL THE TIME.
+        Pointers allow the values to change within the pointee.
+
+        When seeing a lot of errors within the usage of pointers, they came up with references. They are LIKE pointers, differences:
+            1. Values cannot be changes. It's like a const * pointer. Will point to that one thing for the entire life of the reference (running time of the program). If you can never changes, you must initialize it pointing to something, so when declaring it, you must initialize it upon declaration. If you did not do it, then you would NEVER make it point anything.
+            2. Must point to something valid.
+            3. Must be initialized upon declaration.
+            4. Since the memory address does not change due to it pointing to one thing for it's entire life, people generally care about WHAT it points to, not it's address.
+
+            Similar in the assembly level. Only useful in parameter passing and return passing.
+
+    ##References Memory Storage:
+        Assembly lvl same as pointers; 4 byte memory address. (Implemented the same way.)
+
+    ##*Possible Test Question*: References in parameters but not variables in subroutine:
+        List m = ...(something);
+        List & l = m;
+        l.foo();
+
+        As seen above, list m has already been defines, so if you really wanted to see list m, you could just call it rather than calling it through the reference l. In parameters, the value you will give the reference has not been defined yet, so it will be passed later, and do not need to initialize it.
+
+    ##Passing by value vs. reference:
+        Call by value modifies the copy of the parameter.
+        
+        Given a really big object, such as a list of students and info, when passing the object by value to the subroutine, it spends a lot of time copying the value of the sub routine. Spends so much time copying the object.(DISADVANTAGE)
+
+        Passing an object to something somebody else wrote, calling by value allows to pass a copy as opposed to letting the other person modify the actualy object you have. (ADVANTAGE)
+
+        SPEED:
+            Dereferencing a pointer takes some time.
+            Passing a value of an int is much quicker to just make a copy of that number and then returning it. But given an object with a given amount of parameters, all that data might be easier to gather by reference.
+
+            Formal Parameters**
+
+    ##When would you pass a blah by reference:
+        1. When you want a modification of a formal parameter to change the actual parameter as well.
+            EXAMPLE:    Binary tree search. Lab 5
+
+        SLIDE // Swap with references:
+        void swap(int & x, int & y){
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+
+    ##Unions:
+        Places the values in the exact same spot in memory:
+        Keep in mind: int = 4 bytes, float 4 bytes, double 8 bytes.
+
+        union foo{
+            float f;
+            int *x;
+        }bar;
+        bar.f = 42.125
+        When printing bar.x,you will see that number (42.125) in hex.
+        Keep in mind that the reason it prints it out as hex is because x is a pointer, had it been just an int, it would be printed out in base 10 (billion something).
+
+        Syntax: union foo{}bar;,  = foo bar = .... - It's short hand.
+        Foo is of size 4 here because it takes the max size of all the fields within it; in this case being 4 (both float and int are 4 bytes).
+
+        "bar" is 4 bytes since it's a variable of type foo.
+
+    ##Lower Bound (Omega):
+        given f(n) = n^2, g(n) = n;
+        f(n) E Omega(g(n)):
+            By definition (f(n)) >= c*g(n) for all values of n>n_0
+
+            Select a value for n_0 and c and verify.
+            Let n_0 E N, and c E N, such that c=1, n_0 = 1;
+
+            n^2 >= (1)*n
+            n >= 1
+            for all values of n.
+            True.
+
+            NOTE: Big O proves will not be required for this exam. But you should be able to talk about running times within Omega, O, Theta.
+
+    ##Run time b/w Linked List and Vectors:
+        If there are a fixed constant of time, take out the constant.
+
+    ##Memory Gap w/in two Consecutive Variables:
+        Dynamic Memory allocations:
+            1. Often a gap between declaring two variables, because when allocating the space, it needs to know how much to deallocate.(HEY, IT EXISTS!);
+
+    ##Code that would make a hole:
+        int * p = new int();
+        p = NULL;
+
+        Creates an int pointer, which then points to a memory space that holds a pointer, but then you then make it point to memory address 0. You just allocated the space and now you no longer know where this space is. The only way you knew where that space was with the pointer. You must then deallocate the space with the delete command, but YOU DO NOT KNOW where it is.
+
+        The program CANNOT finds the space. Only once the program stops will that space be cleaned. This creates a problem within continuously running programs like servers, etc.
+
+        Alternatively
+        //You could make p point to an array, and then make it point to NULL, which if the array is int[10], you just lost 40 bytes of memory.
+
+    ##Destructor:
+        int main{
+            List L;
+            AAUFNSFODSINFOSDIf; (whatever)
+
+            return 0;
+        //This is actually when the destructor is called, AFTER the return statement.
+        }
+
+    ##Templates:
+        Created classes like <vector> using templates.
+        Vector contains practically everything in order to be a class but lacks the type, which allows the following to be valid:
+            vector<int>
+            vector<double>
+            vector<float>
+            etc.
+        It's the generic type, it allows it to work with any type.
+        Lab 3. You can make a template of methods, classes, etc. Allows to compare using the operators like =, <, etc. in order to compare the types.
+
+        NOTE: Templates cause many errors b/c certain operators are limitedd to certain types, despite it being a template; meaning they need to be defined. 
+
+        Templates in C++ and generics in Java are essentially the same thing.  (Look up differences)
+
+    ##Class in C++ COME WITH:
+        1. default constructor
+        2. Copy constructor and operator =
+        3. Destructor, which does nothing.
+
+        When you define it yourself, it will then not include the default one, just the one you wrote.
+
+    ##~Test Question:
+    Given questions that say why, make sure your answer justifies the chosen number.
+
+    ##Iterators:
+        Allows you to go through a collection of things w/o worrying on how to get to a next one. Iterators has standard methods which correspond to the type that you're moving through.
+
+    NOTE: Briefly check generic commands of emacs.
+
+    ##Abstract Data Types:
+        Allows for a universal talk about storing data and manipulating/moving through data type without it being specific to a given language.
+
+    ##Single, Double, precision:
+        Quad Precision ~34, needs a lot of hardware in order to do floating point, there would have to be a lot of hardware (transistors) in order to allow for that to happen.
+
+        Double is good enough for virtually anything you would need.
+        Usually the case is you either need less than 16, but more than 34.
+
+    ##Implementing Stack Array, Vector vs. LinkedList:
+        Be able to talk about the pros and cons about the two data structures.
+
+        Stack, constant insert, constant time for most methods.
+
+        In vector array, copying things will be insane to do. Adding new elements.
+
+        Linked lists are constant running time, they're still slow.
+
+        
+
+
+
+
+
+
+    
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

@@ -1,0 +1,53 @@
+@import 'app';
+
+.card {
+  width: 400px;
+  // height: fit-content;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.123);
+  box-shadow: $shadow-3;
+  //   margin: 1rem;
+  padding: 1rem;
+  background-color: #ffec99;
+  border-radius: 0.5rem;
+}
+
+.img-container {
+  width: 350px;
+  height: 200px;
+
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+.posted-img {
+  // border: 2px solid red;
+  // height: auto;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  // display: none;
+  border-radius: 2px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.card-details {
+  grid-area: middle;
+  display: flex;
+  flex-direction: column;
+  //   color: $grey-800;
+  color: $grey-800;
+
+  h5 {
+    margin: 0;
+  }
+  p {
+    margin: 0 0;
+  }
+}

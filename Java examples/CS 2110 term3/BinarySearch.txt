@@ -1,0 +1,28 @@
+Binary Search:
+
+-1	4	5	11	13
+and a target of 4, perform a binary search.
+
+1. What index (position) is returned?
+ [1]
+
+2. What are the sequences of indexes checked? (answer as a comma-separated list)
+[2], [0], [1]
+Given the array below
+
+-5	-2	-1	4	5	11	13	14	17	18
+and a target of 3, perform a binary search.
+
+3. What index is returned?
+-1
+4. What is the sequence of indexes checked?
+[4],[1],[3],[2]
+Given the array below
+
+-1	4	5	11	13
+and a target of 13, perform a binary search.
+
+5. What index is returned?
+[4]
+6. What is the sequence of indexes checked?
+[2],[3],[4]

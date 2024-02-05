@@ -1,0 +1,36 @@
+@import 'app';
+
+.signup-background{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 500px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+.signup-input{
+    height: 40px;
+    width: 200px;
+    align-self: center;
+    background-color: #e9ecef;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.submit-button{
+    background-color: #ff8f6a;
+    color: white;
+    height: 20px;
+    width: 100px;
+    align-self: center;
+} 

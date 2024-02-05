@@ -1,0 +1,106 @@
+---
+title: "Homework 4"
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{rsetup,include=FALSE}
+knitr::opts_chunk$set(echo=TRUE,highlight=FALSE)
+```
+
+## Problem 1
+### a)
+```{r}
+fatal_accidents <- read.csv("fatal accidents.csv")
+head(fatal_accidents)
+```
+### b)
+```{r}
+state.list<-split(fatal_accidents,fatal_accidents$State)
+names(state.list)<-sapply(state.list,function(x)x[1,"State"])
+print(names(state.list))
+```
+### c)
+```{r}
+print(lapply(state.list,head,n=3))
+```
+### d)
+```{r}
+day_of_week_tables<-lapply(state.list,function(x){
+table(x$Day.of.Week)/nrow(x)*100
+})
+
+print(day_of_week_tables)
+```
+### e)
+```{r}
+#Observations can be drawn about the distribution of accidents by day of the week for each state.
+```
+### f)
+```{r}
+fatal_accidents <- read.csv("fatal accidents.csv")
+state_list <- unique(fatal_accidents$state)
+
+accidents_by_day_and_vehicles <- lapply(state_list, function(state) {
+  state_data <- fatal_accidents[fatal_accidents$state == state, ]
+  table(state_data$day_of_week, state_data$num_vehicles)
+})
+
+# Print the resulting list
+accidents_by_day_and_vehicles
+```
+### g)
+```{r}
+# Changes that might improve ease of drawing observations include sorting the table by day of the week or by the number of vehicles involved ,and add in grow or column totals.
+```
+## Problem 2
+### a)
+```{r}
+fatal_accidents<-read.csv("fatal accidents.csv")
+fatal_accidents<-mutate(fatal_accidents,People.count=Fatal.Injury+Non.Fatal.Injury)
+head(fatal_accidents)
+```
+### b)
+```{r}
+group_by(fatal_accidents,State)%>%
+summarize(mean_vehicles=mean(Vehicles.Involved),
+mean_people=mean(People.count))
+print(mean_people)
+```
+### c)
+```{r}
+group_by(fatal_accidents,State)%>%
+summarize(min_vehicles=min(Vehicles.Involved),
+mean_vehicles=mean(Vehicles.Involved),
+max_vehicles=max(Vehicles.Involved))
+
+print(mean_vehicles)
+print(max_vehicles)
+```
+### d)
+```{r}
+#Observationscanbedrawnabouttheaveragenumberofvehiclesandpeopleinvolvedinaccidentsineachstate,andabouttherangeofvehiclesinvolvedinaccidentsineachstate.
+```
+### e)
+```{r}
+group_by(fatal_accidents[fatal_accidents$State=="Virginia",],Month)%>%
+print(summarize(count=n()))
+```
+### f)
+```{r}
+summer_months<-c("June","July","August")
+fatal_accidents_va_summer<-fatal_accidents[fatal_accidents$State=="Virginia"&
+fatal_accidents$Month%in%summer_months,]
+group_by(fatal_accidents_va_summer,Day.of.Week)%>%
+summarize(median_vehicles=median(Vehicles.Involved),
+print(mean_vehicles=mean(Vehicles.Involved)))
+```
+### g)
+```{r}
+# Observations can be drawn about the number of accidents that occurred in Virginia in each month ,and about the median and mean number of vehicles involved in accidents on each day of the week in the summer months in Virginia.
+```
+
+

@@ -1,0 +1,16 @@
+@import 'app';
+.main {
+  grid-area: main;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+  display: grid;
+  //   background-color: $secondary-500;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0.5rem;
+  grid-template-rows: auto;
+  border-radius: 0.5rem;
+  // border: 2px solid red;
+  justify-items: center; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+}

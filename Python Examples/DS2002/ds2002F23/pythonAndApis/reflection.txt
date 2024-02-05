@@ -1,0 +1,17 @@
+a. Security Mechanisms:
+The API utilizes token-based authentication to ensure only authorized users can access the data. 
+Every API call is accompanied by an Authorization header bearing a token. 
+Without this token, or with an invalid or expired token, the request would be denied.
+
+b. Errors Encountered:
+While testing the code, a few potential errors were identified:
+
+The stock ticker entered by the user might not exist.
+The API might not respond or return an error due to various reasons (rate limits, server errors, etc.).
+The program explicitly checks for HTTP errors and informs the user if there's an issue fetching the data.
+
+c. Resources Used:
+Mainly, the documentation at financeapi.net was referred to. 
+This documentation provided the necessary endpoints, parameters, 
+and sample responses required to design the program. 
+For Python-specific syntax and library methods, the Python official documentation and some community forums like StackOverflow were referred to.

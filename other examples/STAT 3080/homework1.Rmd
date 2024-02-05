@@ -1,0 +1,132 @@
+---
+title: "Homework 1" 
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+## Problem 1   
+### a)
+```{r}
+a<-seq(513,585,9)
+print(a)
+```
+### b)
+```{r}
+b<-rep("1st",5)
+print(b)
+```
+### c)
+```{r}
+c<-seq(37,52,1)
+print(c)
+```
+### d)
+```{r}
+x<-rep("1st",3)
+y<-rep("2nd",3)
+z<-rep("3rd",3)
+d<-c(x,y,zd)
+print(d)
+```
+### e)
+```{r}
+e<-seq(155,135,-4)
+print(e)
+```
+### f)
+```{r}
+x<-seq(50,100,10)
+y<-seq(95,75,-5)
+f<-c(x,y)
+print(f)
+```
+### g)
+```{r}
+a<-rep(20,4)
+b<-rep(30,3)
+c<-rep(40,2)
+d<-50
+g<-c(a,b,c,d)
+print(g)
+```
+### h)
+```{r}
+x<-seq(2,0,-1)
+h<-rep(x,5)
+print(h)
+
+```
+### i)
+```{r}
+x<-seq(124,68,-8)
+y<-seq(63,38,-5)
+print(c(x,y))
+
+```
+### j)
+```{r}
+x<-c("3rd","2nd","1st")
+print(rep(x,2))
+
+```
+## Problem 2   
+### a)
+```{r}
+print(pnorm((29.43-63)/12))
+```
+### b)
+```{r}
+x<-(12*(qnorm(0.05)))+63
+print(x)
+```
+### c)
+```{r}
+print((1-pnorm((90-63)/12))*28000)
+```
+## Problem 3   
+### a)
+```{r}
+print(1-pbinom(1, size=10, prob=0.1) + dbinom(1,10,0.1))
+```
+### b)
+```{r}
+data<-{1:10}
+
+print(round(dbinom(data[],10,0.1),digit=3))
+```
+### c)
+```{r}
+row1<-round(1:10,digits = 2)
+row2<-round(dbinom(data[],10,0.1),digit=3)
+rbind(row1,row2)
+```
+### d)
+```{r}
+
+```
+### e)
+```{r}
+
+```
+### f)
+```{r}
+
+```
+### g)
+```{r}
+
+```
+### h)
+```{r}
+
+```
+
+## References
+1. Your resources go here. Links should be surrounded by <>.

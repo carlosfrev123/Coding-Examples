@@ -1,0 +1,17 @@
+.dashboard {
+  //   background-color: red;
+  width: 95vw;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main';
+  grid-gap: 10px;
+  //   background-color: red;
+}

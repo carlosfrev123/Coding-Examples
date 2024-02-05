@@ -1,0 +1,74 @@
+---
+title: "Homework 7" 
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+## Problem 1   
+
+```{r}
+chisq.test(x,y)
+```
+## Problem 2   
+### a
+```{r}
+
+```
+### b
+```{r}
+
+```
+### c
+```{r}
+
+```
+## Problem 3   
+
+```{r}
+
+```
+## Problem 4   
+### a
+```{r}
+
+```
+### b
+```{r}
+
+```
+### c
+```{r}
+
+```
+## Problem 5   
+```{r}
+
+```
+## Problem 6   
+### a
+```{r}
+
+```
+### b
+```{r}
+
+```
+### c
+```{r}
+
+```
+## Problem 7   
+```{r}
+
+```
+
+
+
+

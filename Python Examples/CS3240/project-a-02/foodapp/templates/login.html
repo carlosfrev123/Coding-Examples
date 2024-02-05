@@ -1,0 +1,23 @@
+{% load socialaccount %}
+{% providers_media_js %}
+
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body class="text-center h-75 d-flex justify-content-center align-items-center">
+    <div class="m-auto p-3">
+        <h1 class="h3 mb-3 fw-normal strong fw-bold">Hoos <span class="text-primary">Hungry</span> Helper</h1>
+        <br>
+        <a class="mx-auto btn btn-outline-primary d-flex align-items-center justify-content-center gap-1" href="{% provider_login_url 'google' %}">
+            <i class="bi bi-google"></i> Sign in with Google
+        </a>
+    </div>
+</body>

@@ -1,0 +1,45 @@
+---
+title: "Homework 4" 
+author: "Carlos F Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+## Problem 1   
+### a
+```{r}
+fatalA<-read.csv(file = 'fatal accidents.csv')
+head(fatalA)
+```
+Your explanation and comments go here, when needed.  
+### b
+```{r}
+state.list<-split(fatalA,f=fatalA$State)
+```
+Your explanation and comments go here, when needed.  
+### c
+```{r}
+lapply(state.list,head,3)
+
+```
+Your explanation and comments go here, when needed.  
+### d
+```{r}
+##apply(state.list,FUN=hist(state.list$Day.of.week))
+```
+Your explanation and comments go here, when needed.  
+### e
+```{r}
+
+```
+Your explanation and comments go here, when needed.  
+
+
+## References
+1. Your resources go here. Links should be surrounded by <>.

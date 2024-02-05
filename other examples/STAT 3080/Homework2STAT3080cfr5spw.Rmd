@@ -1,0 +1,93 @@
+---
+title: "Homework 2"
+author: "Carlos F Revilla"
+date: "2022-09-14"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Problem 1:
+Katie budgets 30 minutes each morning for her commute to work regardless of
+the time she leaves home. One week she left home at exactly 8am every day and recorded the
+amount of time it took for her to get to her office. The next week she left home at exactly
+8:30am every day and recorded the amount of time it took for her to get to her office.
+
+a) Create and store a matrix called commutes with a column representing each week
+containing the following information:\
+• On Monday of the two weeks, she arrived in 25 and 24 minutes, respectively\
+• On Tuesday of the two weeks, she arrived in 36 and 27 minutes, respectively\
+• On Wednesday of the two weeks, she arrived in 21 and 36 minutes, respectively\
+• On Thursday of the two weeks, she arrived in 34 and 33 minutes, respectively\
+• On Friday of the two weeks, she arrived in 25 and 32 minutes, respectively\
+
+(b) Label the rows of commutes with the corresponding day of the week and label the
+columns with the labels Week1 and Week2.\
+(c) Compare her commute on each day of the week and determine whether she arrived
+faster leaving at 8:30am or not each day.\
+(d) Determine the average commute time for each weekday over the two week period.\
+(e) Determine how many minutes over her budgeted time each commute lasted (early
+arrivals should be negative values) and save these values in a matrix called diff.\
+(f) Determine the average difference over each week.\
+Note: Do not manipulate the values prior to calculating the averages.
+(g) Determine the maximum delay over each week.\
+(h) Determine the day(s) of the second week on which she arrived to work within 25
+minutes.\
+Note: Only the day(s) of the week should print.
+(i) Determine the number of days in each week that she arrived within her budgeted time.\
+(j) On which day(s) did she arrive the fastest in the first week?\
+Note: Only the day(s) of the week should print. Hint: Use the row names.\
+(k) Subset the matrix of differences to the day(s) of the week on which her commute was
+similar over the two weeks (ie. both days under budget or both days over budget).\
+
+
+
+#Problem 2
+The Davis data set in the car package contains recorded weight (kg), recorded
+height (cm), reported weight (kg), reported height (cm), and sex assigned at birth for each
+subject of a study.\
+(a) Subset the recorded weight and reported weight columns and save them in a data frame
+named weight.metric. Print the first few rows.\
+(b) Convert the weights in weight.metric to pounds (1 kg = 2.2 lbs) and name the
+resulting data frame weight.imp. Print the first few rows.\
+(c) Subset the recorded height and reported height columns and save them in a data frame
+named height.metric. Print the first few rows.\
+(d) Convert the heights in height.metric to inches rounded to one decimal (2.54 cm = 1
+inch) and name the resulting data frame height.imp. Pring the first few rows.\
+(e) Combine the sex assigned at birth information with all of the imperial weight and height
+information in a data frame named Davis.imp with column names sex, rec.weight,
+rep.weight, rec.height, and rep.height. Print the first few rows.\
+(f) Determine the number of missing values (NA) in each column of the Davis.imp data.\
+(g) How many rows of the Davis.imp data contain a missing value.
+Note: Do not make assumptions.\
+(h) Subset the sex assigned at birth of the subjects with a missing value.\
+
+#Problem 3
+
+In your astronomy class you have been tasked to create a data set to record the
+major characteristics of the 8 planets in our solar system in their order from the sun: Mercury
+(0.39 AU), Venus (0.72 AU), Earth (1 AU), Mars (1.52 AU), Jupiter (5.2 AU), Saturn (9.54
+AU), Uranus (19.18 AU), and Neptune (30.06 AU). The first major characeteristic is the
+type of planet: the closest four are terrestrial and the furthest four are gas. The next major
+characteristic is the planet’s diameter relative to the diameter of Earth: 0.382, 0.949, 1,
+0.532, 11.209, 9.449, 4.007, 3.883; followed by the planet’s rotation across the sun relative to
+that of the Earth: 58.64, -243.02, 1, 1.03, 0.41, 0.43, -0.72, 0.67. The next characteristic is
+whether or not the planet has rings: the closest four do not and the furthest four do. The
+final characteristic is the number of moons: Mercury and Venus have none, Earth has one,
+and the remaining have more than one.\
+
+(a) Create, save, and print the required data frame using the column labels name, distance,
+type, diameter, rotation, rings, and moons for the columns.\
+(b) Subset to a data frame that contains any planet(s) with a diameter less than five times
+that of the Earth.\
+(c) Determine the distance away from the sun of any planet(s) that have the same rotation
+direction across the sun of the Earth.\
+(d) Subset the data frame to show only the name, number of moons, and type of any
+planet(s) that have a larger diameter than Earth.\
+(e) Subset the data frame to show only the presence of rings and type of any planet(s) that
+have more than one moon.\
+
+
+

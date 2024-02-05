@@ -1,0 +1,10 @@
+Carlos Revilla
+Computing ID: cfr5spw
+InClass 36
+
+Binary Heaps
+
+8 7 11 5 17 15
+
+18 8 6 7 11 5 17 15 12
+

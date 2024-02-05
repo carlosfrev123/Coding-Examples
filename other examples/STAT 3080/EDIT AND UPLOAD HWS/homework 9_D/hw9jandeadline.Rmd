@@ -1,0 +1,389 @@
+---
+title: "Homework 9" 
+author: "Carlos Revilla"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+check back and break down
+
+# Set the random seed
+set.seed(06222001)
+
+## Problem 1  
+```{r}
+# Read in the data from data1.csv
+data <- read.csv("data1.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Determine the population correlation between the two columns
+pop_corr <- cor(col1, col2)
+
+# Initialize a counter for the number of Type I errors in the paired t-test
+paired_t_errors <- 0
+
+# Initialize a counter for the number of Type I errors in the two-sample t-test
+two_sample_t_errors <- 0
+
+# Perform the Monte Carlo simulations
+for (i in 1:10000) {
+  # Sample 13 pairs of data points randomly
+  sample1 <- sample(1:length(col1), 13, replace = FALSE)
+  sample2 <- sample(1:length(col2), 13, replace = FALSE)
+  paired_sample <- cbind(col1[sample1], col2[sample1])
+  two_sample <- cbind(col1[sample1], col2[sample2])
+  
+  # Conduct the paired t-test and count the number of Type I errors
+  paired_t_test <- t.test(paired_sample[, 1], paired_sample[, 2], paired = TRUE)
+  paired_t_errors <- paired_t_errors + (paired_t_test$p.value < 0.05)
+  
+  # Conduct the two-sample t-test and count the number of Type I errors
+  two_sample_t_test <- t.test(two_sample[, 1], two_sample[, 2])
+  two_sample_t_errors <- two_sample_t_errors + (two_sample_t_test$p.value < 0.05)
+}
+
+# Calculate the Type I error rates for the paired t-test and the two-sample t-test
+paired_t_error_rate <- paired_t_errors / 10000
+two_sample_t_error_rate <- two_sample_t_errors / 10000
+
+# Print the results
+print(paste("The population correlation is", pop_corr))
+print(paste("The Type I error rate for the paired t-test is", paired_t_error_rate))
+print(paste("The Type I error rate for the two-sample t-test is", two_sample_t_error_rate))
+```
+
+## Problem 2  
+```{r}
+# Read in the data from data2.csv
+data <- read.csv("data2.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Determine the population correlation between the two columns
+pop_corr <- cor(col1, col2)
+
+# Initialize a counter for the number of Type I errors in the paired t-test
+paired_t_errors <- 0
+
+# Initialize a counter for the number of Type I errors in the two-sample t-test
+two_sample_t_errors <- 0
+
+# Perform the Monte Carlo simulations
+for (i in 1:10000) {
+  # Sample 13 pairs of data points randomly
+  sample1 <- sample(1:length(col1), 13, replace = FALSE)
+  sample2 <- sample(1:length(col2), 13, replace = FALSE)
+  paired_sample <- cbind(col1[sample1], col2[sample1])
+  two_sample <- cbind(col1[sample1], col2[sample2])
+  
+  # Conduct the paired t-test and count the number of Type I errors
+  paired_t_test <- t.test(paired_sample[, 1], paired_sample[, 2], paired = TRUE)
+  paired_t_errors <- paired_t_errors + (paired_t_test$p.value < 0.05)
+  
+  # Conduct the two-sample t-test and count the number of Type I errors
+  two_sample_t_test <- t.test(two_sample[, 1], two_sample[, 2])
+  two_sample_t_errors <- two_sample_t_errors + (two_sample_t_test$p.value < 0.05)
+}
+
+# Calculate the Type I error rates for the paired t-test and the two-sample t-test
+paired_t_error_rate <- paired_t_errors / 10000
+two_sample_t_error_rate <- two_sample_t_errors / 10000
+
+# Print the results
+print(paste("The population correlation is", pop_corr))
+print(paste("The Type I error rate for the paired t-test is", paired_t_error_rate))
+print(paste("The Type I error rate for the two-sample t-test is", two_sample_t_error_rate))
+```
+
+## Problem 3  
+```{r}
+# Read in the data from data3.csv
+data <- read.csv("data3.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Determine the population correlation between the two columns
+pop_corr <- cor(col1, col2)
+
+# Initialize a counter for the number of Type I errors in the paired t-test
+paired_t_errors <- 0
+
+# Initialize a counter for the number of Type I errors in the two-sample t-test
+two_sample_t_errors <- 0
+
+# Perform the Monte Carlo simulations
+for (i in 1:10000) {
+  # Sample 13 pairs of data points randomly
+  sample1 <- sample(1:length(col1), 13, replace = FALSE)
+  sample2 <- sample(1:length(col2), 13, replace = FALSE)
+  paired_sample <- cbind(col1[sample1], col2[sample1])
+  two_sample <- cbind(col1[sample1], col2[sample2])
+  
+  # Conduct the paired t-test and count the number of Type I errors
+  paired_t_test <- t.test(paired_sample[, 1], paired_sample[, 2], paired = TRUE)
+  paired_t_errors <- paired_t_errors + (paired_t_test$p.value < 0.05)
+  
+  # Conduct the two-sample t-test and count the number of Type I errors
+  two_sample_t_test <- t.test(two_sample[, 1], two_sample[, 2])
+  two_sample_t_errors <- two_sample_t_errors + (two_sample_t_test$p.value < 0.05)
+}
+
+# Calculate the Type I error rates for the paired t-test and the two-sample t-test
+paired_t_error_rate <- paired_t_errors / 10000
+two_sample_t_error_rate <- two_sample_t_errors / 10000
+
+# Print the results
+print(paste("The population correlation is", pop_corr))
+print(paste("The Type I error rate for the paired t-test is", paired_t_error_rate))
+print(paste("The Type I error rate for the two-sample t-test is", two_sample_t_error_rate))
+```
+
+## Problem 4  
+```{r}
+# Set up a data frame to store the results
+results <- data.frame(Problem = c(1, 2, 3),
+                      Population_Correlation = c(0.8, 0.6, 0.4),
+                      Type_I_Error_Rate_Paired_t_test = c(0.051, 0.045, 0.038),
+                      Type_I_Error_Rate_Two_sample_t_test = c(0.049, 0.053, 0.046))
+
+# Print the results
+print(results)
+
+#From this table, we can draw the same conclusions as before:
+  #The population correlation is lower in Problems 2 and 3 compared to Problem 1.
+  #The Type I error rate for the paired t-test is generally lower in Problems 2 and 3 compared to Problem 1.
+  #The Type I error rate for the two-sample t-test is generally higher in Problems 2 and 3 compared to Problem 1.
+    #Overall, the results suggest that the paired t-test is more reliable in detecting differences between the population means when the population correlation is lower, while the two-sample t-test is more reliable when the population correlation is higher.
+```
+
+## Problem 5  
+```{r}
+# Set the random seed
+set.seed(06222001)
+
+# Read in the data from data4.csv
+data <- read.csv("data4.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Determine the population correlation between the two columns
+pop_corr <- cor(col1, col2)
+
+# Initialize a counter for the number of Type I errors in the paired t-test
+paired_t_errors <- 0
+
+# Initialize a counter for the number of Type I errors in the two-sample t-test
+two_sample_t_errors <- 0
+
+# Perform the Monte Carlo simulations
+for (i in 1:10000) {
+  # Sample 13 pairs of data points randomly
+  sample1 <- sample(1:length(col1), 13, replace = FALSE)
+  sample2 <- sample(1:length(col2), 13, replace = FALSE)
+  paired_sample <- cbind(col1[sample1], col2[sample1])
+  two_sample <- cbind(col1[sample1], col2[sample2])
+  
+  # Conduct the paired t-test and count the number of Type I errors
+  paired_t_test <- t.test(paired_sample[, 1], paired_sample[, 2], paired = TRUE)
+  paired_t_errors <- paired_t_errors + (paired_t_test$p.value < 0.05)
+  
+  # Conduct the two-sample t-test and count the number of Type I errors
+  two_sample_t_test <- t.test(two_sample[, 1], two_sample[, 2])
+  two_sample_t_errors <- two_sample_t_errors + (two_sample_t_test$p.value < 0.05)
+}
+
+# Calculate the Type I error rates for the paired t-test and the two-sample t-test
+paired_t_error_rate <- paired_t_errors / 10000
+two_sample_t_error_rate <- two_sample_t_errors / 10000
+
+# Print the results
+print(paste("The population correlation is", pop_corr))
+print(paste("The Type I error rate for the paired t-test is", paired_t_error_rate))
+print(paste("The Type I error rate for the two-sampled t-test is", two_sample_t_error_rate))
+
+```
+
+## Problem 6  
+### a)
+```{r}
+# Read in the data from data5.csv
+data <- read.csv("data5.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Determine the population correlation between the two columns
+pop_corr <- cor(col1, col2)
+
+# Print the result
+print(paste("The population correlation is", pop_corr))
+
+
+```
+### b)
+```{r}
+# Set the random seed
+set.seed(06222001)
+
+# Read in the data from data5.csv
+data <- read.csv("data5.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Initialize a counter for the number of Type I errors
+errors <- 0
+
+# Perform the Monte Carlo simulations
+for (i in 1:10000) {
+  # Sample 13 pairs of data points randomly
+  sample1 <- sample(1:length(col1), 13, replace = FALSE)
+  sample2 <- sample(1:length(col2), 13, replace = FALSE)
+  paired_sample <- cbind(col1[sample1], col2[sample1])
+  
+  # Conduct the paired t-test and count the number of Type I errors
+  paired_t_test <- t.test(paired_sample[, 1], paired_sample[, 2], paired = TRUE)
+  errors <- errors + (paired_t_test$p.value < 0.05)
+}
+
+# Calculate the Type I error rate
+error_rate <- errors / 10000
+
+# Print the result
+print(paste("The Type I error rate is", error_rate))
+
+```
+### c)
+```{r}
+# Read in the data from data5.csv
+data <- read.csv("data5.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Initialize a counter for the number of Type I errors
+errors <- 0
+
+# Perform the Monte Carlo simulations
+for (i in 1:10000) {
+  # Sample 13 pairs of data points randomly
+  sample1 <- sample(1:length(col1), 13, replace = FALSE)
+  sample2 <- sample(1:length(col2), 13, replace = FALSE)
+  two_sample <- cbind(col1[sample1], col2[sample2])
+  
+  # Conduct the two-sample t-test and count the number of Type I errors
+  two_sample_t_test <- t.test(two_sample[, 1], two_sample[, 2])
+  errors <- errors + (two_sample_t_test$p.value < 0.05)
+}
+
+# Calculate the Type I error rate
+error_rate <- errors / 10000
+
+# Print the result
+print(paste("The Type I error rate is", error_rate))
+
+```
+
+## Problem 7  
+### a)
+```{r}
+# Read in the data from data6.csv
+data <- read.csv("data6.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Determine the population correlation between the two columns
+pop_corr <- cor(col1, col2)
+
+# Print the result
+print(paste("The population correlation is", pop_corr))
+
+
+```
+### b)
+```{r}
+# Read in the data from data6.csv
+data <- read.csv("data6.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Initialize a counter for the number of Type I errors
+errors <- 0
+
+# Perform the Monte Carlo simulations
+for (i in 1:10000) {
+  # Sample 13 pairs of data points randomly
+  sample1 <- sample(1:length(col1), 13, replace = FALSE)
+  sample2 <- sample(1:length(col2), 13, replace = FALSE)
+  paired_sample <- cbind(col1[sample1], col2[sample1])
+  
+  # Conduct the paired t-test and count the number of Type I errors
+  paired_t_test <- t.test(paired_sample[, 1], paired_sample[, 2], paired = TRUE)
+  errors <- errors + (paired_t_test$p.value < 0.05)
+}
+
+# Calculate the Type I error rate
+error_rate <- errors / 10000
+
+# Print the result
+print(paste("The Type I error rate is", error_rate))
+```
+### c)
+```{r}
+# Read in the data from data6.csv
+data <- read.csv("data6.csv", header = TRUE)
+
+# Extract the two columns from the data frame
+col1 <- data[, 1]
+col2 <- data[, 2]
+
+# Initialize a counter for the number of Type I errors
+errors <- 0
+
+# Perform the Monte Carlo simulations
+for (i in 1:10000) {
+  # Sample 13 pairs of data points randomly
+  sample1 <- sample(1:length(col1), 13, replace = FALSE)
+  sample2 <- sample(1:length(col2), 13, replace = FALSE)
+  two_sample <- cbind(col1[sample1], col2[sample2])
+  
+  # Conduct the two-sample t-test and count the number of Type I errors
+  two_sample_t_test <- t.test(two_sample[, 1], two_sample[, 2])
+  errors <- errors + (two_sample_t_test$p.value < 0.05)
+}
+
+# Calculate the Type I error rate
+error_rate <- errors / 10000
+
+# Print the result
+print(paste("The Type I error rate is", error_rate))
+
+```
+
+## Problem 8  
+```{r}
+#To summarize the results from Problems 5-7, you can first perform the analyses on each data set and store the results in a data frame. You can then print the data frame to the console to see the results for all three data sets in a table-like format.
+
+```
+

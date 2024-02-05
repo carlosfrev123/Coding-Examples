@@ -1,0 +1,105 @@
+---
+title: "Homework 8" 
+author: "Carlos F Revilla (cfr5spw)"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+# Set the seed
+set.seed(06222001)
+
+## Problem 1
+```{r}
+# Load the data
+delays <- read.csv("Delta delays.csv")
+
+# Define a function to compute the interquartile range
+iqr <- function(x) {
+  quantile(x, probs = c(0.75, 0.25))
+}
+
+# Run the bootstrap
+boot_results <- boot(data = delays, statistic = iqr, R = 10000)
+
+# Calculate the 90% confidence interval
+ci <- boot.ci(boot_results, type = "perc", index = c(2.5, 97.5))
+print(ci)
+```
+
+## Problem 2
+### a)
+```{r}
+# Load the data
+delays <- read.csv("Delta delays.csv")
+
+# Calculate the 90th percentile of arrival delays
+p90 <- quantile(delays, probs = 0.9)
+
+# Check if the 90th percentile is considered a late arrival
+if (p90 > 15) {
+  print("There is evidence that the 90th percentile of arrival delay lengths on these holiday travel days is a late arrival")
+} else {
+  print("There is not evidence that the 90th percentile of arrival delay lengths on these holiday travel days is a late arrival")
+}
+
+```
+### b)
+```{r}
+#In terms of whether the conclusion in part a is indisputable, it would depend on the definition of "late arrival" that is being used. If the definition of "late arrival" is fixed at 15 minutes or more, then the conclusion would be indisputable based on the data. However, if the definition of "late arrival" is subjective or open to interpretation, then the conclusion may not be indisputable.
+```
+
+## Problem 3
+```{r}
+# Set the seed
+set.seed(06222001)
+
+# Load the data
+delta_delays <- read.csv("Delta delays.csv")
+american_delays <- read.csv("American delays.csv")
+
+# Calculate the 90th percentile of arrival delays for each airline
+delta_p90 <- quantile(delta_delays, probs = 0.9)
+american_p90 <- quantile(american_delays, probs = 0.9)
+
+# Calculate the observed difference in 90th percentile arrival delays
+observed_diff <- abs(delta_p90 - american_p90)
+
+# Randomization test
+num_reps <- 10000
+differences <- rep(NA, num_reps)
+
+# Combine the data from both airlines
+all_delays <- c(delta_delays, american_delays)
+
+for (i in 1:num_reps) {
+  # Shuffle the labels for the combined data
+  labels <- sample(c("Delta", "American"), size = length(all_delays), replace = TRUE)
+  
+  # Split the data by label
+  delta_subset <- all_delays[labels == "Delta"]
+  american_subset <- all_delays[labels == "American"]
+  
+  # Calculate the 90th percentile of arrival delays for each shuffled subset
+  delta_subset_p90 <- quantile(delta_subset, probs = 0.9)
+  american_subset_p90 <- quantile(american_subset, probs = 0.9)
+  
+  # Calculate the difference in 90th percentile arrival delays for the shuffled subsets
+  differences[i] <- abs(delta_subset_p90 - american_subset_p90)
+}
+
+# Calculate the p-value
+p_value <- sum(differences >= observed_diff) / num_reps
+
+# Print the p-value
+print(p_value)
+
+#conclusions: If the p-value is below a certain threshold (typically 0.05), it can be concluded that there is evidence that the 90th percentile of arrival delay lengths is different for the two airlines. If the p-value is above this threshold, it cannot be concluded that there is a significant difference between the two airlines.
+
+```
+

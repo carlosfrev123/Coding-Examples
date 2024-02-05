@@ -1,0 +1,977 @@
+"","Make","Make_Year","Color","Body_Type","Mileage_Run","No_of_Owners","Seating_Capacity","Fuel_Type","Transmission","Transmission_Type","Price"
+"1","Volkswagen",2017,"silver","sedan",44611,"1st",5,"diesel","7-Speed","Automatic",657000
+"2","Hyundai",2016,"red","crossover",20305,"1st",5,"petrol","5-Speed","Manual",682000
+"3","Honda",2019,"white","suv",29540,"2nd",5,"petrol","5-Speed","Manual",793000
+"4","Renault",2017,"bronze","hatchback",35680,"1st",5,"petrol","5-Speed","Manual",414000
+"5","Hyundai",2017,"orange","hatchback",25126,"1st",5,"petrol","5-Speed","Manual",515000
+"6","Hyundai",2016,"red","hatchback",52261,"1st",5,"petrol","5-Speed","Manual",604000
+"7","Honda",2012,"grey","hatchback",28108,"2nd",5,"petrol","5-Speed","Manual",316000
+"8","Tata",2019,"grey","suv",92603,"1st",5,"diesel","6-Speed","Automatic",1419000
+"9","Hyundai",2021,"blue","hatchback",16304,"1st",5,"petrol","5-Speed","Manual",710000
+"10","Renault",2019,"bronze","hatchback",26350,"2nd",5,"petrol","5-Speed","Manual",392000
+"11","Renault",2020,"yellow","muv",35400,"1st",7,"petrol","5-Speed","Manual",613000
+"12","Chevrolet",2013,"white","sedan",71450,"1st",5,"diesel","6-Speed","Automatic",598000
+"13","Hyundai",2019,"grey","suv",32395,"1st",5,"petrol","7-Speed","Automatic",969000
+"14","Tata",2021,"grey","suv",15059,"1st",7,"diesel","6-Speed","Automatic",2100000
+"15","Maruti Suzuki",2019,"white","hatchback",31994,"1st",5,"petrol","5-Speed","Manual",666000
+"16","Toyota",2020,"white","sedan",13768,"1st",5,"petrol","CVT","Automatic",1039000
+"17","Tata",2022,"beige","suv",3174,"1st",5,"petrol","5-Speed","Manual",858000
+"18","Renault",2017,"orange","suv",70137,"1st",5,"diesel","6-Speed","Automatic",860000
+"19","Toyota",2018,"white","sedan",35913,"2nd",5,"petrol","6-Speed","Automatic",680000
+"20","Hyundai",2018,"blue","hatchback",19056,"1st",5,"petrol","5-Speed","Manual",625000
+"21","Volkswagen",2017,"brown","sedan",32492,"1st",5,"petrol","5-Speed","Manual",567000
+"22","Maruti Suzuki",2014,"yellow","hatchback",22598,"1st",5,"petrol","5-Speed","Manual",371000
+"23","Hyundai",2019,"grey","suv",85981,"1st",5,"diesel","6-Speed","Automatic",1076000
+"24","Toyota",2017,"blue","hatchback",17791,"1st",5,"petrol","5-Speed","Manual",587000
+"25","Hyundai",2016,"white","hatchback",26910,"2nd",5,"petrol","5-Speed","Manual",396000
+"26","Maruti Suzuki",2014,"blue","sedan",28562,"1st",5,"petrol","5-Speed","Manual",554000
+"27","Hyundai",2019,"white","sedan",40345,"1st",5,"petrol","6-Speed","Automatic",984000
+"28","Maruti Suzuki",2019,"grey","hatchback",19550,"1st",5,"petrol","5-Speed","Manual",507000
+"29","Hyundai",2017,"red","hatchback",54233,"1st",5,"petrol","5-Speed","Manual",586000
+"30","Maruti Suzuki",2017,"blue","hatchback",33113,"1st",5,"petrol","5-Speed","Manual",639000
+"31","Maruti Suzuki",2011,"red","hatchback",79565,"1st",5,"petrol","5-Speed","Manual",237000
+"32","Honda",2013,"white","sedan",10651,"1st",5,"petrol","5-Speed","Manual",536000
+"33","Renault",2020,"bronze","hatchback",27664,"1st",5,"petrol","5-Speed","Manual",456000
+"34","Hyundai",2021,"red","hatchback",13389,"1st",5,"petrol","7-Speed","Automatic",1107000
+"35","Hyundai",2016,"grey","hatchback",30797,"2nd",5,"petrol","5-Speed","Manual",571000
+"36","Honda",2015,"grey","muv",48947,"1st",7,"petrol","5-Speed","Manual",587000
+"37","Honda",2017,"white","sedan",37315,"1st",5,"petrol","5-Speed","Manual",629000
+"38","Maruti Suzuki",2022,"silver","hatchback",11047,"1st",5,"petrol","5-Speed","Manual",718000
+"39","Hyundai",2013,"silver","hatchback",24858,"1st",5,"petrol","5-Speed","Manual",396000
+"40","Hyundai",2022,"blue","suv",4839,"1st",5,"petrol","5-Speed","Manual",877000
+"41","Tata",2020,"golden","hatchback",16329,"1st",5,"petrol","5-Speed","Manual",774000
+"42","Maruti Suzuki",2018,"red","hatchback",57286,"1st",5,"petrol","5-Speed","Manual",554000
+"43","Tata",2022,"white","suv",3679,"1st",5,"petrol","6-Speed","Automatic",829000
+"44","Hyundai",2014,"white","hatchback",96077,"1st",5,"petrol","5-Speed","Manual",530000
+"45","Maruti Suzuki",2017,"grey","hatchback",30406,"1st",5,"petrol","5-Speed","Manual",367000
+"46","Hyundai",2018,"grey","hatchback",60873,"1st",5,"petrol","5-Speed","Manual",550000
+"47","Maruti Suzuki",2018,"blue","hatchback",24811,"1st",5,"petrol","5-Speed","Manual",660000
+"48","Hyundai",2021,"red","hatchback",56275,"1st",5,"petrol","7-Speed","Automatic",998000
+"49","Hyundai",2018,"silver","sedan",78981,"1st",5,"diesel","6-Speed","Automatic",1012000
+"50","Honda",2021,"silver","sedan",7434,"1st",5,"petrol","7-Speed","Automatic",1537000
+"51","Hyundai",2021,"blue","hatchback",10730,"1st",5,"petrol","5-Speed","Manual",908000
+"52","Renault",2019,"bronze","hatchback",21996,"1st",5,"petrol","5-Speed","Manual",508000
+"53","Maruti Suzuki",2019,"blue","hatchback",3474,"1st",5,"petrol","5-Speed","Manual",417000
+"54","Maruti Suzuki",2017,"brown","sedan",64458,"1st",5,"diesel","5-Speed","Manual",725000
+"55","Hyundai",2020,"white","hatchback",24360,"1st",5,"petrol","6-Speed","Automatic",980000
+"56","Mahindra",2017,"blue","suv",69939,"1st",7,"diesel","5-Speed","Manual",796000
+"57","Hyundai",2016,"silver","hatchback",35387,"1st",5,"petrol","5-Speed","Manual",435000
+"58","Maruti Suzuki",2015,"blue","hatchback",63035,"2nd",5,"petrol","5-Speed","Manual",554000
+"59","Maruti Suzuki",2020,"silver","muv",26190,"1st",5,"petrol","5-Speed","Manual",481000
+"60","Maruti Suzuki",2013,"white","hatchback",47013,"1st",5,"petrol","5-Speed","Manual",442000
+"61","Hyundai",2019,"grey","hatchback",11734,"1st",5,"petrol","5-Speed","Manual",530000
+"62","Maruti Suzuki",2018,"blue","sedan",27902,"1st",5,"petrol","5-Speed","Manual",759000
+"63","Hyundai",2015,"blue","sedan",66674,"2nd",5,"petrol","5-Speed","Manual",455000
+"64","Tata",2021,"black","suv",38143,"1st",5,"diesel","6-Speed","Automatic",1972000
+"65","Maruti Suzuki",2021,"grey","sedan",13554,"1st",5,"petrol","4-Speed","Automatic",1138000
+"66","Tata",2022,"red","hatchback",1540,"1st",5,"petrol","6-Speed","Automatic",920000
+"67","Hyundai",2021,"black","suv",12285,"1st",5,"petrol","7-Speed","Automatic",1742000
+"68","Maruti Suzuki",2015,"blue","hatchback",80408,"1st",5,"petrol","5-Speed","Manual",568000
+"69","Maruti Suzuki",2016,"white","hatchback",83377,"1st",5,"petrol","5-Speed","Manual",419000
+"70","Renault",2020,"bronze","hatchback",21887,"1st",5,"petrol","5-Speed","Manual",476000
+"71","Hyundai",2019,"grey","hatchback",40498,"1st",5,"petrol","5-Speed","Manual",577000
+"72","Hyundai",2020,"white","hatchback",18065,"1st",5,"petrol","5-Speed","Manual",541000
+"73","Volkswagen",2016,"grey","sedan",70958,"1st",5,"petrol","7-Speed","Automatic",730000
+"74","Tata",2021,"white","suv",16090,"1st",5,"diesel","6-Speed","Automatic",1875000
+"75","Ford",2015,"grey","suv",55617,"2nd",5,"petrol","6-Speed","Automatic",622000
+"76","Hyundai",2018,"brown","sedan",87773,"1st",5,"diesel","6-Speed","Automatic",937000
+"77","Hyundai",2016,"brown","crossover",54744,"1st",5,"petrol","5-Speed","Manual",625000
+"78","Hyundai",2020,"grey","hatchback",18915,"2nd",5,"petrol","5-Speed","Manual",609000
+"79","Hyundai",2016,"white","hatchback",97573,"1st",5,"petrol","5-Speed","Manual",571000
+"80","Renault",2019,"grey","hatchback",4776,"1st",5,"petrol","5-Speed","Manual",412000
+"81","Hyundai",2018,"white","crossover",24676,"2nd",5,"petrol","5-Speed","Manual",638000
+"82","Maruti Suzuki",2018,"blue","suv",52291,"2nd",5,"diesel","5-Speed","Manual",807000
+"83","Hyundai",2017,"white","hatchback",49775,"2nd",5,"petrol","5-Speed","Manual",590000
+"84","Maruti Suzuki",2017,"brown","suv",83551,"1st",5,"diesel","5-Speed","Manual",651000
+"85","Hyundai",2018,"brown","crossover",34075,"2nd",5,"petrol","5-Speed","Manual",694000
+"86","Honda",2020,"brown","sedan",14414,"1st",5,"petrol","6-Speed","Automatic",1364000
+"87","Ford",2018,"brown","suv",35796,"1st",5,"petrol","5-Speed","Manual",783000
+"88","Maruti Suzuki",2020,"red","hatchback",38199,"2nd",5,"petrol","5-Speed","Manual",628000
+"89","Nissan",2021,"silver","suv",8197,"1st",5,"petrol","5-Speed","Manual",885000
+"90","Maruti Suzuki",2018,"grey","hatchback",27626,"1st",5,"petrol","CVT","Automatic",724000
+"91","Hyundai",2014,"blue","sedan",48106,"1st",5,"petrol","5-Speed","Manual",470000
+"92","Maruti Suzuki",2021,"grey","sedan",12031,"1st",5,"petrol","5-Speed","Manual",1085000
+"93","Maruti Suzuki",2021,"grey","hatchback",5992,"1st",5,"petrol","5-Speed","Manual",620000
+"94","Volkswagen",2020,"red","hatchback",20427,"1st",5,"petrol","5-Speed","Manual",659000
+"95","Tata",2022,"red","hatchback",8560,"1st",5,"petrol","5-Speed","Manual",953000
+"96","Hyundai",2019,"red","suv",58693,"1st",5,"petrol","6-Speed","Automatic",1173000
+"97","Maruti Suzuki",2020,"grey","hatchback",18282,"1st",5,"petrol","5-Speed","Manual",457000
+"98","Maruti Suzuki",2020,"grey","hatchback",17214,"1st",5,"petrol","5-Speed","Manual",461000
+"99","Maruti Suzuki",2013,"red","hatchback",77692,"1st",5,"diesel","5-Speed","Manual",471000
+"100","Maruti Suzuki",2020,"white","sedan",10381,"1st",5,"petrol","5-Speed","Manual",902000
+"101","Honda",2017,"silver","suv",28831,"1st",5,"petrol","5-Speed","Manual",791000
+"102","Toyota",2014,"grey","sedan",72359,"1st",5,"petrol","5-Speed","Manual",506000
+"103","Maruti Suzuki",2017,"blue","sedan",36922,"2nd",5,"petrol","5-Speed","Manual",594000
+"104","Hyundai",2013,"silver","hatchback",72356,"1st",5,"petrol","4-Speed","Automatic",362000
+"105","Hyundai",2018,"white","sedan",55760,"1st",5,"diesel","6-Speed","Automatic",914000
+"106","Hyundai",2015,"red","hatchback",77836,"1st",5,"petrol","5-Speed","Manual",544000
+"107","Volkswagen",2014,"silver","sedan",68269,"2nd",5,"petrol","5-Speed","Manual",513000
+"108","Renault",2020,"yellow","muv",62659,"1st",7,"petrol","5-Speed","Manual",737000
+"109","Maruti Suzuki",2018,"brown","sedan",59847,"1st",5,"petrol","5-Speed","Manual",664000
+"110","Hyundai",2018,"white","sedan",83607,"1st",5,"diesel","6-Speed","Automatic",1027000
+"111","Hyundai",2015,"silver","hatchback",33439,"2nd",5,"petrol","5-Speed","Manual",575000
+"112","Honda",2018,"silver","suv",81799,"1st",5,"diesel","6-Speed","Automatic",842000
+"113","Volkswagen",2019,"silver","hatchback",30378,"1st",5,"petrol","5-Speed","Manual",742000
+"114","Nissan",2022,"red","suv",5129,"1st",5,"petrol","CVT","Automatic",1071000
+"115","Hyundai",2021,"blue","suv",8873,"1st",5,"petrol","6-Speed","Automatic",1044000
+"116","Hyundai",2014,"blue","sedan",78297,"2nd",5,"diesel","4-Speed","Automatic",639000
+"117","Jeep",2017,"white","suv",50808,"1st",5,"diesel","6-Speed","Automatic",1649000
+"118","Maruti Suzuki",2020,"grey","hatchback",16384,"1st",5,"petrol","5-Speed","Manual",392000
+"119","Tata",2020,"yellow","hatchback",16123,"1st",5,"petrol","5-Speed","Manual",626000
+"120","Hyundai",2016,"red","hatchback",47487,"2nd",5,"petrol","5-Speed","Manual",320000
+"121","Hyundai",2019,"grey","hatchback",25632,"1st",5,"petrol","5-Speed","Manual",579000
+"122","Volkswagen",2017,"grey","sedan",33269,"1st",5,"petrol","5-Speed","Manual",608000
+"123","Maruti Suzuki",2018,"red","hatchback",73950,"1st",5,"diesel","5-Speed","Manual",773000
+"124","Renault",2015,"silver","muv",70520,"1st",8,"diesel","5-Speed","Manual",615000
+"125","Honda",2015,"white","hatchback",50735,"2nd",5,"petrol","5-Speed","Manual",519000
+"126","Tata",2021,"bronze","suv",6491,"1st",5,"petrol","5-Speed","Manual",869000
+"127","Mahindra",2019,"black","suv",42905,"1st",7,"diesel","6-Speed","Automatic",1399000
+"128","Chevrolet",2015,"red","hatchback",42222,"1st",5,"diesel","5-Speed","Manual",356000
+"129","Ford",2014,"silver","suv",97902,"1st",5,"diesel","5-Speed","Manual",562000
+"130","Hyundai",2018,"grey","hatchback",16760,"1st",5,"petrol","5-Speed","Manual",522000
+"131","Hyundai",2019,"red","hatchback",24860,"1st",5,"petrol","5-Speed","Manual",699000
+"132","Hyundai",2016,"grey","hatchback",20685,"1st",5,"petrol","5-Speed","Manual",510000
+"133","Maruti Suzuki",2021,"red","hatchback",2163,"1st",5,"petrol","5-Speed","Manual",512000
+"134","Toyota",2018,"white","hatchback",18170,"1st",5,"petrol","5-Speed","Manual",658000
+"135","Honda",2012,"blue","hatchback",66699,"1st",5,"petrol","5-Speed","Manual",369000
+"136","Maruti Suzuki",2020,"silver","sedan",19958,"1st",5,"petrol","5-Speed","Manual",966000
+"137","Ford",2021,"silver","suv",15924,"1st",5,"petrol","5-Speed","Manual",932000
+"138","Hyundai",2018,"red","hatchback",24428,"1st",5,"petrol","5-Speed","Manual",388000
+"139","Toyota",2013,"red","sedan",51187,"1st",5,"petrol","5-Speed","Manual",489000
+"140","Toyota",2016,"black","sedan",47767,"1st",5,"petrol","6-Speed","Automatic",926000
+"141","MG Motors",2020,"maroon","suv",33433,"1st",5,"petrol","6-Speed","Automatic",1709000
+"142","Maruti Suzuki",2020,"white","sedan",40635,"1st",5,"petrol","5-Speed","Manual",1039000
+"143","MG Motors",2020,"red","suv",25835,"1st",5,"petrol","6-Speed","Automatic",1770000
+"144","Maruti Suzuki",2020,"grey","sedan",30752,"1st",5,"petrol","4-Speed","Automatic",1163000
+"145","Honda",2020,"red","sedan",16332,"1st",5,"petrol","6-Speed","Automatic",1349000
+"146","Kia",2020,"orange","suv",20930,"1st",5,"petrol","7-Speed","Automatic",1705000
+"147","Ford",2019,"red","hatchback",14499,"1st",5,"diesel","5-Speed","Manual",739000
+"148","Hyundai",2014,"grey","sedan",72009,"1st",5,"diesel","6-Speed","Automatic",600000
+"149","Hyundai",2019,"white","suv",23164,"1st",5,"petrol","6-Speed","Automatic",1039000
+"150","Maruti Suzuki",2019,"blue","sedan",28618,"1st",5,"petrol","5-Speed","Manual",950000
+"151","Honda",2017,"red","suv",88695,"1st",5,"petrol","5-Speed","Manual",748000
+"152","Maruti Suzuki",2018,"blue","sedan",7858,"1st",5,"petrol","5-Speed","Manual",820000
+"153","Hyundai",2016,"red","crossover",88827,"1st",5,"petrol","5-Speed","Manual",645000
+"154","Tata",2017,"silver","sedan",7697,"1st",5,"petrol","5-Speed","Manual",570000
+"155","MG Motors",2020,"black","suv",31271,"1st",5,"petrol","6-Speed","Automatic",1764000
+"156","Hyundai",2018,"red","hatchback",17121,"1st",5,"petrol","5-Speed","Manual",677000
+"157","Hyundai",2017,"white","sedan",60287,"1st",5,"petrol","4-Speed","Automatic",837000
+"158","MG Motors",2020,"red","suv",8265,"1st",5,"petrol","6-Speed","Automatic",1826000
+"159","Jeep",2017,"red","suv",43091,"2nd",5,"diesel","6-Speed","Automatic",1290000
+"160","Jeep",2017,"blue","suv",44503,"1st",5,"diesel","6-Speed","Automatic",1559000
+"161","Hyundai",2020,"blue","hatchback",17056,"1st",5,"petrol","5-Speed","Manual",523000
+"162","Maruti Suzuki",2018,"blue","suv",61922,"1st",5,"diesel","5-Speed","Manual",942000
+"163","Hyundai",2017,"silver","crossover",60629,"1st",5,"petrol","5-Speed","Manual",725000
+"164","Hyundai",2017,"black","crossover",32602,"1st",5,"petrol","5-Speed","Manual",711000
+"165","Ford",2020,"silver","suv",26116,"1st",5,"petrol","5-Speed","Manual",974000
+"166","Hyundai",2016,"brown","crossover",90058,"1st",5,"petrol","5-Speed","Manual",608000
+"167","Hyundai",2012,"grey","hatchback",63676,"1st",5,"petrol","5-Speed","Manual",273000
+"168","Hyundai",2011,"grey","hatchback",43918,"2nd",5,"petrol","4-Speed","Automatic",304000
+"169","Maruti Suzuki",2020,"silver","hatchback",6301,"1st",5,"petrol","5-Speed","Manual",361000
+"170","Renault",2017,"grey","hatchback",29907,"1st",5,"petrol","5-Speed","Manual",365000
+"171","Hyundai",2016,"white","hatchback",41218,"1st",5,"diesel","6-Speed","Automatic",616000
+"172","Maruti Suzuki",2015,"brown","muv",5475,"1st",7,"petrol","5-Speed","Manual",690000
+"173","Hyundai",2022,"blue","hatchback",4305,"1st",5,"petrol","5-Speed","Manual",749000
+"174","Ford",2017,"bronze","suv",43112,"1st",5,"diesel","5-Speed","Manual",619000
+"175","Volkswagen",2015,"grey","hatchback",53807,"1st",5,"diesel","5-Speed","Manual",547000
+"176","Hyundai",2015,"silver","hatchback",37837,"1st",5,"petrol","5-Speed","Manual",579000
+"177","Renault",2019,"white","muv",11074,"1st",7,"petrol","5-Speed","Manual",686000
+"178","Maruti Suzuki",2017,"blue","hatchback",15748,"1st",5,"petrol","5-Speed","Manual",679000
+"179","Maruti Suzuki",2015,"red","hatchback",14593,"1st",5,"petrol","5-Speed","Manual",400000
+"180","Maruti Suzuki",2015,"white","sedan",30228,"1st",5,"petrol","4-Speed","Automatic",612000
+"181","MG Motors",2020,"black","suv",44897,"1st",6,"petrol","6-Speed","Automatic",1644000
+"182","Maruti Suzuki",2013,"grey","hatchback",55995,"1st",5,"petrol","5-Speed","Manual",342000
+"183","Tata",2021,"grey","hatchback",9936,"1st",5,"petrol","5-Speed","Manual",790000
+"184","Hyundai",2017,"red","hatchback",18790,"1st",5,"petrol","5-Speed","Manual",360000
+"185","Maruti Suzuki",2015,"red","hatchback",64323,"1st",5,"petrol","5-Speed","Manual",276000
+"186","Hyundai",2013,"red","hatchback",32849,"1st",5,"petrol","5-Speed","Manual",352000
+"187","Maruti Suzuki",2020,"red","hatchback",22777,"1st",5,"petrol","5-Speed","Manual",363000
+"188","Hyundai",2013,"white","hatchback",37652,"1st",5,"petrol","5-Speed","Manual",333000
+"189","Hyundai",2016,"red","hatchback",93446,"1st",5,"diesel","6-Speed","Automatic",589000
+"190","Renault",2022,"blue","suv",11031,"1st",5,"petrol","5-Speed","Manual",735000
+"191","Maruti Suzuki",2021,"white","hatchback",9752,"1st",5,"petrol","5-Speed","Manual",790000
+"192","Maruti Suzuki",2019,"red","suv",15418,"1st",5,"diesel","5-Speed","Manual",1117000
+"193","Maruti Suzuki",2020,"grey","hatchback",8249,"1st",5,"petrol","5-Speed","Manual",660000
+"194","Hyundai",2021,"blue","hatchback",10514,"1st",5,"petrol","5-Speed","Manual",678000
+"195","Honda",2019,"silver","sedan",24136,"2nd",5,"petrol","5-Speed","Manual",857000
+"196","Renault",2019,"blue","hatchback",18638,"1st",5,"petrol","5-Speed","Manual",483000
+"197","Hyundai",2013,"red","hatchback",93653,"2nd",5,"petrol","5-Speed","Manual",248000
+"198","Jeep",2017,"black","suv",60049,"1st",5,"diesel","6-Speed","Automatic",1500000
+"199","Maruti Suzuki",2019,"brown","sedan",31330,"2nd",5,"petrol","5-Speed","Manual",759000
+"200","Hyundai",2012,"red","hatchback",49014,"2nd",5,"petrol","5-Speed","Manual",336000
+"201","Maruti Suzuki",2015,"silver","sedan",56221,"1st",5,"petrol","5-Speed","Manual",677000
+"202","Maruti Suzuki",2017,"blue","hatchback",20894,"1st",5,"petrol","5-Speed","Manual",711000
+"203","Hyundai",2016,"grey","suv",88735,"2nd",5,"diesel","6-Speed","Manual",1099000
+"204","Hyundai",2016,"grey","suv",88735,"2nd",5,"diesel","6-Speed","Manual",1099000
+"205","Hyundai",2016,"grey","suv",88735,"2nd",5,"diesel","6-Speed","Manual",1099000
+"206","Hyundai",2016,"grey","suv",88735,"2nd",5,"diesel","6-Speed","Manual",1099000
+"207","Renault",2021,"white","suv",9034,"1st",5,"petrol","5-Speed","Automatic",1078000
+"208","Maruti Suzuki",2014,"silver","hatchback",63746,"3rd",5,"petrol","5-Speed","Automatic",348000
+"209","Hyundai",2016,"white","hatchback",85602,"1st",5,"petrol","5-Speed","Manual",659000
+"210","Hyundai",2013,"purple","sedan",59054,"2nd",5,"petrol","5-Speed","Automatic",501000
+"211","Renault",2017,"white","suv",50811,"1st",5,"diesel","6-Speed","Manual",1013000
+"212","Kia",2020,"silver","suv",38198,"1st",5,"petrol","7-Speed","Manual",1741000
+"213","Maruti Suzuki",2018,"silver","sedan",92118,"1st",5,"petrol","4-Speed","Manual",829000
+"214","Hyundai",2014,"white","sedan",72801,"1st",5,"petrol","5-Speed","Manual",496000
+"215","Hyundai",2014,"grey","hatchback",38592,"2nd",5,"petrol","5-Speed","Manual",269000
+"216","Honda",2019,"brown","sedan",22379,"1st",5,"petrol","5-Speed","Manual",927000
+"217","Maruti Suzuki",2016,"silver","hatchback",44822,"2nd",5,"petrol","5-Speed","Manual",451000
+"218","Renault",2021,"white","hatchback",13069,"1st",5,"petrol","5-Speed","Automatic",532000
+"219","Maruti Suzuki",2011,"brown","hatchback",96939,"1st",5,"petrol","5-Speed","Manual",338000
+"220","Mahindra",2015,"silver","suv",71397,"2nd",7,"diesel","6-Speed","Manual",1032000
+"221","Hyundai",2019,"beige","hatchback",21903,"1st",5,"petrol","5-Speed","Manual",557000
+"222","Hyundai",2020,"grey","hatchback",9468,"1st",5,"petrol","5-Speed","Automatic",653000
+"223","Honda",2018,"brown","sedan",60209,"1st",5,"petrol","5-Speed","Manual",898000
+"224","Renault",2016,"orange","suv",69658,"1st",5,"diesel","6-Speed","Manual",912000
+"225","Hyundai",2015,"white","hatchback",81103,"1st",5,"diesel","6-Speed","Manual",642000
+"226","Renault",2020,"blue","muv",57503,"1st",7,"petrol","5-Speed","Manual",651000
+"227","Maruti Suzuki",2018,"silver","hatchback",45560,"1st",5,"petrol","5-Speed","Automatic",503000
+"228","Maruti Suzuki",2012,"silver","hatchback",45008,"2nd",5,"petrol","4-Speed","Automatic",330000
+"229","Maruti Suzuki",2011,"grey","hatchback",51210,"2nd",5,"petrol","5-Speed","Manual",395000
+"230","Hyundai",2017,"silver","suv",44894,"1st",5,"diesel","6-Speed","Manual",1235000
+"231","Maruti Suzuki",2015,"white","suv",39515,"1st",5,"diesel","5-Speed","Automatic",808000
+"232","Hyundai",2015,"silver","hatchback",54287,"1st",5,"petrol","5-Speed","Manual",458000
+"233","Hyundai",2013,"white","sedan",91039,"1st",5,"petrol","5-Speed","Automatic",514000
+"234","Honda",2015,"grey","sedan",49435,"1st",5,"petrol","5-Speed","Manual",512000
+"235","Skoda",2019,"black","sedan",9686,"1st",5,"petrol","7-Speed","Automatic",2941000
+"236","Honda",2021,"white","sedan",12092,"1st",5,"petrol","6-Speed","Manual",1346000
+"237","Maruti Suzuki",2019,"blue","hatchback",27053,"1st",5,"petrol","5-Speed","Manual",844000
+"238","Maruti Suzuki",2019,"blue","hatchback",27053,"1st",5,"petrol","5-Speed","Manual",844000
+"239","Maruti Suzuki",2019,"blue","hatchback",27053,"1st",5,"petrol","5-Speed","Manual",844000
+"240","Maruti Suzuki",2019,"blue","hatchback",27053,"1st",5,"petrol","5-Speed","Manual",844000
+"241","Maruti Suzuki",2017,"blue","sedan",28833,"1st",5,"petrol","5-Speed","Automatic",789000
+"242","Honda",2016,"red","hatchback",48606,"2nd",5,"petrol","5-Speed","Manual",570000
+"243","Maruti Suzuki",2016,"red","hatchback",96236,"1st",5,"petrol","5-Speed","Manual",639000
+"244","Maruti Suzuki",2012,"silver","sedan",37258,"1st",5,"petrol","5-Speed","Manual",470000
+"245","Maruti Suzuki",2014,"silver","hatchback",33869,"1st",5,"petrol","5-Speed","Automatic",454000
+"246","Maruti Suzuki",2013,"silver","muv",91796,"1st",7,"petrol","5-Speed","Manual",618000
+"247","Tata",2019,"grey","hatchback",45607,"1st",5,"petrol","5-Speed","Automatic",548000
+"248","Hyundai",2021,"grey","hatchback",1117,"1st",5,"petrol","5-Speed","Manual",710000
+"249","Hyundai",2018,"blue","hatchback",24745,"1st",5,"petrol","5-Speed","Automatic",621000
+"250","Hyundai",2017,"red","suv",66868,"1st",5,"diesel","6-Speed","Manual",1290000
+"251","Hyundai",2017,"red","suv",66868,"1st",5,"diesel","6-Speed","Manual",1290000
+"252","Hyundai",2017,"red","suv",66868,"1st",5,"diesel","6-Speed","Manual",1290000
+"253","Hyundai",2017,"red","suv",66868,"1st",5,"diesel","6-Speed","Manual",1290000
+"254","Honda",2017,"red","suv",75639,"1st",5,"petrol","5-Speed","Manual",748000
+"255","Chevrolet",2013,"blue","hatchback",77022,"1st",5,"diesel","5-Speed","Manual",267000
+"256","Renault",2018,"bronze","hatchback",56387,"1st",5,"petrol","5-Speed","Manual",368000
+"257","Hyundai",2019,"red","suv",23724,"1st",5,"petrol","7-Speed","Manual",1137000
+"258","Maruti Suzuki",2022,"grey","hatchback",6900,"1st",5,"petrol","5-Speed","Manual",699000
+"259","Maruti Suzuki",2017,"grey","hatchback",43785,"1st",5,"petrol","5-Speed","Automatic",544000
+"260","Honda",2019,"white","sedan",29780,"1st",5,"diesel","5-Speed","Manual",982000
+"261","Maruti Suzuki",2015,"blue","hatchback",56207,"1st",5,"petrol","5-Speed","Manual",611000
+"262","Maruti Suzuki",2016,"yellow","suv",40003,"1st",5,"diesel","5-Speed","Automatic",941000
+"263","Hyundai",2014,"silver","hatchback",94315,"1st",5,"petrol","5-Speed","Manual",534000
+"264","Maruti Suzuki",2018,"grey","hatchback",29492,"1st",5,"petrol","5-Speed","Automatic",584000
+"265","Maruti Suzuki",2017,"grey","sedan",21365,"1st",5,"petrol","5-Speed","Manual",827000
+"266","Ford",2019,"red","hatchback",31262,"1st",5,"diesel","5-Speed","Manual",681000
+"267","Ford",2019,"red","hatchback",31262,"1st",5,"diesel","5-Speed","Manual",681000
+"268","Ford",2019,"red","hatchback",31262,"1st",5,"diesel","5-Speed","Manual",681000
+"269","Ford",2019,"red","hatchback",31262,"1st",5,"diesel","5-Speed","Manual",681000
+"270","Honda",2017,"red","hatchback",56221,"1st",5,"petrol","5-Speed","Automatic",580000
+"271","Hyundai",2021,"grey","hatchback",27185,"1st",5,"petrol","5-Speed","Manual",746000
+"272","Honda",2014,"red","sedan",63170,"2nd",5,"petrol","5-Speed","Manual",452000
+"273","Tata",2015,"purple","hatchback",44736,"1st",5,"petrol","4-Speed","Manual",239000
+"274","Renault",2019,"grey","hatchback",13111,"1st",5,"petrol","5-Speed","Manual",453000
+"275","Ford",2016,"grey","hatchback",83705,"1st",5,"diesel","5-Speed","Manual",521000
+"276","Renault",2021,"white","muv",7227,"1st",7,"petrol","5-Speed","Manual",780000
+"277","Hyundai",2014,"white","sedan",45880,"1st",5,"petrol","5-Speed","Automatic",694000
+"278","Maruti Suzuki",2015,"white","sedan",36850,"1st",5,"petrol","5-Speed","Manual",698000
+"279","Maruti Suzuki",2011,"silver","hatchback",53160,"1st",5,"petrol","5-Speed","Manual",426000
+"280","Honda",2021,"white","sedan",17790,"1st",5,"petrol","5-Speed","Manual",989000
+"281","Honda",2020,"white","sedan",24218,"1st",5,"petrol","5-Speed","Manual",940000
+"282","Hyundai",2017,"red","hatchback",11304,"1st",5,"petrol","5-Speed","Automatic",556000
+"283","Tata",2021,"grey","hatchback",12002,"1st",5,"diesel","5-Speed","Manual",785000
+"284","Mahindra",2020,"black","suv",61411,"1st",5,"diesel","6-Speed","Manual",1077000
+"285","Hyundai",2014,"grey","hatchback",35703,"1st",5,"petrol","5-Speed","Manual",464000
+"286","Hyundai",2017,"grey","sedan",45378,"1st",5,"petrol","5-Speed","Manual",589000
+"287","Hyundai",2017,"grey","sedan",45378,"1st",5,"petrol","5-Speed","Manual",589000
+"288","Hyundai",2017,"grey","sedan",45378,"1st",5,"petrol","5-Speed","Manual",589000
+"289","Hyundai",2017,"grey","sedan",45378,"1st",5,"petrol","5-Speed","Manual",589000
+"290","Hyundai",2018,"grey","hatchback",28557,"2nd",5,"petrol","5-Speed","Automatic",574000
+"291","Maruti Suzuki",2021,"white","hatchback",14853,"1st",5,"petrol","5-Speed","Manual",655000
+"292","Maruti Suzuki",2020,"silver","sedan",70245,"1st",5,"petrol","5-Speed","Manual",920000
+"293","Maruti Suzuki",2020,"grey","muv",22703,"1st",5,"petrol","5-Speed","Manual",488000
+"294","Renault",2020,"blue","hatchback",36069,"1st",5,"petrol","5-Speed","Automatic",548000
+"295","Maruti Suzuki",2016,"silver","hatchback",5227,"1st",5,"petrol","5-Speed","Manual",528000
+"296","Maruti Suzuki",2017,"grey","hatchback",27803,"1st",5,"petrol","5-Speed","Automatic",527000
+"297","Honda",2017,"white","sedan",47154,"1st",5,"petrol","5-Speed","Automatic",952000
+"298","Honda",2012,"silver","hatchback",84488,"1st",5,"petrol","5-Speed","Manual",340000
+"299","Volkswagen",2014,"brown","sedan",83265,"2nd",5,"diesel","5-Speed","Manual",790000
+"300","Volkswagen",2014,"brown","sedan",83265,"2nd",5,"diesel","5-Speed","Manual",790000
+"301","Volkswagen",2014,"brown","sedan",83265,"2nd",5,"diesel","5-Speed","Manual",790000
+"302","Volkswagen",2014,"brown","sedan",83265,"2nd",5,"diesel","5-Speed","Manual",790000
+"303","Honda",2018,"brown","sedan",16348,"1st",5,"petrol","5-Speed","Manual",765000
+"304","Hyundai",2012,"white","hatchback",90078,"1st",5,"petrol","5-Speed","Manual",420000
+"305","Honda",2018,"grey","suv",69591,"3rd",5,"diesel","6-Speed","Manual",800000
+"306","Hyundai",2013,"blue","hatchback",56096,"1st",5,"petrol","5-Speed","Manual",486000
+"307","Mahindra",2017,"white","suv",56418,"1st",7,"diesel","6-Speed","Manual",1465000
+"308","Hyundai",2012,"grey","hatchback",65284,"1st",5,"petrol","5-Speed","Manual",348000
+"309","Chevrolet",2015,"grey","sedan",72489,"1st",5,"diesel","6-Speed","Automatic",892000
+"310","Volkswagen",2011,"silver","hatchback",68645,"2nd",5,"petrol","5-Speed","Manual",451000
+"311","Hyundai",2018,"blue","hatchback",33231,"2nd",5,"petrol","5-Speed","Manual",403000
+"312","Hyundai",2011,"beige","hatchback",43953,"1st",5,"petrol","5-Speed","Manual",338000
+"313","Ford",2016,"grey","suv",36422,"1st",5,"petrol","6-Speed","Automatic",806000
+"314","Maruti Suzuki",2015,"red","sedan",78251,"1st",5,"petrol","5-Speed","Manual",634000
+"315","Hyundai",2016,"red","hatchback",48481,"1st",5,"petrol","5-Speed","Manual",654000
+"316","Maruti Suzuki",2018,"blue","sedan",37746,"1st",5,"petrol","4-Speed","Manual",882000
+"317","Hyundai",2017,"silver","suv",50872,"1st",5,"petrol","6-Speed","Manual",1196000
+"318","Hyundai",2015,"grey","hatchback",25517,"1st",5,"petrol","5-Speed","Manual",669000
+"319","Ford",2014,"silver","suv",74814,"2nd",5,"petrol","5-Speed","Manual",589000
+"320","Tata",2020,"red","suv",24315,"1st",5,"diesel","6-Speed","Manual",1912000
+"321","Hyundai",2017,"blue","hatchback",63937,"1st",5,"petrol","5-Speed","Manual",628000
+"322","Maruti Suzuki",2019,"white","sedan",11499,"1st",5,"petrol","5-Speed","Automatic",812000
+"323","Maruti Suzuki",2019,"blue","hatchback",30420,"1st",5,"diesel","5-Speed","Automatic",883000
+"324","Maruti Suzuki",2018,"white","sedan",15221,"1st",5,"petrol","4-Speed","Manual",914000
+"325","Mahindra",2017,"black","suv",46438,"1st",7,"diesel","5-Speed","Manual",1112000
+"326","Maruti Suzuki",2018,"orange","hatchback",27941,"1st",5,"diesel","5-Speed","Manual",810000
+"327","Hyundai",2014,"grey","hatchback",35461,"2nd",5,"petrol","4-Speed","Automatic",530000
+"328","Maruti Suzuki",2012,"white","hatchback",46447,"1st",5,"diesel","5-Speed","Manual",455000
+"329","Maruti Suzuki",2013,"grey","sedan",74652,"1st",5,"petrol","5-Speed","Manual",498000
+"330","Maruti Suzuki",2013,"beige","hatchback",44746,"1st",5,"petrol","5-Speed","Manual",403000
+"331","Hyundai",2014,"grey","hatchback",92092,"1st",5,"petrol","5-Speed","Manual",380000
+"332","Toyota",2020,"red","sedan",26653,"2nd",5,"petrol","5-Speed","Manual",1092000
+"333","Toyota",2020,"red","sedan",26653,"2nd",5,"petrol","5-Speed","Manual",1092000
+"334","Toyota",2020,"red","sedan",26653,"2nd",5,"petrol","5-Speed","Manual",1092000
+"335","Toyota",2020,"red","sedan",26653,"2nd",5,"petrol","5-Speed","Manual",1092000
+"336","Hyundai",2014,"blue","hatchback",58748,"2nd",5,"petrol","5-Speed","Manual",457000
+"337","Hyundai",2016,"beige","suv",90147,"1st",5,"petrol","6-Speed","Manual",813000
+"338","Hyundai",2017,"grey","sedan",25905,"1st",5,"petrol","5-Speed","Manual",820000
+"339","Hyundai",2014,"black","sedan",76890,"1st",5,"petrol","5-Speed","Manual",502000
+"340","Maruti Suzuki",2020,"silver","hatchback",32490,"1st",5,"petrol","5-Speed","Manual",414000
+"341","Maruti Suzuki",2019,"red","hatchback",13505,"1st",5,"petrol","5-Speed","Manual",391000
+"342","Maruti Suzuki",2021,"silver","hatchback",21564,"1st",5,"petrol","5-Speed","Manual",433000
+"343","Maruti Suzuki",2018,"grey","hatchback",22849,"1st",5,"petrol","5-Speed","Manual",372000
+"344","Maruti Suzuki",2016,"white","hatchback",24374,"1st",5,"petrol","5-Speed","Manual",384000
+"345","Hyundai",2018,"white","hatchback",31912,"1st",5,"petrol","5-Speed","Manual",784000
+"346","Hyundai",2016,"red","suv",60578,"1st",5,"petrol","6-Speed","Manual",971000
+"347","Hyundai",2016,"red","hatchback",95065,"1st",5,"petrol","5-Speed","Manual",655000
+"348","Renault",2022,"white","hatchback",7342,"1st",5,"petrol","5-Speed","Automatic",539000
+"349","Renault",2021,"blue","hatchback",9285,"1st",5,"petrol","5-Speed","Automatic",470000
+"350","Hyundai",2017,"grey","hatchback",41443,"1st",5,"diesel","6-Speed","Manual",790000
+"351","Maruti Suzuki",2015,"silver","hatchback",53848,"2nd",5,"petrol","5-Speed","Automatic",415000
+"352","Maruti Suzuki",2012,"silver","hatchback",70568,"2nd",5,"petrol","5-Speed","Manual",368000
+"353","Maruti Suzuki",2012,"black","sedan",61885,"1st",5,"petrol","5-Speed","Manual",457000
+"354","Honda",2019,"grey","suv",16240,"1st",5,"petrol","5-Speed","Manual",894000
+"355","Hyundai",2011,"red","hatchback",62840,"1st",5,"petrol","5-Speed","Manual",338000
+"356","Hyundai",2011,"grey","hatchback",74710,"2nd",5,"petrol","5-Speed","Manual",342000
+"357","Renault",2021,"grey","suv",19722,"1st",5,"petrol","5-Speed","Manual",986000
+"358","Renault",2014,"silver","suv",85751,"1st",5,"diesel","5-Speed","Manual",637000
+"359","Hyundai",2016,"white","hatchback",73251,"1st",5,"diesel","6-Speed","Manual",688000
+"360","Hyundai",2018,"orange","hatchback",44188,"1st",5,"diesel","6-Speed","Automatic",816000
+"361","Ford",2019,"red","hatchback",45590,"1st",5,"diesel","5-Speed","Manual",644000
+"362","Ford",2019,"red","hatchback",45590,"1st",5,"diesel","5-Speed","Manual",644000
+"363","Ford",2019,"red","hatchback",45590,"1st",5,"diesel","5-Speed","Manual",644000
+"364","Ford",2019,"red","hatchback",45590,"1st",5,"diesel","5-Speed","Manual",644000
+"365","Hyundai",2016,"blue","suv",97039,"1st",5,"diesel","6-Speed","Manual",1086000
+"366","Hyundai",2016,"blue","suv",97039,"1st",5,"diesel","6-Speed","Manual",1086000
+"367","Hyundai",2016,"blue","suv",97039,"1st",5,"diesel","6-Speed","Manual",1086000
+"368","Hyundai",2016,"blue","suv",97039,"1st",5,"diesel","6-Speed","Manual",1086000
+"369","Hyundai",2016,"silver","hatchback",14359,"1st",5,"petrol","5-Speed","Manual",674000
+"370","Hyundai",2018,"white","hatchback",48670,"2nd",5,"petrol","5-Speed","Manual",350000
+"371","Hyundai",2018,"red","suv",70015,"1st",5,"petrol","6-Speed","Automatic",1213000
+"372","Maruti Suzuki",2011,"silver","hatchback",41517,"2nd",5,"petrol","5-Speed","Manual",275000
+"373","Maruti Suzuki",2021,"grey","hatchback",14818,"1st",5,"petrol","5-Speed","Manual",533000
+"374","Honda",2017,"brown","sedan",46935,"1st",5,"petrol","5-Speed","Manual",824000
+"375","Hyundai",2020,"white","hatchback",30590,"1st",5,"petrol","5-Speed","Automatic",805000
+"376","Hyundai",2017,"black","suv",62805,"1st",5,"petrol","6-Speed","Manual",1098000
+"377","Maruti Suzuki",2017,"grey","sedan",47123,"1st",5,"petrol","5-Speed","Manual",795000
+"378","Maruti Suzuki",2019,"silver","hatchback",50437,"2nd",5,"petrol","5-Speed","Manual",406000
+"379","Maruti Suzuki",2017,"blue","sedan",49930,"1st",5,"petrol","5-Speed","Automatic",720000
+"380","Ford",2016,"blue","suv",46485,"1st",5,"petrol","5-Speed","Automatic",732000
+"381","Maruti Suzuki",2014,"white","hatchback",76306,"1st",5,"petrol","5-Speed","Automatic",406000
+"382","Hyundai",2015,"blue","hatchback",80743,"1st",5,"petrol","5-Speed","Manual",622000
+"383","Hyundai",2018,"red","hatchback",54836,"1st",5,"petrol","5-Speed","Automatic",742000
+"384","Maruti Suzuki",2018,"blue","sedan",32170,"1st",5,"petrol","5-Speed","Automatic",699000
+"385","Toyota",2011,"black","sedan",62193,"1st",5,"petrol","5-Speed","Manual",426000
+"386","Hyundai",2012,"blue","hatchback",40097,"1st",5,"petrol","5-Speed","Manual",284000
+"387","Honda",2015,"white","sedan",44188,"1st",5,"petrol","5-Speed","Manual",574000
+"388","Hyundai",2017,"red","hatchback",86163,"2nd",5,"diesel","6-Speed","Manual",699000
+"389","Hyundai",2016,"red","hatchback",50229,"1st",5,"petrol","5-Speed","Manual",605000
+"390","Maruti Suzuki",2020,"blue","suv",20156,"1st",5,"petrol","5-Speed","Manual",1104000
+"391","Hyundai",2016,"silver","hatchback",29122,"1st",5,"petrol","5-Speed","Manual",451000
+"392","Hyundai",2016,"white","hatchback",71532,"2nd",5,"petrol","5-Speed","Manual",633000
+"393","MG Motors",2020,"white","suv",36581,"1st",5,"diesel","5-Speed","Manual",1848000
+"394","MG Motors",2020,"white","suv",36581,"1st",5,"diesel","5-Speed","Manual",1848000
+"395","MG Motors",2020,"white","suv",36581,"1st",5,"diesel","6-Speed","Manual",1848000
+"396","MG Motors",2020,"white","suv",36581,"1st",5,"diesel","6-Speed","Manual",1848000
+"397","Hyundai",2016,"red","suv",37702,"2nd",5,"petrol","6-Speed","Manual",943000
+"398","Hyundai",2018,"red","hatchback",30876,"1st",5,"petrol","5-Speed","Automatic",709000
+"399","Volkswagen",2011,"white","hatchback",92227,"2nd",5,"petrol","5-Speed","Manual",402000
+"400","Volkswagen",2017,"grey","sedan",24747,"1st",5,"petrol","5-Speed","Automatic",646000
+"401","Hyundai",2013,"white","hatchback",26671,"2nd",5,"petrol","5-Speed","Manual",334000
+"402","Maruti Suzuki",2013,"red","hatchback",84739,"1st",5,"diesel","5-Speed","Manual",496000
+"403","Volkswagen",2017,"silver","hatchback",90423,"1st",5,"diesel","5-Speed","Manual",735000
+"404","Maruti Suzuki",2015,"brown","hatchback",40632,"1st",5,"petrol","5-Speed","Manual",487000
+"405","Maruti Suzuki",2013,"silver","hatchback",59010,"1st",5,"petrol","5-Speed","Manual",410000
+"406","Hyundai",2018,"red","hatchback",24732,"1st",5,"petrol","5-Speed","Automatic",766000
+"407","Kia",2020,"red","suv",14077,"1st",5,"petrol","6-Speed","Manual",1647000
+"408","Hyundai",2013,"blue","hatchback",19600,"1st",5,"petrol","5-Speed","Manual",311000
+"409","Skoda",2012,"white","sedan",93981,"2nd",5,"diesel","5-Speed","Manual",436000
+"410","Hyundai",2015,"silver","hatchback",25413,"2nd",5,"petrol","5-Speed","Manual",391000
+"411","Hyundai",2017,"silver","sedan",95862,"1st",5,"diesel","6-Speed","Manual",870000
+"412","Maruti Suzuki",2012,"blue","hatchback",53015,"2nd",5,"petrol","5-Speed","Manual",323000
+"413","Honda",2015,"maroon","hatchback",63279,"1st",5,"petrol","5-Speed","Manual",598000
+"414","Hyundai",2017,"grey","sedan",73591,"1st",5,"petrol","5-Speed","Manual",589000
+"415","Maruti Suzuki",2017,"white","hatchback",79503,"1st",5,"petrol","5-Speed","Automatic",464000
+"416","Hyundai",2014,"red","sedan",60227,"1st",5,"diesel","6-Speed","Manual",702000
+"417","Renault",2021,"blue","hatchback",5564,"1st",5,"petrol","5-Speed","Automatic",472000
+"418","Renault",2017,"white","hatchback",71696,"1st",5,"petrol","5-Speed","Manual",353000
+"419","Volkswagen",2011,"black","hatchback",44787,"2nd",5,"petrol","5-Speed","Manual",402000
+"420","Hyundai",2017,"red","suv",68295,"2nd",5,"petrol","6-Speed","Manual",977000
+"421","Maruti Suzuki",2016,"white","hatchback",38868,"2nd",5,"petrol","5-Speed","Manual",358000
+"422","Maruti Suzuki",2012,"blue","hatchback",40411,"1st",5,"petrol","5-Speed","Manual",399000
+"423","Hyundai",2020,"white","hatchback",17156,"1st",5,"petrol","5-Speed","Automatic",836000
+"424","Ford",2017,"black","suv",12761,"2nd",5,"petrol","5-Speed","Manual",803000
+"425","Maruti Suzuki",2021,"grey","hatchback",10563,"1st",5,"petrol","5-Speed","Manual",410000
+"426","Hyundai",2018,"red","hatchback",13948,"1st",5,"petrol","5-Speed","Automatic",795000
+"427","Hyundai",2019,"silver","sedan",6165,"1st",5,"petrol","6-Speed","Automatic",1266000
+"428","Hyundai",2012,"red","hatchback",44478,"2nd",5,"petrol","5-Speed","Manual",343000
+"429","Hyundai",2011,"golden","hatchback",85895,"1st",5,"petrol","5-Speed","Manual",362000
+"430","Datsun",2017,"red","hatchback",42187,"1st",5,"petrol","5-Speed","Manual",300000
+"431","Hyundai",2016,"blue","hatchback",88795,"1st",5,"diesel","6-Speed","Manual",694000
+"432","Hyundai",2013,"grey","hatchback",45000,"2nd",5,"petrol","5-Speed","Manual",484000
+"433","Honda",2018,"white","sedan",14861,"1st",5,"petrol","5-Speed","Automatic",1001000
+"434","Hyundai",2014,"red","hatchback",61455,"1st",5,"petrol","5-Speed","Manual",384000
+"435","Honda",2019,"brown","suv",23697,"1st",5,"petrol","5-Speed","Manual",858000
+"436","Maruti Suzuki",2017,"grey","hatchback",84623,"1st",5,"petrol","5-Speed","Automatic",482000
+"437","Honda",2016,"silver","hatchback",36822,"1st",5,"petrol","5-Speed","Automatic",581000
+"438","Hyundai",2011,"silver","hatchback",49985,"1st",5,"petrol","5-Speed","Manual",320000
+"439","Hyundai",2018,"red","suv",25411,"1st",5,"petrol","6-Speed","Manual",1176000
+"440","Hyundai",2019,"white","suv",26198,"1st",5,"petrol","6-Speed","Automatic",1274000
+"441","Maruti Suzuki",2016,"grey","hatchback",21812,"1st",5,"petrol","5-Speed","Manual",362000
+"442","Renault",2020,"white","hatchback",15591,"1st",5,"petrol","5-Speed","Automatic",489000
+"443","Honda",2015,"white","sedan",50821,"2nd",5,"petrol","5-Speed","Manual",815000
+"444","Hyundai",2017,"red","suv",57167,"1st",5,"petrol","6-Speed","Manual",1064000
+"445","Hyundai",2014,"silver","hatchback",62904,"1st",5,"petrol","5-Speed","Manual",389000
+"446","Honda",2018,"silver","hatchback",13074,"1st",5,"petrol","5-Speed","Manual",715000
+"447","Maruti Suzuki",2019,"blue","hatchback",37942,"1st",5,"diesel","5-Speed","Automatic",847000
+"448","Ford",2016,"grey","suv",96471,"1st",5,"diesel","5-Speed","Manual",628000
+"449","Hyundai",2015,"red","hatchback",40959,"1st",5,"petrol","5-Speed","Manual",317000
+"450","Ford",2020,"white","sedan",18300,"1st",5,"petrol","5-Speed","Manual",729000
+"451","Maruti Suzuki",2017,"grey","hatchback",32419,"1st",5,"petrol","5-Speed","Manual",396000
+"452","Maruti Suzuki",2016,"blue","muv",35128,"1st",7,"diesel","5-Speed","Manual",949000
+"453","Hyundai",2016,"grey","hatchback",36707,"1st",5,"petrol","5-Speed","Manual",453000
+"454","Maruti Suzuki",2016,"grey","muv",99495,"1st",7,"diesel","5-Speed","Manual",898000
+"455","Maruti Suzuki",2011,"red","hatchback",69077,"1st",5,"petrol","5-Speed","Manual",281000
+"456","Hyundai",2017,"grey","hatchback",81673,"1st",5,"petrol","5-Speed","Manual",628000
+"457","Hyundai",2017,"blue","hatchback",22127,"1st",5,"petrol","5-Speed","Manual",713000
+"458","Maruti Suzuki",2011,"brown","hatchback",43763,"1st",5,"petrol","5-Speed","Manual",338000
+"459","Maruti Suzuki",2014,"grey","hatchback",45887,"2nd",5,"petrol","5-Speed","Manual",445000
+"460","Maruti Suzuki",2015,"red","hatchback",68859,"1st",5,"petrol","5-Speed","Automatic",447000
+"461","Hyundai",2017,"white","hatchback",24353,"1st",5,"petrol","5-Speed","Manual",620000
+"462","Ford",2017,"white","sedan",53467,"1st",5,"petrol","5-Speed","Manual",524000
+"463","Hyundai",2017,"silver","sedan",18732,"1st",5,"petrol","6-Speed","Automatic",1047000
+"464","Hyundai",2015,"white","hatchback",24631,"1st",5,"petrol","5-Speed","Manual",444000
+"465","Maruti Suzuki",2016,"white","muv",54971,"1st",7,"diesel","5-Speed","Manual",906000
+"466","Maruti Suzuki",2022,"white","hatchback",12076,"1st",5,"petrol+cng","5-Speed","Manual",686000
+"467","Hyundai",2013,"white","hatchback",35425,"1st",5,"petrol","5-Speed","Manual",372000
+"468","Hyundai",2016,"silver","hatchback",54734,"1st",5,"diesel","6-Speed","Manual",684000
+"469","Maruti Suzuki",2015,"silver","hatchback",39807,"1st",5,"petrol","5-Speed","Manual",352000
+"470","Hyundai",2014,"grey","hatchback",41667,"2nd",5,"petrol","5-Speed","Manual",392000
+"471","Maruti Suzuki",2015,"brown","hatchback",28840,"1st",5,"petrol","5-Speed","Manual",489000
+"472","Hyundai",2014,"blue","sedan",69402,"1st",5,"petrol","4-Speed","Automatic",551000
+"473","Honda",2017,"white","hatchback",53613,"2nd",5,"petrol","7-Speed","Manual",688000
+"474","Kia",2019,"white","suv",27562,"1st",5,"petrol","6-Speed","Manual",1549000
+"475","Honda",2018,"brown","hatchback",14952,"1st",5,"petrol","5-Speed","Manual",710000
+"476","Maruti Suzuki",2011,"white","hatchback",71380,"1st",5,"petrol","5-Speed","Manual",308000
+"477","Mahindra",2015,"white","suv",44987,"1st",7,"diesel","5-Speed","Manual",848000
+"478","Hyundai",2018,"grey","hatchback",34491,"1st",5,"petrol","5-Speed","Automatic",787000
+"479","Hyundai",2016,"white","crossover",88321,"1st",5,"petrol","5-Speed","Automatic",638000
+"480","Renault",2021,"brown","hatchback",11275,"1st",5,"petrol","5-Speed","Automatic",528000
+"481","Hyundai",2013,"silver","sedan",84391,"1st",5,"petrol","4-Speed","Automatic",606000
+"482","Maruti Suzuki",2012,"red","sedan",93004,"1st",5,"petrol","5-Speed","Manual",442000
+"483","Maruti Suzuki",2019,"blue","sedan",23861,"2nd",5,"petrol","5-Speed","Manual",859000
+"484","Hyundai",2016,"grey","hatchback",43877,"1st",5,"petrol","5-Speed","Manual",514000
+"485","Honda",2015,"silver","sedan",76926,"1st",5,"petrol","5-Speed","Manual",663000
+"486","Hyundai",2016,"blue","hatchback",94389,"1st",5,"petrol","5-Speed","Manual",568000
+"487","Maruti Suzuki",2014,"silver","hatchback",64291,"2nd",5,"petrol","5-Speed","Manual",407000
+"488","Hyundai",2017,"white","sedan",25068,"1st",5,"petrol","5-Speed","Manual",824000
+"489","Renault",2020,"white","muv",27215,"1st",7,"petrol","5-Speed","Manual",739000
+"490","Hyundai",2014,"blue","hatchback",62692,"2nd",5,"petrol","5-Speed","Manual",485000
+"491","Hyundai",2020,"grey","sedan",16234,"1st",5,"diesel","6-Speed","Manual",1464000
+"492","Hyundai",2018,"grey","hatchback",39742,"1st",5,"petrol","5-Speed","Automatic",691000
+"493","Maruti Suzuki",2017,"grey","hatchback",27876,"1st",5,"petrol","5-Speed","Manual",512000
+"494","Hyundai",2017,"red","hatchback",51511,"1st",5,"diesel","6-Speed","Manual",788000
+"495","Maruti Suzuki",2012,"black","hatchback",82049,"1st",5,"diesel","5-Speed","Manual",457000
+"496","Maruti Suzuki",2018,"blue","sedan",16257,"1st",5,"petrol","5-Speed","Automatic",755000
+"497","Mahindra",2020,"white","suv",39894,"1st",5,"diesel","6-Speed","Manual",1277000
+"498","Maruti Suzuki",2018,"grey","muv",24630,"1st",5,"petrol","5-Speed","Manual",452000
+"499","Maruti Suzuki",2013,"red","hatchback",74834,"1st",5,"petrol","5-Speed","Manual",301000
+"500","Maruti Suzuki",2011,"black","hatchback",54857,"2nd",5,"petrol","5-Speed","Manual",262000
+"501","Maruti Suzuki",2013,"red","hatchback",59394,"1st",5,"petrol","5-Speed","Manual",308000
+"502","Maruti Suzuki",2020,"white","sedan",8617,"1st",5,"petrol","5-Speed","Manual",1023000
+"503","Ford",2018,"red","crossover",29028,"1st",5,"petrol","5-Speed","Automatic",635000
+"504","Maruti Suzuki",2020,"grey","sedan",4878,"1st",5,"petrol","5-Speed","Manual",1015000
+"505","Maruti Suzuki",2011,"silver","hatchback",82262,"2nd",5,"petrol","5-Speed","Manual",255000
+"506","Maruti Suzuki",2011,"red","hatchback",56696,"1st",5,"petrol","5-Speed","Manual",396000
+"507","Hyundai",2016,"red","suv",40249,"1st",5,"petrol","6-Speed","Manual",1011000
+"508","Hyundai",2015,"red","hatchback",29169,"1st",5,"petrol","5-Speed","Manual",661000
+"509","Maruti Suzuki",2014,"red","hatchback",48449,"1st",5,"petrol","5-Speed","Manual",450000
+"510","Volkswagen",2011,"red","hatchback",55512,"1st",5,"petrol","5-Speed","Manual",435000
+"511","Hyundai",2014,"white","sedan",81335,"2nd",5,"diesel","4-Speed","Manual",772000
+"512","Maruti Suzuki",2015,"silver","hatchback",25388,"1st",5,"petrol","5-Speed","Manual",331000
+"513","Renault",2021,"white","suv",17120,"1st",5,"petrol","5-Speed","Automatic",830000
+"514","Renault",2021,"silver","hatchback",25170,"1st",5,"petrol","5-Speed","Automatic",485000
+"515","Maruti Suzuki",2014,"brown","hatchback",67154,"2nd",5,"petrol","5-Speed","Manual",405000
+"516","Maruti Suzuki",2012,"grey","hatchback",40078,"1st",5,"petrol","5-Speed","Manual",347000
+"517","Maruti Suzuki",2017,"grey","hatchback",10100,"1st",5,"petrol","5-Speed","Manual",369000
+"518","Hyundai",2018,"red","hatchback",23326,"1st",5,"petrol","5-Speed","Automatic",768000
+"519","Honda",2016,"red","hatchback",56762,"1st",5,"petrol","5-Speed","Automatic",578000
+"520","Maruti Suzuki",2021,"white","hatchback",6363,"1st",5,"petrol","5-Speed","Manual",417000
+"521","Maruti Suzuki",2012,"blue","hatchback",49799,"1st",5,"petrol","5-Speed","Manual",349000
+"522","Honda",2016,"white","hatchback",94873,"1st",5,"petrol","5-Speed","Automatic",576000
+"523","Ford",2016,"blue","suv",69414,"1st",5,"petrol","5-Speed","Manual",629000
+"524","Hyundai",2014,"red","hatchback",40450,"1st",5,"petrol","5-Speed","Manual",423000
+"525","Ford",2014,"white","suv",86120,"1st",5,"diesel","5-Speed","Manual",643000
+"526","Hyundai",2018,"red","hatchback",29948,"1st",5,"petrol","5-Speed","Automatic",737000
+"527","Renault",2019,"grey","hatchback",22356,"1st",5,"petrol","5-Speed","Manual",425000
+"528","Hyundai",2011,"grey","hatchback",77554,"1st",5,"petrol","5-Speed","Manual",330000
+"529","Kia",2020,"red","suv",18499,"1st",5,"petrol","6-Speed","Manual",1369000
+"530","Maruti Suzuki",2019,"grey","muv",27462,"1st",5,"petrol","5-Speed","Manual",436000
+"531","Honda",2019,"red","suv",53948,"1st",5,"petrol","5-Speed","Manual",883000
+"532","Kia",2020,"red","suv",20280,"1st",5,"petrol","6-Speed","Manual",1610000
+"533","Hyundai",2011,"white","sedan",75713,"2nd",5,"petrol","5-Speed","Automatic",400000
+"534","Maruti Suzuki",2019,"grey","hatchback",35607,"1st",5,"petrol","5-Speed","Manual",429000
+"535","Maruti Suzuki",2017,"silver","muv",75728,"1st",5,"petrol","5-Speed","Manual",408000
+"536","Hyundai",2015,"white","hatchback",26176,"2nd",5,"petrol","5-Speed","Manual",408000
+"537","Maruti Suzuki",2018,"blue","sedan",19949,"1st",5,"petrol","5-Speed","Automatic",739000
+"538","Renault",2015,"red","suv",59680,"1st",5,"diesel","5-Speed","Manual",754000
+"539","Renault",2015,"red","suv",59680,"1st",5,"diesel","5-Speed","Manual",754000
+"540","Renault",2015,"red","suv",59680,"1st",5,"diesel","5-Speed","Manual",754000
+"541","Renault",2015,"red","suv",59680,"1st",5,"diesel","5-Speed","Manual",754000
+"542","Hyundai",2014,"white","sedan",68363,"1st",5,"petrol","5-Speed","Manual",461000
+"543","Renault",2020,"red","muv",12256,"1st",7,"petrol","5-Speed","Automatic",732000
+"544","Renault",2019,"orange","muv",16554,"1st",7,"petrol","5-Speed","Manual",701000
+"545","Hyundai",2015,"silver","hatchback",38156,"2nd",5,"petrol","5-Speed","Manual",406000
+"546","Maruti Suzuki",2012,"white","hatchback",66016,"1st",5,"petrol","5-Speed","Manual",271000
+"547","Hyundai",2013,"blue","hatchback",24862,"1st",5,"petrol","5-Speed","Manual",293000
+"548","Toyota",2012,"silver","sedan",67312,"2nd",5,"petrol","5-Speed","Manual",368000
+"549","Hyundai",2013,"red","hatchback",68842,"1st",5,"petrol","5-Speed","Manual",447000
+"550","Honda",2018,"brown","suv",48924,"1st",5,"diesel","6-Speed","Manual",912000
+"551","Maruti Suzuki",2011,"grey","sedan",71460,"1st",5,"petrol","5-Speed","Manual",387000
+"552","Renault",2019,"red","hatchback",33661,"1st",5,"petrol","5-Speed","Manual",448000
+"553","Toyota",2020,"white","sedan",33394,"2nd",5,"petrol","5-Speed","Manual",1051000
+"554","Toyota",2020,"white","sedan",33394,"2nd",5,"petrol","5-Speed","Manual",1051000
+"555","Toyota",2020,"white","sedan",33394,"2nd",5,"petrol","5-Speed","Manual",1051000
+"556","Toyota",2020,"white","sedan",33394,"2nd",5,"petrol","5-Speed","Manual",1051000
+"557","Toyota",2019,"brown","sedan",9242,"1st",5,"petrol","6-Speed","Manual",914000
+"558","Toyota",2019,"brown","sedan",9242,"1st",5,"petrol","6-Speed","Manual",914000
+"559","Toyota",2019,"brown","sedan",9242,"1st",5,"petrol","6-Speed","Manual",914000
+"560","Toyota",2019,"brown","sedan",9242,"1st",5,"petrol","6-Speed","Manual",914000
+"561","Hyundai",2014,"white","sedan",88267,"1st",5,"petrol","5-Speed","Automatic",598000
+"562","MG Motors",2020,"silver","suv",13185,"1st",5,"diesel","5-Speed","Manual",1822000
+"563","MG Motors",2020,"silver","suv",13185,"1st",5,"diesel","5-Speed","Manual",1822000
+"564","MG Motors",2020,"silver","suv",13185,"1st",5,"diesel","6-Speed","Manual",1822000
+"565","MG Motors",2020,"silver","suv",13185,"1st",5,"diesel","6-Speed","Manual",1822000
+"566","Kia",2020,"white","suv",25450,"1st",5,"petrol","6-Speed","Manual",1589000
+"567","Toyota",2020,"white","sedan",37283,"2nd",5,"petrol","5-Speed","Manual",1027000
+"568","Toyota",2020,"white","sedan",37283,"2nd",5,"petrol","5-Speed","Manual",1027000
+"569","Toyota",2020,"white","sedan",37283,"2nd",5,"petrol","5-Speed","Manual",1027000
+"570","Toyota",2020,"white","sedan",37283,"2nd",5,"petrol","5-Speed","Manual",1027000
+"571","Maruti Suzuki",2019,"blue","sedan",41804,"1st",5,"petrol","5-Speed","Manual",863000
+"572","Maruti Suzuki",2011,"red","hatchback",72631,"1st",5,"petrol","5-Speed","Manual",315000
+"573","Renault",2019,"grey","hatchback",37865,"1st",5,"petrol","5-Speed","Manual",433000
+"574","Hyundai",2014,"white","hatchback",72514,"1st",5,"petrol","5-Speed","Manual",454000
+"575","Renault",2021,"silver","suv",21304,"1st",5,"petrol","5-Speed","Automatic",807000
+"576","Maruti Suzuki",2021,"red","hatchback",7881,"1st",5,"petrol","5-Speed","Manual",734000
+"577","Mahindra",2016,"black","suv",54656,"1st",7,"diesel","5-Speed","Manual",1054000
+"578","Maruti Suzuki",2014,"grey","hatchback",39400,"1st",5,"petrol","5-Speed","Automatic",449000
+"579","Skoda",2012,"silver","sedan",52326,"1st",5,"petrol","6-Speed","Automatic",538000
+"580","Hyundai",2018,"brown","crossover",24310,"1st",5,"petrol","5-Speed","Automatic",883000
+"581","Hyundai",2017,"silver","hatchback",25966,"1st",5,"petrol","5-Speed","Automatic",544000
+"582","Honda",2011,"black","sedan",90745,"1st",5,"petrol","5-Speed","Automatic",485000
+"583","Hyundai",2019,"blue","suv",21628,"1st",5,"petrol","6-Speed","Manual",995000
+"584","Renault",2020,"blue","muv",43164,"1st",7,"petrol","5-Speed","Automatic",752000
+"585","Maruti Suzuki",2011,"black","hatchback",16061,"2nd",5,"petrol","5-Speed","Manual",266000
+"586","Hyundai",2015,"blue","sedan",65025,"1st",5,"petrol","4-Speed","Automatic",551000
+"587","Hyundai",2014,"black","hatchback",26974,"1st",5,"petrol","5-Speed","Manual",477000
+"588","Maruti Suzuki",2013,"beige","sedan",23778,"1st",5,"petrol","5-Speed","Manual",523000
+"589","Hyundai",2020,"black","sedan",7594,"1st",5,"petrol","5-Speed","Automatic",1422000
+"590","Maruti Suzuki",2020,"blue","hatchback",21075,"1st",5,"petrol","5-Speed","Manual",430000
+"591","Toyota",2020,"brown","sedan",7122,"1st",5,"petrol","6-Speed","Manual",894000
+"592","Toyota",2020,"brown","sedan",7122,"1st",5,"petrol","6-Speed","Manual",894000
+"593","Toyota",2020,"brown","sedan",7122,"1st",5,"petrol","6-Speed","Manual",894000
+"594","Toyota",2020,"brown","sedan",7122,"1st",5,"petrol","6-Speed","Manual",894000
+"595","MG Motors",2019,"red","suv",25219,"1st",5,"petrol","6-Speed","Automatic",1700000
+"596","Mahindra",2015,"blue","suv",94751,"2nd",7,"diesel","5-Speed","Manual",914000
+"597","Maruti Suzuki",2020,"blue","sedan",26246,"1st",5,"petrol","5-Speed","Manual",971000
+"598","Maruti Suzuki",2015,"brown","sedan",93570,"2nd",5,"petrol","4-Speed","Automatic",593000
+"599","Maruti Suzuki",2014,"white","sedan",70563,"2nd",5,"petrol","4-Speed","Automatic",499000
+"600","Ford",2020,"golden","crossover",14965,"1st",5,"petrol","5-Speed","Automatic",728000
+"601","Renault",2015,"bronze","hatchback",33390,"1st",5,"petrol","5-Speed","Manual",287000
+"602","Maruti Suzuki",2011,"brown","hatchback",53349,"1st",5,"petrol","5-Speed","Manual",373000
+"603","Maruti Suzuki",2014,"silver","hatchback",87635,"1st",5,"petrol","5-Speed","Automatic",404000
+"604","Maruti Suzuki",2011,"grey","hatchback",77919,"1st",5,"petrol","5-Speed","Manual",318000
+"605","Ford",2017,"white","suv",84118,"1st",5,"petrol","6-Speed","Automatic",727000
+"606","Hyundai",2018,"white","hatchback",22735,"1st",5,"petrol","5-Speed","Manual",447000
+"607","Hyundai",2017,"black","suv",50749,"1st",5,"diesel","6-Speed","Manual",1150000
+"608","Honda",2015,"red","muv",45754,"2nd",7,"petrol","5-Speed","Manual",605000
+"609","Mahindra",2015,"white","suv",72696,"1st",7,"diesel","6-Speed","Automatic",1117000
+"610","Hyundai",2015,"orange","hatchback",99001,"1st",5,"petrol","4-Speed","Automatic",506000
+"611","Hyundai",2017,"blue","hatchback",85933,"1st",5,"petrol","5-Speed","Manual",610000
+"612","Datsun",2014,"red","hatchback",55890,"2nd",5,"petrol","5-Speed","Manual",290000
+"613","Volkswagen",2013,"black","sedan",88105,"1st",5,"petrol","6-Speed","Automatic",542000
+"614","MG Motors",2019,"black","suv",20761,"1st",5,"petrol","6-Speed","Automatic",1720000
+"615","Maruti Suzuki",2016,"white","hatchback",56280,"1st",5,"petrol","5-Speed","Manual",523000
+"616","Honda",2017,"grey","suv",37043,"1st",5,"petrol","5-Speed","Manual",745000
+"617","Mahindra",2015,"white","suv",79576,"1st",7,"diesel","6-Speed","Automatic",1052000
+"618","Hyundai",2017,"white","sedan",29759,"1st",5,"petrol","5-Speed","Manual",854000
+"619","Ford",2017,"red","suv",28559,"1st",5,"petrol","5-Speed","Manual",788000
+"620","Maruti Suzuki",2013,"white","hatchback",18214,"1st",5,"petrol","5-Speed","Manual",460000
+"621","Hyundai",2015,"white","hatchback",92256,"1st",5,"diesel","6-Speed","Manual",689000
+"622","Honda",2015,"silver","muv",42933,"2nd",7,"petrol","5-Speed","Manual",638000
+"623","Hyundai",2020,"blue","sedan",18146,"1st",5,"petrol","5-Speed","Automatic",1458000
+"624","Hyundai",2016,"red","hatchback",29602,"1st",5,"diesel","6-Speed","Manual",814000
+"625","MG Motors",2020,"silver","suv",26994,"1st",5,"petrol","6-Speed","Automatic",1774000
+"626","Maruti Suzuki",2013,"white","hatchback",47642,"2nd",5,"petrol","5-Speed","Manual",455000
+"627","Maruti Suzuki",2012,"red","hatchback",67041,"1st",5,"petrol","5-Speed","Manual",314000
+"628","MG Motors",2020,"red","suv",30234,"1st",5,"diesel","5-Speed","Manual",2019000
+"629","MG Motors",2020,"red","suv",30234,"1st",5,"diesel","5-Speed","Manual",2019000
+"630","MG Motors",2020,"red","suv",30234,"1st",5,"diesel","6-Speed","Manual",2019000
+"631","MG Motors",2020,"red","suv",30234,"1st",5,"diesel","6-Speed","Manual",2019000
+"632","Hyundai",2017,"white","hatchback",33545,"1st",5,"diesel","6-Speed","Manual",876000
+"633","Toyota",2012,"silver","hatchback",42200,"2nd",5,"petrol","5-Speed","Automatic",423000
+"634","Toyota",2012,"silver","hatchback",42200,"2nd",5,"petrol","5-Speed","Automatic",423000
+"635","Toyota",2012,"silver","hatchback",42200,"2nd",5,"petrol","5-Speed","Manual",423000
+"636","Toyota",2012,"silver","hatchback",42200,"2nd",5,"petrol","5-Speed","Manual",423000
+"637","Hyundai",2017,"white","sedan",48583,"1st",5,"petrol","6-Speed","Automatic",1100000
+"638","Hyundai",2014,"grey","hatchback",98109,"1st",5,"petrol","5-Speed","Manual",411000
+"639","Hyundai",2011,"red","hatchback",70581,"2nd",5,"petrol","5-Speed","Manual",340000
+"640","Maruti Suzuki",2018,"red","hatchback",64194,"1st",5,"petrol","5-Speed","Manual",405000
+"641","Renault",2015,"white","suv",87057,"1st",5,"diesel","5-Speed","Manual",738000
+"642","Hyundai",2012,"white","hatchback",23227,"1st",5,"petrol","5-Speed","Manual",365000
+"643","MG Motors",2019,"black","suv",24564,"1st",5,"petrol","6-Speed","Automatic",1700000
+"644","Maruti Suzuki",2012,"red","hatchback",39719,"1st",5,"petrol","5-Speed","Manual",422000
+"645","MG Motors",2020,"white","suv",51686,"1st",5,"diesel","5-Speed","Manual",1958000
+"646","MG Motors",2020,"white","suv",51686,"1st",5,"diesel","5-Speed","Manual",1958000
+"647","MG Motors",2020,"white","suv",51686,"1st",5,"diesel","6-Speed","Manual",1958000
+"648","MG Motors",2020,"white","suv",51686,"1st",5,"diesel","6-Speed","Manual",1958000
+"649","Renault",2018,"bronze","suv",57995,"1st",5,"diesel","6-Speed","Manual",1019000
+"650","MG Motors",2020,"red","suv",32604,"1st",5,"diesel","5-Speed","Manual",1978000
+"651","MG Motors",2020,"red","suv",32604,"1st",5,"diesel","5-Speed","Manual",1978000
+"652","MG Motors",2020,"red","suv",32604,"1st",5,"diesel","6-Speed","Manual",1978000
+"653","MG Motors",2020,"red","suv",32604,"1st",5,"diesel","6-Speed","Manual",1978000
+"654","Maruti Suzuki",2012,"silver","hatchback",46627,"1st",5,"petrol","5-Speed","Manual",412000
+"655","Honda",2017,"grey","sedan",45868,"1st",5,"petrol","5-Speed","Manual",878000
+"656","Maruti Suzuki",2013,"brown","hatchback",68876,"1st",5,"petrol","5-Speed","Manual",429000
+"657","Ford",2013,"white","suv",47068,"1st",5,"petrol","6-Speed","Automatic",708000
+"658","Ford",2014,"white","suv",48060,"1st",5,"petrol","5-Speed","Manual",678000
+"659","Maruti Suzuki",2016,"orange","hatchback",80307,"2nd",5,"petrol","5-Speed","Manual",326000
+"660","Maruti Suzuki",2013,"red","hatchback",29217,"1st",5,"petrol","5-Speed","Manual",336000
+"661","MG Motors",2019,"black","suv",28787,"1st",5,"petrol","6-Speed","Automatic",1589000
+"662","Maruti Suzuki",2014,"silver","muv",57964,"2nd",8,"petrol","4-Speed","Manual",335000
+"663","Maruti Suzuki",2011,"grey","hatchback",54318,"2nd",5,"petrol","5-Speed","Manual",368000
+"664","Hyundai",2014,"grey","hatchback",55319,"1st",5,"petrol","5-Speed","Manual",439000
+"665","Ford",2018,"silver","suv",39105,"1st",5,"petrol","6-Speed","Automatic",1066000
+"666","MG Motors",2021,"white","suv",49279,"1st",5,"diesel","5-Speed","Manual",1984000
+"667","MG Motors",2021,"white","suv",49279,"1st",5,"diesel","5-Speed","Manual",1984000
+"668","MG Motors",2021,"white","suv",49279,"1st",5,"diesel","6-Speed","Manual",1984000
+"669","MG Motors",2021,"white","suv",49279,"1st",5,"diesel","6-Speed","Manual",1984000
+"670","Hyundai",2011,"maroon","hatchback",57259,"2nd",5,"petrol","5-Speed","Manual",328000
+"671","Mahindra",2015,"silver","suv",66820,"2nd",7,"diesel","6-Speed","Manual",1055000
+"672","Ford",2018,"blue","sedan",21089,"1st",5,"petrol","5-Speed","Manual",555000
+"673","Maruti Suzuki",2014,"blue","hatchback",7779,"1st",5,"petrol","5-Speed","Automatic",434000
+"674","Hyundai",2011,"red","hatchback",48267,"2nd",5,"petrol","4-Speed","Automatic",348000
+"675","Maruti Suzuki",2014,"grey","hatchback",48079,"1st",5,"diesel","5-Speed","Manual",556000
+"676","Hyundai",2014,"orange","hatchback",42290,"1st",5,"petrol","5-Speed","Manual",447000
+"677","Volkswagen",2014,"blue","hatchback",54723,"1st",5,"diesel","5-Speed","Automatic",569000
+"678","Renault",2019,"white","hatchback",23160,"1st",5,"petrol","5-Speed","Automatic",428000
+"679","Hyundai",2012,"white","hatchback",41191,"1st",5,"petrol","5-Speed","Manual",455000
+"680","Renault",2018,"grey","suv",18005,"1st",5,"diesel","6-Speed","Manual",1164000
+"681","Honda",2017,"white","sedan",34480,"1st",5,"petrol","5-Speed","Automatic",1178000
+"682","Honda",2019,"brown","sedan",20604,"1st",5,"petrol","5-Speed","Manual",765000
+"683","Renault",2021,"grey","suv",9015,"1st",5,"petrol","5-Speed","Automatic",885000
+"684","Hyundai",2016,"red","hatchback",56348,"1st",5,"petrol","5-Speed","Manual",658000
+"685","Honda",2018,"brown","sedan",16006,"1st",5,"petrol","5-Speed","Automatic",1240000
+"686","Hyundai",2018,"white","hatchback",27617,"1st",5,"petrol","5-Speed","Automatic",752000
+"687","Maruti Suzuki",2019,"grey","hatchback",17246,"1st",5,"petrol","5-Speed","Manual",869000
+"688","Maruti Suzuki",2019,"grey","hatchback",17246,"1st",5,"petrol","5-Speed","Manual",869000
+"689","Maruti Suzuki",2019,"grey","hatchback",17246,"1st",5,"petrol","5-Speed","Manual",869000
+"690","Maruti Suzuki",2019,"grey","hatchback",17246,"1st",5,"petrol","5-Speed","Manual",869000
+"691","Ford",2017,"brown","suv",73428,"1st",5,"petrol","6-Speed","Automatic",833000
+"692","Hyundai",2018,"brown","sedan",25198,"1st",5,"petrol","6-Speed","Automatic",1171000
+"693","Honda",2020,"white","sedan",7981,"1st",5,"petrol","5-Speed","Manual",840000
+"694","Hyundai",2016,"white","crossover",65232,"2nd",5,"diesel","6-Speed","Automatic",706000
+"695","Chevrolet",2013,"grey","hatchback",52501,"1st",5,"petrol","5-Speed","Manual",273000
+"696","Hyundai",2015,"grey","hatchback",91933,"1st",5,"petrol","5-Speed","Manual",603000
+"697","Hyundai",2017,"silver","hatchback",39437,"1st",5,"petrol","5-Speed","Automatic",521000
+"698","Maruti Suzuki",2018,"white","sedan",50664,"1st",5,"diesel","5-Speed","Automatic",764000
+"699","Mahindra",2015,"white","suv",60985,"1st",7,"diesel","6-Speed","Manual",1266000
+"700","Hyundai",2020,"blue","suv",37005,"1st",5,"petrol","6-Speed","Manual",1030000
+"701","Maruti Suzuki",2015,"white","hatchback",23217,"1st",5,"petrol","5-Speed","Automatic",511000
+"702","Maruti Suzuki",2017,"grey","hatchback",46289,"2nd",5,"petrol","5-Speed","Manual",389000
+"703","Renault",2018,"red","suv",23783,"1st",5,"diesel","6-Speed","Manual",1137000
+"704","Honda",2014,"brown","sedan",55410,"2nd",5,"petrol","5-Speed","Manual",563000
+"705","Hyundai",2014,"blue","sedan",38147,"1st",5,"petrol","5-Speed","Manual",465000
+"706","Kia",2019,"white","suv",23801,"1st",5,"petrol","7-Speed","Manual",1708000
+"707","Maruti Suzuki",2018,"blue","hatchback",16123,"1st",5,"petrol","5-Speed","Manual",751000
+"708","Maruti Suzuki",2013,"purple","hatchback",22801,"1st",5,"petrol","5-Speed","Automatic",306000
+"709","Maruti Suzuki",2013,"purple","hatchback",22801,"1st",5,"petrol","5-Speed","Automatic",306000
+"710","Maruti Suzuki",2013,"purple","hatchback",22801,"1st",5,"petrol","5-Speed","Manual",306000
+"711","Maruti Suzuki",2013,"purple","hatchback",22801,"1st",5,"petrol","5-Speed","Manual",306000
+"712","Maruti Suzuki",2018,"blue","hatchback",16373,"1st",5,"petrol","5-Speed","Manual",771000
+"713","Maruti Suzuki",2016,"red","sedan",31207,"1st",5,"petrol","4-Speed","Automatic",823000
+"714","Ford",2019,"white","suv",60197,"1st",5,"petrol","6-Speed","Automatic",980000
+"715","Honda",2013,"red","sedan",73382,"1st",5,"petrol","5-Speed","Manual",571000
+"716","Maruti Suzuki",2016,"blue","hatchback",62811,"1st",5,"petrol","5-Speed","Manual",614000
+"717","Hyundai",2018,"silver","crossover",29086,"1st",5,"petrol","5-Speed","Automatic",843000
+"718","Renault",2018,"red","hatchback",12582,"1st",5,"petrol","5-Speed","Manual",410000
+"719","Hyundai",2017,"white","hatchback",40158,"1st",5,"petrol","5-Speed","Manual",427000
+"720","Hyundai",2013,"bronze","hatchback",50665,"1st",5,"petrol","5-Speed","Manual",484000
+"721","Hyundai",2013,"white","sedan",42283,"1st",5,"petrol","5-Speed","Automatic",622000
+"722","Maruti Suzuki",2017,"silver","hatchback",79767,"1st",5,"petrol","5-Speed","Automatic",423000
+"723","Maruti Suzuki",2018,"blue","sedan",48524,"1st",5,"petrol","5-Speed","Manual",812000
+"724","Maruti Suzuki",2021,"silver","hatchback",4704,"1st",5,"petrol","5-Speed","Manual",549000
+"725","Maruti Suzuki",2016,"red","hatchback",44272,"1st",5,"petrol","5-Speed","Automatic",525000
+"726","Hyundai",2018,"grey","sedan",14197,"1st",5,"petrol","5-Speed","Manual",709000
+"727","Hyundai",2017,"blue","hatchback",57359,"1st",5,"petrol","5-Speed","Manual",744000
+"728","Honda",2019,"brown","sedan",13791,"1st",5,"petrol","5-Speed","Manual",982000
+"729","Maruti Suzuki",2016,"yellow","suv",76060,"1st",5,"diesel","5-Speed","Automatic",881000
+"730","Tata",2021,"white","hatchback",5389,"1st",5,"petrol","5-Speed","Manual",834000
+"731","Mahindra",2015,"black","suv",64338,"1st",7,"diesel","5-Speed","Manual",916000
+"732","Honda",2019,"brown","sedan",17691,"1st",5,"petrol","5-Speed","Manual",880000
+"733","Tata",2022,"white","suv",19734,"1st",5,"petrol","5-Speed","Automatic",871000
+"734","Hyundai",2017,"silver","hatchback",16150,"1st",5,"petrol","5-Speed","Automatic",594000
+"735","Hyundai",2021,"silver","sedan",21557,"1st",5,"petrol","6-Speed","Automatic",1366000
+"736","Toyota",2020,"white","hatchback",30130,"1st",5,"petrol","5-Speed","Manual",785000
+"737","Toyota",2020,"white","hatchback",30130,"1st",5,"petrol","5-Speed","Manual",785000
+"738","Toyota",2020,"white","hatchback",30130,"1st",5,"petrol","5-Speed","Manual",785000
+"739","Toyota",2020,"white","hatchback",30130,"1st",5,"petrol","5-Speed","Manual",785000
+"740","Maruti Suzuki",2019,"blue","hatchback",24618,"1st",5,"petrol","5-Speed","Manual",718000
+"741","Maruti Suzuki",2020,"blue","hatchback",4337,"1st",5,"petrol","5-Speed","Manual",749000
+"742","Maruti Suzuki",2015,"red","hatchback",74114,"2nd",5,"petrol","5-Speed","Manual",320000
+"743","Hyundai",2016,"white","suv",52631,"3rd",5,"petrol","6-Speed","Manual",860000
+"744","Maruti Suzuki",2021,"blue","sedan",5744,"1st",5,"petrol","5-Speed","Manual",799000
+"745","Maruti Suzuki",2019,"silver","hatchback",18988,"1st",5,"petrol","5-Speed","Manual",625000
+"746","Maruti Suzuki",2019,"grey","hatchback",18066,"1st",5,"petrol","5-Speed","Manual",411000
+"747","Maruti Suzuki",2014,"silver","hatchback",74660,"2nd",5,"diesel","5-Speed","Manual",540000
+"748","Maruti Suzuki",2019,"white","hatchback",32801,"1st",5,"petrol","5-Speed","Manual",822000
+"749","Maruti Suzuki",2018,"white","sedan",46517,"1st",5,"petrol","5-Speed","Automatic",784000
+"750","Hyundai",2019,"blue","suv",44781,"1st",5,"petrol","7-Speed","Manual",1165000
+"751","Maruti Suzuki",2019,"blue","muv",27409,"1st",8,"petrol","4-Speed","Manual",396000
+"752","Hyundai",2019,"blue","hatchback",23505,"1st",5,"petrol","5-Speed","Automatic",770000
+"753","Maruti Suzuki",2021,"red","hatchback",34872,"1st",5,"petrol","5-Speed","Manual",515000
+"754","Maruti Suzuki",2020,"red","hatchback",7401,"1st",5,"petrol","5-Speed","Manual",426000
+"755","Hyundai",2014,"orange","hatchback",51531,"1st",5,"petrol","4-Speed","Automatic",541000
+"756","Hyundai",2017,"white","hatchback",40187,"1st",5,"petrol","5-Speed","Manual",390000
+"757","Renault",2017,"bronze","suv",77127,"2nd",5,"diesel","5-Speed","Manual",810000
+"758","Ford",2017,"grey","suv",31080,"1st",5,"diesel","5-Speed","Manual",932000
+"759","Maruti Suzuki",2019,"blue","hatchback",28967,"1st",5,"petrol","5-Speed","Manual",792000
+"760","Hyundai",2017,"white","suv",69302,"1st",5,"petrol","6-Speed","Manual",1238000
+"761","Hyundai",2020,"red","hatchback",14502,"1st",5,"petrol","5-Speed","Automatic",769000
+"762","Hyundai",2014,"blue","hatchback",38213,"1st",5,"petrol","5-Speed","Manual",635000
+"763","Maruti Suzuki",2016,"white","hatchback",54635,"1st",5,"petrol","5-Speed","Automatic",481000
+"764","Honda",2018,"brown","sedan",32939,"1st",5,"petrol","5-Speed","Automatic",1185000
+"765","Skoda",2012,"beige","sedan",99495,"1st",5,"diesel","5-Speed","Manual",466000
+"766","Renault",2019,"red","hatchback",23342,"1st",5,"petrol","5-Speed","Manual",489000
+"767","Hyundai",2020,"black","sedan",32464,"1st",5,"petrol","7-Speed","Automatic",1454000
+"768","Honda",2019,"red","suv",30457,"1st",5,"diesel","6-Speed","Manual",1032000
+"769","Toyota",2021,"red","hatchback",6738,"1st",5,"petrol","5-Speed","Manual",847000
+"770","Toyota",2021,"red","hatchback",6738,"1st",5,"petrol","5-Speed","Manual",847000
+"771","Toyota",2021,"red","hatchback",6738,"1st",5,"petrol","5-Speed","Manual",847000
+"772","Toyota",2021,"red","hatchback",6738,"1st",5,"petrol","5-Speed","Manual",847000
+"773","Honda",2020,"brown","sedan",18402,"1st",5,"petrol","6-Speed","Manual",1411000
+"774","Ford",2013,"silver","suv",95381,"1st",5,"diesel","5-Speed","Manual",559000
+"775","Honda",2016,"orange","hatchback",22856,"1st",5,"petrol","5-Speed","Manual",625000
+"776","Maruti Suzuki",2019,"white","sedan",15251,"2nd",5,"petrol","4-Speed","Automatic",999000
+"777","Hyundai",2017,"grey","hatchback",57394,"1st",5,"petrol","5-Speed","Manual",677000
+"778","Maruti Suzuki",2020,"grey","muv",26856,"1st",5,"petrol","5-Speed","Manual",495000
+"779","Hyundai",2019,"grey","sedan",9421,"1st",5,"petrol","5-Speed","Manual",761000
+"780","Maruti Suzuki",2016,"blue","hatchback",56204,"2nd",5,"petrol","5-Speed","Manual",647000
+"781","Honda",2017,"grey","sedan",16936,"1st",5,"petrol","5-Speed","Manual",877000
+"782","Maruti Suzuki",2021,"silver","sedan",15443,"1st",5,"petrol","5-Speed","Manual",734000
+"783","Hyundai",2016,"grey","hatchback",49826,"1st",5,"petrol","5-Speed","Manual",661000
+"784","Maruti Suzuki",2020,"grey","hatchback",7140,"1st",5,"petrol","5-Speed","Manual",446000
+"785","Maruti Suzuki",2019,"blue","hatchback",26533,"1st",5,"petrol","5-Speed","Manual",814000
+"786","Maruti Suzuki",2019,"white","hatchback",15928,"1st",5,"petrol","5-Speed","Manual",391000
+"787","Hyundai",2021,"grey","hatchback",14133,"1st",5,"petrol","6-Speed","Automatic",1034000
+"788","Maruti Suzuki",2015,"blue","hatchback",29978,"2nd",5,"petrol","5-Speed","Manual",350000
+"789","Maruti Suzuki",2018,"grey","sedan",32454,"1st",5,"petrol","5-Speed","Automatic",763000
+"790","Maruti Suzuki",2012,"beige","sedan",70628,"1st",5,"diesel","5-Speed","Manual",487000
+"791","Ford",2020,"grey","hatchback",11762,"1st",5,"diesel","5-Speed","Manual",787000
+"792","Ford",2020,"grey","hatchback",11762,"1st",5,"diesel","5-Speed","Manual",787000
+"793","Ford",2020,"grey","hatchback",11762,"1st",5,"diesel","5-Speed","Manual",787000
+"794","Ford",2020,"grey","hatchback",11762,"1st",5,"diesel","5-Speed","Manual",787000
+"795","Hyundai",2017,"white","hatchback",18411,"1st",5,"petrol","5-Speed","Automatic",526000
+"796","Hyundai",2018,"grey","hatchback",42101,"1st",5,"petrol","5-Speed","Automatic",571000
+"797","Toyota",2018,"brown","sedan",73664,"1st",5,"petrol","5-Speed","Manual",1011000
+"798","Toyota",2018,"brown","sedan",73664,"1st",5,"petrol","5-Speed","Manual",1011000
+"799","Toyota",2018,"brown","sedan",73664,"1st",5,"petrol","5-Speed","Manual",1011000
+"800","Toyota",2018,"brown","sedan",73664,"1st",5,"petrol","5-Speed","Manual",1011000
+"801","Maruti Suzuki",2016,"brown","sedan",69045,"1st",5,"petrol","5-Speed","Manual",699000
+"802","Hyundai",2016,"white","hatchback",25382,"1st",5,"petrol","5-Speed","Manual",726000
+"803","Hyundai",2015,"red","sedan",68611,"1st",5,"petrol","5-Speed","Manual",517000
+"804","Hyundai",2016,"white","hatchback",30045,"2nd",5,"petrol","4-Speed","Automatic",573000
+"805","Hyundai",2018,"red","hatchback",11225,"1st",5,"petrol","5-Speed","Manual",454000
+"806","Renault",2015,"silver","muv",73760,"1st",8,"diesel","6-Speed","Manual",625000
+"807","Ford",2019,"blue","suv",67732,"1st",5,"diesel","5-Speed","Automatic",955000
+"808","Maruti Suzuki",2011,"red","hatchback",67463,"2nd",5,"petrol","5-Speed","Manual",274000
+"809","Renault",2021,"grey","suv",30322,"1st",5,"petrol","5-Speed","Automatic",926000
+"810","Maruti Suzuki",2019,"white","hatchback",15878,"2nd",5,"petrol","5-Speed","Manual",465000
+"811","Volkswagen",2016,"silver","hatchback",44885,"1st",5,"petrol","5-Speed","Manual",663000
+"812","Maruti Suzuki",2019,"blue","hatchback",31171,"1st",5,"petrol","5-Speed","Manual",812000
+"813","Maruti Suzuki",2019,"blue","hatchback",31171,"1st",5,"petrol","5-Speed","Manual",812000
+"814","Maruti Suzuki",2019,"blue","hatchback",31171,"1st",5,"petrol","5-Speed","Manual",812000
+"815","Maruti Suzuki",2019,"blue","hatchback",31171,"1st",5,"petrol","5-Speed","Manual",812000
+"816","Honda",2016,"silver","sedan",43992,"1st",5,"petrol","5-Speed","Manual",896000
+"817","Maruti Suzuki",2020,"silver","sedan",17050,"1st",5,"petrol","5-Speed","Manual",978000
+"818","Maruti Suzuki",2020,"grey","hatchback",6470,"1st",5,"petrol","5-Speed","Manual",541000
+"819","Nissan",2022,"brown","suv",3832,"1st",5,"petrol","5-Speed","Automatic",1106000
+"820","Maruti Suzuki",2015,"blue","hatchback",47060,"1st",5,"petrol","5-Speed","Automatic",464000
+"821","Hyundai",2020,"blue","suv",37489,"1st",5,"petrol","6-Speed","Manual",994000
+"822","Hyundai",2020,"grey","hatchback",30169,"1st",5,"petrol","5-Speed","Automatic",809000
+"823","Honda",2015,"white","sedan",53600,"2nd",5,"petrol","5-Speed","Manual",544000
+"824","Maruti Suzuki",2013,"silver","sedan",61796,"1st",5,"diesel","5-Speed","Manual",538000
+"825","Volkswagen",2016,"brown","sedan",26094,"1st",5,"petrol","5-Speed","Automatic",607000
+"826","Maruti Suzuki",2016,"brown","sedan",99144,"1st",5,"petrol","5-Speed","Automatic",754000
+"827","Hyundai",2017,"white","sedan",49335,"2nd",5,"petrol","5-Speed","Manual",618000
+"828","Maruti Suzuki",2019,"blue","hatchback",13197,"1st",5,"petrol","5-Speed","Manual",814000
+"829","Toyota",2011,"silver","hatchback",50857,"1st",5,"petrol","5-Speed","Manual",406000
+"830","Hyundai",2019,"blue","suv",12156,"1st",5,"petrol","6-Speed","Manual",997000
+"831","Hyundai",2017,"white","hatchback",39525,"2nd",5,"petrol","5-Speed","Manual",523000
+"832","Maruti Suzuki",2019,"red","hatchback",27951,"1st",5,"petrol","5-Speed","Manual",425000
+"833","Hyundai",2021,"silver","hatchback",25975,"1st",5,"petrol","6-Speed","Automatic",1026000
+"834","Hyundai",2011,"grey","hatchback",89303,"1st",5,"petrol","5-Speed","Manual",353000
+"835","Maruti Suzuki",2015,"silver","hatchback",24655,"1st",5,"petrol","5-Speed","Automatic",490000
+"836","Renault",2017,"grey","suv",54260,"2nd",5,"diesel","5-Speed","Manual",862000
+"837","Maruti Suzuki",2017,"grey","muv",39484,"1st",5,"petrol","5-Speed","Manual",425000
+"838","Hyundai",2015,"grey","hatchback",32754,"1st",5,"petrol","5-Speed","Manual",548000
+"839","Hyundai",2014,"orange","hatchback",66963,"1st",5,"petrol","5-Speed","Manual",465000
+"840","Hyundai",2018,"beige","hatchback",33581,"1st",5,"petrol","5-Speed","Manual",505000
+"841","Mahindra",2017,"white","suv",41060,"1st",7,"diesel","5-Speed","Manual",1166000
+"842","Hyundai",2020,"blue","suv",49130,"1st",5,"petrol","6-Speed","Manual",1099000
+"843","Maruti Suzuki",2021,"grey","hatchback",4773,"1st",5,"petrol","5-Speed","Manual",459000
+"844","Maruti Suzuki",2021,"silver","muv",14560,"1st",5,"petrol","5-Speed","Manual",506000
+"845","Renault",2013,"silver","suv",88547,"1st",5,"diesel","5-Speed","Manual",618000
+"846","Volkswagen",2016,"brown","sedan",46922,"2nd",5,"petrol","5-Speed","Automatic",544000
+"847","Hyundai",2012,"black","hatchback",64378,"1st",5,"petrol","5-Speed","Manual",334000
+"848","Maruti Suzuki",2018,"blue","hatchback",41244,"1st",5,"petrol","5-Speed","Manual",764000
+"849","Maruti Suzuki",2011,"black","hatchback",60256,"2nd",5,"petrol","5-Speed","Manual",245000
+"850","Ford",2011,"green","hatchback",84494,"2nd",5,"petrol","5-Speed","Manual",290000
+"851","Maruti Suzuki",2018,"blue","muv",58025,"1st",7,"diesel","5-Speed","Manual",1091000
+"852","Hyundai",2015,"white","sedan",89133,"1st",5,"petrol","5-Speed","Manual",470000
+"853","Renault",2019,"white","hatchback",60983,"1st",5,"petrol","5-Speed","Manual",430000
+"854","Honda",2014,"silver","sedan",61881,"2nd",5,"petrol","5-Speed","Manual",430000
+"855","Renault",2021,"white","muv",32340,"1st",7,"petrol","5-Speed","Manual",749000
+"856","Hyundai",2017,"silver","hatchback",37237,"2nd",5,"petrol","5-Speed","Automatic",529000
+"857","Maruti Suzuki",2017,"grey","hatchback",64528,"1st",5,"diesel","5-Speed","Manual",722000
+"858","Datsun",2015,"white","hatchback",73892,"1st",5,"petrol","5-Speed","Manual",279000
+"859","Maruti Suzuki",2015,"grey","hatchback",68796,"1st",5,"petrol","5-Speed","Manual",620000
+"860","Mahindra",2015,"silver","suv",40438,"1st",7,"diesel","6-Speed","Manual",1130000
+"861","Hyundai",2020,"red","suv",12699,"1st",5,"petrol","6-Speed","Manual",1043000
+"862","Maruti Suzuki",2018,"grey","hatchback",23745,"1st",5,"petrol","5-Speed","Manual",401000
+"863","Maruti Suzuki",2016,"silver","muv",38717,"1st",5,"petrol","4-Speed","Manual",335000
+"864","Honda",2019,"red","suv",73732,"1st",5,"diesel","6-Speed","Manual",915000
+"865","Renault",2021,"red","hatchback",16742,"1st",5,"petrol","5-Speed","Automatic",528000
+"866","Honda",2017,"brown","sedan",65581,"3rd",5,"petrol","5-Speed","Automatic",785000
+"867","Hyundai",2017,"red","hatchback",39427,"1st",5,"petrol","5-Speed","Manual",700000
+"868","Maruti Suzuki",2014,"white","hatchback",52004,"1st",5,"petrol","5-Speed","Automatic",439000
+"869","Maruti Suzuki",2013,"red","hatchback",40545,"1st",5,"petrol","5-Speed","Manual",319000
+"870","Maruti Suzuki",2021,"grey","hatchback",15836,"1st",5,"petrol","5-Speed","Manual",520000
+"871","Maruti Suzuki",2020,"grey","muv",11212,"1st",5,"petrol","5-Speed","Manual",499000
+"872","Hyundai",2015,"white","hatchback",52501,"1st",5,"petrol","5-Speed","Manual",662000
+"873","Renault",2021,"red","suv",6052,"1st",5,"petrol","5-Speed","Automatic",936000
+"874","Maruti Suzuki",2018,"blue","sedan",20326,"1st",5,"petrol","5-Speed","Automatic",737000
+"875","Toyota",2011,"red","hatchback",50009,"1st",5,"petrol","5-Speed","Automatic",439000
+"876","Toyota",2011,"red","hatchback",50009,"1st",5,"petrol","5-Speed","Automatic",439000
+"877","Toyota",2011,"red","hatchback",50009,"1st",5,"petrol","5-Speed","Manual",439000
+"878","Toyota",2011,"red","hatchback",50009,"1st",5,"petrol","5-Speed","Manual",439000
+"879","Maruti Suzuki",2021,"grey","hatchback",15113,"1st",5,"petrol","5-Speed","Manual",543000
+"880","Hyundai",2014,"white","sedan",50071,"1st",5,"petrol","5-Speed","Automatic",689000
+"881","Maruti Suzuki",2020,"white","muv",9832,"1st",5,"petrol","5-Speed","Manual",495000
+"882","Ford",2018,"grey","crossover",43273,"1st",5,"petrol","5-Speed","Automatic",617000
+"883","Maruti Suzuki",2014,"silver","hatchback",44193,"1st",5,"petrol","5-Speed","Manual",469000
+"884","Hyundai",2017,"red","sedan",36208,"1st",5,"petrol","4-Speed","Manual",669000
+"885","Hyundai",2017,"red","sedan",36208,"1st",5,"petrol","4-Speed","Manual",669000
+"886","Hyundai",2017,"red","sedan",36208,"1st",5,"petrol","4-Speed","Manual",669000
+"887","Hyundai",2017,"red","sedan",36208,"1st",5,"petrol","4-Speed","Manual",669000
+"888","Hyundai",2017,"brown","crossover",43613,"1st",5,"petrol","5-Speed","Automatic",752000
+"889","Honda",2018,"brown","sedan",46006,"1st",5,"petrol","5-Speed","Automatic",1132000
+"890","Hyundai",2018,"brown","crossover",35015,"2nd",5,"petrol","5-Speed","Automatic",760000
+"891","Hyundai",2017,"white","hatchback",55670,"1st",5,"petrol","5-Speed","Manual",367000
+"892","Hyundai",2018,"silver","hatchback",38961,"1st",5,"petrol","5-Speed","Automatic",568000
+"893","Hyundai",2020,"blue","sedan",41843,"1st",5,"petrol","5-Speed","Automatic",1448000
+"894","Hyundai",2018,"white","hatchback",13846,"2nd",5,"petrol","5-Speed","Automatic",579000
+"895","Maruti Suzuki",2019,"orange","hatchback",16712,"2nd",5,"petrol","5-Speed","Manual",475000
+"896","Ford",2015,"red","suv",92474,"2nd",5,"diesel","5-Speed","Manual",635000
+"897","Maruti Suzuki",2014,"black","sedan",44815,"1st",5,"petrol","5-Speed","Manual",647000
+"898","Honda",2020,"white","sedan",13209,"1st",5,"petrol","6-Speed","Manual",1314000
+"899","Hyundai",2013,"red","hatchback",48721,"1st",5,"petrol","5-Speed","Manual",326000
+"900","Mahindra",2015,"blue","suv",41651,"1st",7,"diesel","5-Speed","Manual",1127000
+"901","Hyundai",2019,"blue","hatchback",8842,"1st",5,"petrol","5-Speed","Manual",565000
+"902","Volkswagen",2016,"blue","sedan",64313,"1st",5,"petrol","5-Speed","Automatic",553000
+"903","Maruti Suzuki",2016,"brown","suv",52220,"1st",5,"diesel","5-Speed","Automatic",831000
+"904","Ford",2019,"red","sedan",10370,"1st",5,"petrol","5-Speed","Manual",776000
+"905","Honda",2016,"brown","sedan",60656,"1st",5,"petrol","5-Speed","Manual",533000
+"906","Maruti Suzuki",2020,"red","hatchback",12433,"1st",5,"petrol","5-Speed","Manual",443000
+"907","Volkswagen",2013,"grey","hatchback",53735,"1st",5,"petrol","5-Speed","Manual",524000
+"908","Skoda",2014,"red","sedan",46103,"2nd",5,"petrol","7-Speed","Automatic",1299000
+"909","Maruti Suzuki",2019,"red","hatchback",2174,"1st",5,"petrol","5-Speed","Manual",420000
+"910","Volkswagen",2012,"silver","hatchback",64878,"1st",5,"petrol","5-Speed","Manual",450000
+"911","Hyundai",2017,"red","suv",76978,"1st",5,"petrol","6-Speed","Manual",1212000
+"912","Honda",2018,"white","sedan",33454,"1st",5,"petrol","5-Speed","Manual",772000
+"913","Tata",2019,"white","suv",19589,"1st",5,"diesel","6-Speed","Manual",1699000
+"914","Maruti Suzuki",2021,"silver","hatchback",17101,"1st",5,"petrol+cng","5-Speed","Manual",612000
+"915","Maruti Suzuki",2015,"brown","muv",51844,"1st",7,"diesel","5-Speed","Manual",911000
+"916","Ford",2016,"red","suv",91463,"2nd",5,"diesel","5-Speed","Manual",707000
+"917","Hyundai",2017,"grey","suv",88895,"2nd",5,"diesel","6-Speed","Manual",1098000
+"918","Chevrolet",2014,"green","hatchback",45080,"1st",5,"petrol","5-Speed","Manual",335000
+"919","Volkswagen",2016,"grey","sedan",81709,"1st",5,"petrol","5-Speed","Automatic",545000
+"920","Nissan",2015,"silver","hatchback",48656,"1st",5,"petrol","5-Speed","Automatic",475000
+"921","Ford",2019,"red","crossover",17504,"1st",5,"petrol","5-Speed","Automatic",667000
+"922","Tata",2013,"blue","hatchback",33744,"1st",4,"petrol","4-Speed","Manual",188000
+"923","Hyundai",2019,"blue","suv",18398,"2nd",5,"petrol","6-Speed","Manual",907000
+"924","Volkswagen",2017,"brown","sedan",41757,"1st",5,"petrol","5-Speed","Automatic",619000
+"925","Hyundai",2015,"red","crossover",41086,"1st",5,"diesel","6-Speed","Automatic",748000
+"926","Maruti Suzuki",2019,"silver","hatchback",25418,"1st",5,"petrol","5-Speed","Manual",731000
+"927","Maruti Suzuki",2018,"red","hatchback",23606,"1st",5,"petrol","5-Speed","Manual",395000
+"928","Renault",2020,"red","muv",18798,"1st",7,"petrol","5-Speed","Manual",758000
+"929","Maruti Suzuki",2019,"orange","hatchback",24105,"1st",5,"petrol","5-Speed","Manual",495000
+"930","Volkswagen",2018,"silver","hatchback",26394,"1st",5,"petrol","5-Speed","Manual",699000
+"931","Hyundai",2017,"silver","sedan",22538,"2nd",5,"petrol","4-Speed","Manual",651000
+"932","Hyundai",2017,"silver","sedan",22538,"2nd",5,"petrol","4-Speed","Manual",651000
+"933","Hyundai",2017,"silver","sedan",22538,"2nd",5,"petrol","4-Speed","Manual",651000
+"934","Hyundai",2017,"silver","sedan",22538,"2nd",5,"petrol","4-Speed","Manual",651000
+"935","Hyundai",2012,"red","hatchback",34060,"1st",5,"petrol","5-Speed","Manual",332000
+"936","Hyundai",2011,"white","hatchback",46251,"2nd",5,"petrol","5-Speed","Manual",371000
+"937","Ford",2020,"red","crossover",6886,"1st",5,"petrol","5-Speed","Automatic",753000
+"938","Hyundai",2020,"white","suv",26020,"1st",5,"petrol","6-Speed","Manual",1117000
+"939","Hyundai",2013,"white","hatchback",33440,"1st",5,"petrol","5-Speed","Manual",305000
+"940","Ford",2019,"grey","suv",11800,"1st",5,"petrol","5-Speed","Automatic",945000
+"941","MG Motors",2019,"white","suv",7339,"1st",5,"petrol","6-Speed","Automatic",1799000
+"942","Maruti Suzuki",2017,"orange","hatchback",41465,"2nd",5,"petrol","5-Speed","Manual",681000
+"943","Maruti Suzuki",2013,"grey","muv",67020,"1st",7,"petrol","5-Speed","Manual",694000
+"944","Maruti Suzuki",2014,"white","muv",23885,"1st",8,"petrol","4-Speed","Manual",328000
+"945","Tata",2019,"orange","suv",62300,"1st",5,"diesel","6-Speed","Manual",1685000
+"946","Renault",2014,"black","sedan",34080,"1st",5,"diesel","5-Speed","Manual",627000
+"947","Ford",2018,"white","suv",78061,"1st",5,"petrol","6-Speed","Automatic",935000
+"948","Maruti Suzuki",2017,"white","suv",28476,"1st",5,"diesel","5-Speed","Automatic",910000
+"949","Maruti Suzuki",2016,"white","suv",38729,"1st",5,"diesel","5-Speed","Automatic",810000
+"950","Maruti Suzuki",2017,"blue","hatchback",26203,"1st",5,"petrol","5-Speed","Automatic",650000
+"951","Tata",2018,"red","suv",35730,"1st",5,"diesel","6-Speed","Automatic",954000
+"952","Maruti Suzuki",2018,"grey","sedan",16491,"1st",5,"petrol","5-Speed","Automatic",746000
+"953","Hyundai",2018,"brown","sedan",35623,"2nd",5,"petrol","6-Speed","Automatic",963000
+"954","Maruti Suzuki",2019,"red","hatchback",15508,"1st",5,"petrol","5-Speed","Automatic",784000
+"955","Maruti Suzuki",2017,"grey","sedan",34004,"1st",5,"petrol","5-Speed","Automatic",727000
+"956","Maruti Suzuki",2018,"silver","suv",35042,"1st",5,"diesel","5-Speed","Automatic",1071000
+"957","Hyundai",2018,"orange","sedan",57046,"1st",5,"petrol","6-Speed","Automatic",898000
+"958","Hyundai",2019,"white","sedan",22546,"1st",5,"petrol","6-Speed","Automatic",1040000
+"959","Maruti Suzuki",2018,"red","suv",31570,"1st",5,"diesel","5-Speed","Automatic",1152000
+"960","Honda",2015,"white","hatchback",49536,"1st",5,"petrol","5-Speed","Automatic",596000
+"961","Maruti Suzuki",2017,"blue","suv",53719,"1st",5,"diesel","5-Speed","Automatic",845000
+"962","Maruti Suzuki",2021,"red","hatchback",10303,"1st",5,"petrol","5-Speed","Automatic",816000
+"963","Maruti Suzuki",2020,"red","hatchback",27437,"1st",5,"petrol","5-Speed","Automatic",790000
+"964","Renault",2018,"brown","suv",6603,"1st",5,"petrol","5-Speed","Automatic",1063000
+"965","Renault",2017,"brown","suv",16556,"2nd",5,"petrol","5-Speed","Automatic",838000
+"966","Maruti Suzuki",2018,"silver","hatchback",25626,"1st",5,"petrol","5-Speed","Automatic",663000
+"967","Maruti Suzuki",2021,"blue","hatchback",9384,"1st",5,"petrol","5-Speed","Automatic",590000
+"968","Maruti Suzuki",2020,"grey","hatchback",6104,"1st",5,"petrol","5-Speed","Automatic",838000
+"969","Maruti Suzuki",2019,"grey","hatchback",21992,"2nd",5,"petrol","5-Speed","Automatic",829000
+"970","Renault",2018,"orange","suv",54137,"1st",5,"petrol","5-Speed","Automatic",799000
+"971","Maruti Suzuki",2017,"blue","sedan",33258,"1st",5,"petrol","5-Speed","Automatic",722000
+"972","Hyundai",2018,"white","sedan",23869,"1st",5,"petrol","6-Speed","Automatic",956000
+"973","Hyundai",2019,"white","sedan",14831,"1st",5,"petrol","6-Speed","Automatic",1027000
+"974","Hyundai",2014,"silver","sedan",52846,"1st",5,"petrol","4-Speed","Automatic",736000
+"975","Ford",2020,"white","crossover",28335,"2nd",5,"diesel","5-Speed","Automatic",749000
+"976","Maruti Suzuki",2018,"silver","hatchback",41176,"1st",5,"petrol","5-Speed","Automatic",691000

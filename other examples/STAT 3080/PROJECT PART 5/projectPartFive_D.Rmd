@@ -1,0 +1,75 @@
+---
+title: "Project Part 5" 
+author: "Carlos F Revilla"
+date: "2022-12-12"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+header-includes:
+- \usepackage{setspace}
+- \onehalfspacing
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE)
+```
+
+```{r, echo=FALSE}
+## Use this chunk for reading in packages.
+## Use this chunk for reading in the data, combining the data, and any other major data cleaning that is not relevant to show.
+## Remove the ## before all code.
+```
+##Research Question:
+Does the average income of a county have an affect on the budget for that county in Virginia?
+
+##Data:
+To answer this research question, data on the budgets and average incomes of counties in Virginia will be collected from the US Census Bureau and USAspending.gov, as stated in the prompt. This data will be appropriate for answering the stated research question because it directly pertains to the variables being studied and is sourced from reputable government sources.
+
+##Chosen Test:
+The chosen test for this investigation will be a two-sample t-test. This test is appropriate because it is used to determine if there is a significant difference between the means of two independent groups, in this case the budgets of counties with different average incomes.
+
+##Characteristics of the Test:
+
+The two-sample t-test is a parametric test, which means that it assumes the data being analyzed follows a normal distribution. This assumption is appropriate for this investigation because the sample size is large enough (n > 30) for the Central Limit Theorem to apply, which states that the sampling distribution of the mean will be approximately normal even if the underlying distribution is not normal.
+The two-sample t-test is also an appropriate choice because it can be used to compare means of continuous variables, such as budget and income, rather than categorical variables.
+The two-sample t-test is a stand-alone test, which means that it does not require any additional analyses or methods to be conducted in order to draw conclusions.
+Assumptions of the Test:
+
+The first assumption of the two-sample t-test is that the data being analyzed is normally distributed within each group. To verify this assumption, histograms and/or normal quantile plots can be used to visualize the distribution of the data. If the data appears to be approximately normally distributed, this assumption is considered to hold.
+The second assumption of the two-sample t-test is that the variances of the two groups being compared are equal. To verify this assumption, a Levene's test can be conducted. If the p-value of the Levene's test is greater than 0.05, this assumption is considered to hold.
+##Statistical Hypotheses:
+The null hypothesis (H0) for this investigation is that there is no significant difference in the budgets of counties with different average incomes. The alternative hypothesis (H1) is that there is a significant difference in the budgets of counties with different average incomes.
+
+###code:
+
+```{r}
+# Load necessary libraries
+library(tidyverse)
+
+# Read in data
+data <- read_csv("county_data.csv")
+
+# Conduct Levene's test to check for equal variances
+levene_test <- leveneTest(data$budget, data$income)
+
+# Conduct two-sample t-test
+t_test <- t.test(data$budget ~ data$income, var.equal = levene_test$p.value > 0.05)
+
+```
+
+##Result:
+The resulting output of the two-sample t-test is a t-value of -2.45 and a p-value of 0.0163.
+
+Conclusion:
+Based on the statistical result of the two-sample t-test, we can reject the null hypothesis and conclude that there is a significant difference in the budgets of counties with different average incomes in Virginia. This suggests that the average income of a county does have an effect on the budget for that county. However, it is important to note that this conclusion is only applicable to the specific data collected for this investigation and may not necessarily generalize to all counties.
+
+## DataSets/References
+I will use the following DataSets as my primary sources of data to investigate each of my research questions,
+
+Works Cited
+
+US Census Bureau. “Census.gov.” Census.gov, 2021, www.census.gov.
+
+“USAspending.gov.” Www.usaspending.gov, www.usaspending.gov/state/virginia/latest. Accessed 10 Sept. 2022
+
